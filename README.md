@@ -3,6 +3,9 @@
 AI-põhine ülesande valideerimise rakendus „Kes tahab saada miljonäriks?" formaadis.
 TAK25 grupi õppeprojekt.
 
+🎮 **Mängi otse brauseris:** <https://urmasrehkalt.github.io/millionaire/>
+(staatiline GitHub Pages demo — uue teema loomise vorm on aktiivne ainult lokaalses arendusrežiimis)
+
 ## Projekti kirjeldus
 
 Õppevahend, mis aitab kontrollida, kas õppija saab aru enda või kellegi teise tehtud
@@ -112,6 +115,26 @@ kirjelduse backendile, mis palub Google Gemini API-l (`gemini-2.5-flash`) luua
   - **50:50** — eemaldab kaks valet vastust
   - **Vihje** — kuvab küsimusepangas salvestatud suunava vihje
   - **Vaheta küsimus** — asendab küsimuse sama raskusastme varuküsimusega
+
+## Demo (GitHub Pages)
+
+Rakendus on saadaval kahes režiimis:
+
+| Režiim | URL | Mängu mängimine | Uue teema loomine AI abil |
+|--------|-----|------------------|---------------------------|
+| **GitHub Pages demo** | <https://urmasrehkalt.github.io/millionaire/> | ✅ töötab kliendipoolselt | ❌ vajab backendi |
+| **Lokaalne arendus** | `http://localhost:8005` | ✅ töötab kliendipoolselt | ✅ vajab `GEMINI_API_KEY`-d |
+
+Mängu loogika (skoor, turvatasemed, õlekõrred, küsimuste valik küsimusepangast)
+elab failis [`frontend/js/engine.js`](frontend/js/engine.js) ja jookseb täielikult
+brauseris. Backend ([`backend/app/services/game_logic.py`](backend/app/services/game_logic.py))
+peegeldab sama loogikat ja teenindab uue teema AI-genereerimist. Mõlemal poolel
+on `pytest` / käsitsi smoke-testid samale käitumisele.
+
+Iga `main`-i push käivitab [`.github/workflows/pages.yml`](.github/workflows/pages.yml),
+mis kogub `frontend/` + numbrilised `input/<id>/` kaustad ühte `dist/`-i,
+genereerib värske `assignments.json`-i `input/`-i põhjal ja deploy-b GitHub
+Pages-isse.
 
 ## Teadaolevad piirangud
 

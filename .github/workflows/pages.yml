@@ -1,0 +1,81 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble dist/
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          cp -r frontend/. dist/
+          # Copy each numeric topic folder under input/ — skip non-numeric
+          # entries (the spec only treats numeric folders as assignments).
+          mkdir -p dist/input
+          for entry in input/*/; do
+            name=$(basename "$entry")
+            if [[ "$name" =~ ^[0-9]+$ ]]; then
+              cp -r "$entry" "dist/input/$name"
+            fi
+          done
+
+      - name: Regenerate assignments.json from input/
+        run: |
+          python3 - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          INPUT = Path("dist/input")
+          H1 = re.compile(r"^#\s+(.+?)\s*$", re.MULTILINE)
+
+          out = []
+          for entry in sorted(INPUT.iterdir()):
+              if not entry.is_dir() or not entry.name.isdigit():
+                  continue
+              md = entry / "assignment.md"
+              if not md.exists():
+                  continue
+              text = md.read_text(encoding="utf-8")
+              m = H1.search(text)
+              title = m.group(1).strip() if m else f"Ülesanne {entry.name}"
+              out.append({"id": entry.name, "title": title})
+
+          (Path("dist") / "assignments.json").write_text(
+              json.dumps({"assignments": out}, ensure_ascii=False, indent=2),
+              encoding="utf-8",
+          )
+          print(f"Wrote {len(out)} assignments to dist/assignments.json")
+          PY
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
