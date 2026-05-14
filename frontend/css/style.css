@@ -291,8 +291,10 @@ body {
         flex: 1;
     }
 
-    .next-button {
+    .next-button,
+    .quit-button {
         width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -432,6 +434,26 @@ body {
 
 .next-button:hover {
     background: var(--accent-dark);
+}
+
+.quit-button {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid rgba(170, 179, 214, 0.25);
+    border-radius: 999px;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    margin-left: auto;
+    transition: color 0.15s, border-color 0.15s, background-color 0.15s;
+}
+
+.quit-button:hover {
+    color: #ff9090;
+    border-color: rgba(255, 144, 144, 0.6);
+    background: rgba(255, 144, 144, 0.08);
 }
 
 /* ----- Score ladder ----- */

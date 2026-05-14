@@ -3,6 +3,6 @@
   "assignments": [
     { "id": "001", "title": "JavaScripti kalkulaator" },
     { "id": "002", "title": "JSON-andmete kuvamine" },
-    { "id": "003", "title": "Pythoni komandoreal käivituv To-Do nimekiri" }
+    { "id": "003", "title": "Pythoni käsurea To-Do nimekiri" }
   ]
 }

@@ -7,6 +7,7 @@
 // throws and the UI surfaces a friendly message.
 
 import {
+    quitGame as engineQuitGame,
     startGameFor,
     submitAnswer as engineSubmitAnswer,
     useLifeline as engineUseLifeline,
@@ -66,4 +67,8 @@ export async function submitAnswer(sessionId, answerIndex) {
 
 export async function useLifeline(sessionId, lifeline) {
     return engineUseLifeline(sessionId, lifeline);
+}
+
+export async function quitGame(sessionId) {
+    return engineQuitGame(sessionId);
 }

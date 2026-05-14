@@ -172,6 +172,24 @@ export function submitAnswer(sessionId, answerIndex) {
     };
 }
 
+export function quitGame(sessionId) {
+    const session = sessions.get(sessionId);
+    if (!session) throw new Error(`Session not found: ${sessionId}`);
+    if (session.finished) throw new Error("Game already finished");
+
+    session.finished = true;
+    // Walking away keeps the score already earned (after the last correct
+    // answer), not the safety level. currentIndex points at the unanswered
+    // question, so we read the ladder slot one below it.
+    const score = session.currentIndex > 0 ? SCORE_LADDER[session.currentIndex - 1] : 0;
+
+    return {
+        status: "quit",
+        score,
+        answered_questions: session.answered,
+    };
+}
+
 export function useLifeline(sessionId, lifeline) {
     const session = sessions.get(sessionId);
     if (!session) throw new Error(`Session not found: ${sessionId}`);
