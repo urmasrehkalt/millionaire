@@ -14,7 +14,7 @@ publiku küsitlus).
 
 ## Kasutatud tehnoloogiad
 
-- **Backend:** Python 3.11+ ja [FastAPI](https://fastapi.tiangolo.com/)
+- **Backend:** Python 3.12+ ja [FastAPI](https://fastapi.tiangolo.com/)
 - **Frontend:** vanilla HTML/CSS/JS (ilma raamistikuta)
 - **AI:** [OpenAI API](https://platform.openai.com/) (mudel `gpt-4o-mini` vaikimisi)
 - **Markdown ja koodivärvimine:** `marked` ja `highlight.js` CDN-ist
@@ -25,7 +25,7 @@ publiku küsitlus).
 
 ### Eeldused
 
-- Python 3.11 või uuem
+- Python 3.12 või uuem
 - OpenAI API võti (vajalik AI-küsimuste genereerimiseks; ilma võtmeta töötab fallback)
 
 ### Käivitamine
@@ -36,7 +36,7 @@ git clone https://github.com/urmasrehkalt/millionaire.git
 cd millionaire
 
 # 2. Loo virtuaalne keskkond ja installi sõltuvused
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate          # Windowsis: .venv\Scripts\activate
 pip install -e ".[dev]"
 
@@ -45,10 +45,10 @@ cp .env.example .env
 # Ava .env ja lisa OPENAI_API_KEY=sk-... (valikuline; ilma selleta töötab fallback)
 
 # 4. Käivita server
-uvicorn backend.app.main:app --reload
+uvicorn backend.app.main:app --reload --port 8005
 
 # 5. Ava brauseris
-# http://localhost:8000
+# http://localhost:8005
 ```
 
 ### Testid
