@@ -47,14 +47,16 @@ function renderLayout(root) {
                     <span id="q-score"></span>
                 </div>
                 <p class="question-text" id="q-text"></p>
-                <div class="lifelines" id="lifelines">
-                    <button type="button" data-lifeline="fifty_fifty">50:50</button>
-                    <button type="button" data-lifeline="hint">Vihje</button>
-                    <button type="button" data-lifeline="swap">Vaheta küsimus</button>
-                </div>
                 <div class="options" id="q-options"></div>
                 <div id="q-feedback" hidden></div>
-                <button class="next-button" id="q-next" hidden>Järgmine küsimus →</button>
+                <div class="question-actions">
+                    <div class="lifelines" id="lifelines" aria-label="Õlekõrred">
+                        <button type="button" data-lifeline="fifty_fifty">50:50</button>
+                        <button type="button" data-lifeline="hint">Vihje</button>
+                        <button type="button" data-lifeline="swap">Vaheta</button>
+                    </div>
+                    <button class="next-button" id="q-next" hidden>Järgmine küsimus →</button>
+                </div>
             </div>
             <aside class="ladder" id="ladder"></aside>
         </div>`;
