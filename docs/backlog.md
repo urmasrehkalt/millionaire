@@ -1,34 +1,49 @@
 # Product Backlog — Miljonimäng
 
-See dokument on Trello tahvli **allikas**: kasutajalood ja arendusülesanded
-hoitakse koodirepos failina, et need oleksid versionihalduses ja mitte ainult
-Trellos. Trello tahvel peegeldab seda dokumenti — kaardid kopeeritakse
-[`trello-cards.md`](trello-cards.md) failist.
+> Viimati uuendatud: 2026-05-14 (issue'd #1–#8 main-il).
+
+See dokument on projekti backlogi **allikas**. Töötahvel
+(`urmas-agiilne-tracker`, localhost:8000) peegeldab seda — kaardid kopeeriti
+algselt [`trello-cards.md`](trello-cards.md)-st ja on edaspidi sünkroonis
+issue-numbritega (`#1`, `#2`, …).
 
 Töövoog: **Backlog → Todo → In progress → Review/Test → Done**
 
----
+## Olek lühidalt
+
+| ID | Lugu | Olek | PR / Issue |
+|----|------|------|------------|
+| US1 | Ülesannete nimekiri | ✅ Done | #1 (iter-1) |
+| US2 | Mängu mängimine 15 küsimusega | ✅ Done | #1, #2, #4 |
+| US3 | Selgituse kuvamine | ✅ Done (tulemusvaates) | #1 |
+| US4 | Uue ülesande lisamine `input/`-i | ✅ Done | #1 |
+| US5 | Igal mängul (osaliselt) uued küsimused | ✅ Done | #4 (juhuslik valik pangast) |
+| US6 | Õlekõrred (50:50, vihje, vaheta) | ✅ Done | #4, #5 |
+| US7 | Mängu pooleli jätmine („walk away") | ✅ Done | #7 |
+| US8 | Markdown ja koodivärvimine | ⬜ Backlog | — |
+| US9 | Mängu uuesti alustamine | ✅ Done (lihtne play-again nupp) | #5 |
+| US10 | AI-genereeritud küsimusepank teema kohta | ✅ Done | #4 |
+| US11 | Veebist uue teema loomine AI abil | ✅ Done | #4 |
+| US12 | Avalik demo (GitHub Pages) | ✅ Done | #6 |
+| US13 | Eestikeelne UI lihv | ✅ Done | #8 |
+| US14 | Mänguajalugu (localStorage) | ⬜ Backlog | — |
+| US15 | Õpetaja vaade | ⬜ Backlog | — |
 
 ## Kasutajalood
 
-### US1 — Ülesannete nimekirja kuvamine
+### US1 — Ülesannete nimekirja kuvamine ✅
 
 > Õppijana tahan näha ülesannete nimekirja, et saaksin valida, millise ülesande
 > kohta mängu mängida.
 
 **Vastuvõtutingimused:**
 
-- Avalehel kuvatakse kõik `input/`-kausta numbrilised alamkaustad (001, 002, …)
-- Iga ülesande kohta on näha number ja pealkiri (`assignment.md` H1-st)
-- Kui pealkirja ei ole, kuvatakse vaikepealkirjana kausta number
-- Nimekiri uueneb pärast brauseri värskendamist ilma serveri taaskäivitamiseta
-- Mittenumbrilised kaustad (`.git`, `node_modules` jne) ignoreeritakse
+- Avalehel kuvatakse kõik teemad `assignments.json` manifesti põhjal
+- Iga teema kohta on näha ID ja pealkiri (`assignment.md` H1-st)
+- CI regenereerib manifesti igal `main`-i push'iga
+- Mittenumbrilised kaustad ignoreeritakse
 
-**Iteratsioon:** 1 · **Sildid:** `feature`, `frontend`, `backend`
-
----
-
-### US2 — Mängu mängimine
+### US2 — Mängu mängimine ✅
 
 > Õppijana tahan vastata valikvastustega küsimustele, et kontrollida, kas saan
 > lahendusest aru.
@@ -36,158 +51,169 @@ Töövoog: **Backlog → Todo → In progress → Review/Test → Done**
 **Vastuvõtutingimused:**
 
 - Pärast ülesande valikut käivitub mäng 15 küsimusega
-- Igal küsimusel on täpselt 4 vastusevarianti
-- Ainult üks vastus on õige
-- Küsimused lähevad järjest keerulisemaks (5 lihtsat + 5 keskmist + 5 rasket)
+- Igal küsimusel on täpselt 4 vastusevarianti, üks õige
+- Küsimused on jaotatud 5 lihtsat + 5 keskmist + 5 rasket (raskenev järjekord)
 - Hetkeseis (küsimuse number ja punktid) on alati ekraanil näha
 - Vale vastusega mäng lõpeb ja punktid kukuvad turvatasemele
 - Õige vastusega liigutakse järgmisele küsimusele
 
-**Iteratsioon:** 1–2 · **Sildid:** `feature`, `frontend`, `backend`
+### US3 — Selgituse kuvamine ✅
 
----
-
-### US3 — Selgituse kuvamine
-
-> Õppijana tahan näha pärast vastamist selgitust, et mõista, miks vastus oli õige
-> või vale.
+> Õppijana tahan näha pärast vastamist selgitust, et mõista, miks vastus oli
+> õige või vale.
 
 **Vastuvõtutingimused:**
 
 - Pärast iga vastust kuvatakse lühike selgitus (1–2 lauset)
-- Selgitus tuleb AI vastusest (väli `explanation`)
-- Mängu lõpus kuvatakse koondvaade vastatud küsimustest koos selgitustega
+- Selgitus tuleb küsimuse `explanation`-väljast
+- Mängu lõpus kuvatakse koondvaade vastatud küsimustest selgitustega
 
-**Iteratsioon:** 1 (lõpus), 4 (iga küsimuse järel) · **Sildid:** `feature`, `frontend`
+### US4 — Uue ülesande lisamine ✅
 
----
-
-### US4 — Uue ülesande lisamine
-
-> Õpetajana tahan lisada uusi ülesandeid `input/`-kausta, et sama rakendust saaks
-> kasutada erinevate ülesannete valideerimiseks.
+> Õpetajana tahan lisada uusi ülesandeid `input/`-kausta, et sama rakendust
+> saaks kasutada erinevate ülesannete valideerimiseks.
 
 **Vastuvõtutingimused:**
 
-- Uue numbrilise alamkausta loomine `input/`-i alla teeb ülesande mängitavaks
-- Kausta sisus peab olema vähemalt `assignment.md`
-- Lahendusfailid võivad olla suvalises struktuuris (sh alamkaustades)
-- Rakenduse koodi muutmist ega taaskäivitamist ei nõuta
-- Alamkaustad nagu `node_modules/`, `.git/`, `vendor/` jäetakse vaikimisi vahele
-- Üle 32 KB suurused failid kärbitakse promptis
+- Uue numbrilise alamkausta loomine teeb ülesande mängitavaks
+- Kausta sisus peab olema vähemalt `assignment.md` ja `questions.json`
+- Veebivormi kaudu (lokaalses dev'is) saab kogu sammu automaatselt teha — vt
+  [US11](#us11--ai-abil-uue-teema-loomine-veebist-)
 
-**Iteratsioon:** 1 · **Sildid:** `feature`, `backend`
+### US5 — Igal mängul (osaliselt) uued küsimused ✅
 
----
-
-### US5 — Igal mängul uued küsimused
-
-> Õpetajana tahan, et küsimused oleksid iga kord erinevad, et õppija ei saaks
-> lihtsalt vastuseid pähe õppida.
+> Õpetajana tahan, et küsimused oleksid iga kord (vähemalt osaliselt) erinevad,
+> et õppija ei saaks lihtsalt vastuseid pähe õppida.
 
 **Vastuvõtutingimused:**
 
-- Kahe järjestikuse mängu küsimustest on vähemalt osa erinev
-- AI päringus kasutatakse `temperature >= 0.7` ja muutuvat seed/nonce'i
-- Kui AI tagastab dubleeritud küsimusi, korratakse päringut
+- Iga mängu alguses valitakse 50 küsimusega pangast juhuslikult 5+5+5
+- Sama teemat järjest mängides on tõenäosus, et osad küsimused korduvad,
+  vähene (50/15 ≈ 30% kattuvus)
 
-**Iteratsioon:** 2 · **Sildid:** `feature`, `backend`, `ai`
-
----
-
-## Lisafunktsioonid (parem hinne)
-
-### US6 — Õlekõrred
+### US6 — Õlekõrred ✅
 
 > Õppijana tahan kasutada õlekõrri, et saaksin raskete küsimuste juures abi.
 
 **Vastuvõtutingimused:**
 
-- 3 õlekõrt: 50:50, AI vihje, küsi publikult
-- Iga õlekõrs kasutatav ainult 1 kord mängu kohta
-- 50:50 jätab alles 2 vastust, millest üks on õige
-- AI vihje annab suunise, kuid ei ütle vastust otse
-- Publik kuvab simuleeritud hääletustulemuse, kus õigel vastusel on suurem
-  tõenäosus saada rohkem hääli (eriti lihtsamatel küsimustel)
+- 3 õlekõrt: **50 : 50**, **Vihje**, **Vaheta küsimus**
+- Iga õlekõrs kasutatav 1 kord mängu kohta
+- 50 : 50 jätab alles 2 vastust, üks õige
+- Vihje tagastab küsimuse `hint`-välja sisu (ilma vastust ütlemata)
+- Vaheta küsimus asendab praeguse küsimuse sama raskustaseme reservküsimusega
 
-**Iteratsioon:** 3 · **Sildid:** `feature`, `frontend`, `backend`, `ai`
+> **Märkus:** algses plaanis oli kolmas õlekõrs „Küsi publikult". Asendati
+> „Vaheta küsimusega" — see sobib küsimusepanga mudeliga paremini ega vaja
+> jooksvalt AI-d.
 
----
+### US7 — Mängu lõpetamine (walk-away) ✅
 
-### US7 — Mängu poolelijätmine ja jätkamine
-
-> Õppijana tahan saada mängu pooleli jätta, et saaksin sellega hiljem jätkata
-> ja oma punktid säiliksid.
-
-**Vastuvõtutingimused:**
-
-- Kasutaja saab nupuga „Lõpeta mäng" mängu lõpetada ja saavutatud punktid säilivad
-- Mänguajalugu salvestatakse `localStorage`-isse
-- Mänguajalugu kuvatakse avalehel
-
-**Iteratsioon:** 4 · **Sildid:** `feature`, `frontend`
-
----
-
-### US8 — Markdown ja koodivärvimine
-
-> Õppijana tahan, et `assignment.md` ja küsimustes esinev kood oleksid loetavalt
-> kuvatud.
+> Õppijana tahan saada mängu igal hetkel lõpetada ja teenitud punktidega
+> lahkuda.
 
 **Vastuvõtutingimused:**
 
-- `assignment.md` renderdatakse markdownina (mitte toorelt tekstina)
-- Küsimustes ja vastustes esinev kood saab süntaksivärvimise (`highlight.js`)
+- „Lõpeta mäng" nupp on alati nähtaval mängu vaates
+- Klikk kuvab kinnitusdialoogi punktisummaga
+- Kinnitusel suunatakse tulemusvaatesse staatuse „quit" ja viimase teenitud
+  skooriga (mitte turvatase)
 
-**Iteratsioon:** 4 · **Sildid:** `feature`, `frontend`
+### US8 — Markdown ja koodivärvimine ⬜
 
----
-
-### US9 — Küsimuste regenereerimine
-
-> Õppijana tahan saada nupuga genereerida samale ülesandele uued küsimused, et
-> ma saaksin uuesti proovida ilma teist ülesannet valimata.
+> Õppijana tahan, et `assignment.md` ja küsimustes esinev kood oleksid
+> loetavalt kuvatud.
 
 **Vastuvõtutingimused:**
 
-- Mängu lõpus on nupp „Mängi uuesti uute küsimustega"
-- Nupp käivitab uue AI-päringu ja alustab mängu nullist
+- `assignment.md` renderdatakse markdownina enne mängu algust
+- Küsimustes esinev kood saab süntaksivärvimise (`highlight.js`)
 
-**Iteratsioon:** 4 · **Sildid:** `feature`, `frontend`, `backend`
+### US9 — Mängu uuesti alustamine ✅
 
----
+> Õppijana tahan mängu lõpus saada sama ülesannet kohe uuesti proovida.
 
-## Arendusülesanded (technical tasks)
+**Vastuvõtutingimused:**
 
-Need ei ole iseseisvad kasutajalood, aga on vajalikud kasutajalugude
-realiseerimiseks. Trellos kuvatakse eraldi kaartidena.
+- Tulemusvaates on nupp „Proovi sama ülesannet uuesti"
+- Klikk käivitab uue mängu (uus küsimuste valik pangast)
 
-| ID | Kirjeldus | Kasutajalugu | Iteratsioon |
-|----|-----------|--------------|-------------|
-| T01 | Projekti skelett, .gitignore, pyproject.toml, README | — | 0 |
-| T02 | FastAPI rakendus + staatilise frontendi serveerimine | US1 | 1 |
-| T03 | `assignment_loader.py` — input/-i lugemine | US1, US4 | 1 |
-| T04 | API: `GET /api/assignments`, `GET /api/assignments/{id}` | US1 | 1 |
-| T05 | Pydantic skeemid (Assignment, Question, GameSession) | US2 | 1 |
-| T06 | `game_logic.py` — punktiastmed, turvatasemed, sessioonid | US2 | 1 |
-| T07 | API: `POST /api/game/start`, `POST /api/game/answer` | US2 | 1 |
-| T08 | Fallback-küsimused JSON-failis | US2 | 1 |
-| T09 | Frontend: avalehe ülesannete nimekiri | US1 | 1 |
-| T10 | Frontend: mänguvaade (küsimus + 4 vastust) | US2 | 1 |
-| T11 | Frontend: tulemusvaade selgitustega | US3 | 1 |
-| T12 | Prompt-fail `prompts/question-generation.md` | US2, US5 | 2 |
-| T13 | OpenAI integratsioon `question_generator.py`-s | US2, US5 | 2 |
-| T14 | `pydantic-settings` config + .env haldus | US2 | 2 |
-| T15 | `lifelines.py` — 50:50, AI vihje, publik | US6 | 3 |
-| T16 | API: `POST /api/game/lifeline` | US6 | 3 |
-| T17 | Frontend: õlekõrte nupud + kasutusloogika | US6 | 3 |
-| T18 | Markdown ja koodivärvimine frontendis | US8 | 4 |
-| T19 | localStorage mänguajalugu | US7 | 4 |
-| T20 | „Mängi uuesti" nupp ja regenereerimine | US9 | 4 |
+### US10 — Küsimusepank teema kohta ✅
 
----
+> Õpetajana tahan, et iga teema küsimused oleksid eelnevalt salvestatud, et
+> mäng ei nõuaks iga alustamisel AI-päringut.
+
+**Vastuvõtutingimused:**
+
+- Iga teema kaustas on `questions.json` (50 küsimusega)
+- Pangas on vähemalt 5 küsimust iga raskustaseme kohta (valideeritud
+  laadimisel)
+- Mängu alguses ei tehta AI-päringut
+
+### US11 — AI abil uue teema loomine veebist ✅
+
+> Õpetajana tahan luua uue teema otse rakendusest, et ma ei peaks
+> JSON-i käsitsi koostama.
+
+**Vastuvõtutingimused:**
+
+- Avalehel on vorm „Lisa uus teema" (pealkiri + kirjeldus)
+- Vajab töötavat `GEMINI_API_KEY`-d (lokaalne arendus)
+- Loob `input/<id>/assignment.md` ja `input/<id>/questions.json` 50 küsimusega
+- Pärast loomist kuvatakse uus teema kohe menüüs
+- GitHub Pages režiimis vorm peidetakse
+
+### US12 — Avalik demo ✅
+
+> Õpetajana tahan jagada lihtsalt linki, et õppijad ja kaaslased saaksid
+> rakendust proovida ilma keskkonda seadistamata.
+
+**Vastuvõtutingimused:**
+
+- `main`-i push deploy-b GitHub Pages-isse
+- URL: <https://urmasrehkalt.github.io/millionaire/>
+- Mäng töötab täielikult ilma serverita
+- AI-uue-teema vorm peidetakse (selge selgitus, kuidas seda saaks)
+
+### US13 — Eestikeelne UI lihv ✅
+
+> Õppijana tahan, et UI sõnastus oleks loomulik ja eestikeelne, mitte
+> kohmakate suhtelausetega.
+
+**Vastuvõtutingimused:**
+
+- Iga visiibel string käsitsi üle loetud
+- „komandorida" → „käsurida" (modernne eesti keel)
+- Verdiktid kasutavad korrektset eesti grammatikat („Mäng on läbi", mitte
+  „Mäng läbi")
+
+### US14 — Mänguajalugu ⬜
+
+> Õppijana tahan näha varasemate mängude tulemusi, et jälgida edusamme.
+
+### US15 — Õpetaja vaade ⬜
+
+> Õpetajana tahan hallata teemasid ja näha õppijate tulemusi (sh statistikat).
+
+## Arendusülesanded — ajalooline kokkuvõte
+
+Algselt kavandatud T01–T20 enamus realiseeriti, kuid arhitektuuri muutused
+(`#4` küsimusepank ja `#6` GitHub Pages) muutsid mõned ülesanded mittevajalikuks
+ja tõid uued juurde. Allpool on lihtsustatud kaardistus PR-ide kaupa —
+detailne lugu igast iteratsioonist on failis [`iterations/`](iterations/).
+
+| Issue | Mis tehti | Iteratsiooni dokument |
+|-------|-----------|----------------------|
+| #1 | FastAPI MVP, mänguvoog fallback-küsimustega, 3 näidisülesannet | [iter-1](iterations/iteration-1-mvp.md) |
+| #2 | Gemini API integratsioon (T12–T14) | [iter-2](iterations/iteration-2-ai.md) |
+| #3 | Gemini JSON-skeemi `min/max_items` parandus | (väike bugfix, vt git log) |
+| #4 | Küsimusepank, 50-küsimusega `questions.json`, vaheta-õlekõrs | [iter-3](iterations/iteration-3-question-banks.md) |
+| #5 | UI moderniseerimine (must-kuld teema, animatsioonid) | [iter-4](iterations/iteration-4-ui-modernization.md) |
+| #6 | Client-side engine, GitHub Pages deploy | [iter-5](iterations/iteration-5-github-pages.md) |
+| #7 | „Lõpeta mäng" walk-away nupp | [iter-6](iterations/iteration-6-quit-and-polish.md) |
+| #8 | Eesti keele lihv kogu UI-s | [iter-6](iterations/iteration-6-quit-and-polish.md) |
 
 ## Testimine ja vastuvõtt
 
-Vt [`testing-notes.md`](testing-notes.md) — iga iteratsiooni lõpus käime kõik
-selle iteratsiooni vastuvõtutingimused läbi ja märgime tulemuse.
+Vt [`testing-notes.md`](testing-notes.md) — iga iteratsiooni lõpus käime selle
+iteratsiooni vastuvõtutingimused läbi ja märgime tulemuse.

@@ -76,10 +76,62 @@ tulemus: AI küsimused on uue mängu jaoks erinevad fallback'i küsimustest ja
 seotud `input/001` ülesande sisuga (kalkulaator). Logides ei tohi olla
 „using fallback questions" hoiatust.
 
-## Iteratsioon 3 — Õlekõrred
+## Iteratsioon 3 — Küsimusepank teema kohta (#3 + #4)
 
-(Täidetakse iteratsiooni lõpus.)
+Testitud 2026-05-14 (issue #4 merge'itud `main`-isse).
 
-## Iteratsioon 4 — Poleerimine
+| Test | Tulemus | Märkused |
+|------|---------|----------|
+| Iga teema kaustas on `questions.json` 50 küsimusega | ✅ | `jq '.questions \| length'` → 50 kõigil |
+| Pangast valitakse 5+5+5 raskustaseme kaupa | ✅ | `test_select_game_questions` |
+| Bank-laadimine valideerib min 5 küsimust per tase | ✅ | `test_load_question_bank_rejects_too_few` |
+| **US6** 50:50 lifeline eemaldab 2 valet vastust | ✅ | `test_fifty_fifty_disables_two_wrong` + brauserist mängitud |
+| **US6** Vihje lifeline tagastab `hint`-välja sisu | ✅ | Brauserist kontrollitud kõigil 3 teemal |
+| **US6** Vaheta lifeline asendab sama raskustaseme küsimusega | ✅ | `test_swap_replaces_with_same_level` |
+| **US11** Uue teema vorm avalehel | ✅ | Loodi test-teema „Test JS", AI tagastas 50 küsimust ja teema kuvati menüüs |
+| Pytest läbib | ✅ | 32/32 |
 
-(Täidetakse iteratsiooni lõpus.)
+## Iteratsioon 4 — UI moderniseerimine (#5)
+
+Testitud 2026-05-14. CSS-only iteratsioon; testid keskendusid visuaalsele
+inspektsioonile.
+
+| Test | Tulemus | Märkused |
+|------|---------|----------|
+| Avaleht — must-kuld teema | ✅ | Kontrollitud Chrome desktop + responsive emulator |
+| Mängu vaade — punktiastmete tabel paremal | ✅ | Turvatasemed eristuvad kuldselt |
+| Õlekõrte nupud — hover/used/disabled | ✅ | Kõik kolm olekut visuaalselt selged |
+| Vastusenupud — hover, correct, wrong | ✅ | Värvide tugevus kontrastne, kuid ei pimesta |
+| Mobiili viewport — ladder ja vastused ridadeks | ✅ | iPhone SE viewport (375px) |
+| Tulemus­vaade — prominentne skoor | ✅ | Suur kollane number keskel |
+
+## Iteratsioon 5 — GitHub Pages demo (#6)
+
+Testitud 2026-05-14 (commit `7cce8c2` ja järgmised deploy'd).
+
+| Test | Tulemus | Märkused |
+|------|---------|----------|
+| Pages deploy õnnestub | ✅ | Workflow `25859954951` ja kõik järgnevad |
+| Demo URL serveerib `index.html`-i (HTTP 200) | ✅ | <https://urmasrehkalt.github.io/millionaire/> |
+| `assignments.json` regenereeritakse igal deploy-l | ✅ | CI Pythoni skript võtab H1 pealkirjad |
+| `input/<id>/questions.json` kättesaadav | ✅ | `curl` saidiltis töötab kõigil 3 teemal |
+| Mängu mängimine staatilises moodis | ✅ | Engine smoke 15/15: täisvõit, kaotus, kõik 3 õlekõrt |
+| Uue teema vorm peidetud Pages režiimis | ✅ | `isBackendAvailable()` tagastab false → CSS .static-note kuvatud |
+| Lokaalne dev `./start.sh`-iga töötab samuti | ✅ | `/input` static mount töötab |
+| Backend pytest ei regresseeru | ✅ | 32/32 |
+
+## Iteratsioon 6 — „Lõpeta mäng" + keele lihv (#7 + #8)
+
+Testitud 2026-05-14 (commit `1791290`).
+
+| Test | Tulemus | Märkused |
+|------|---------|----------|
+| **US7** Walk-away Q1-l (ilma vastusteta) → 0 p | ✅ | `quit_smoke.mjs` test 1 |
+| **US7** Walk-away Q3 järel → 300 p | ✅ | Smoke test 2 |
+| **US7** Walk-away Q5 järel → 1 000 p (mitte turvatase) | ✅ | Smoke test 5 — kinnitab walk-away vs lost erinevuse |
+| **US7** Quit-confirm dialoog näitab summa | ✅ | Brauserist testitud |
+| **US7** Quit-throw kui sessioon juba lõppenud / tundmatu | ✅ | Smoke testid 3, 4 |
+| **US13** Iga visiibel string üle loetud | ✅ | Vt iter-6 dok kõigi muudatuste tabel |
+| **US13** Ülesanne 003 pealkiri uuendatud (käsurea) | ✅ | Manifestis ja questions.json-is |
+| Pytest 32/32 | ✅ | Backend muutmata |
+| JS süntaks puhas | ✅ | `node --check` kõigil failidel |
