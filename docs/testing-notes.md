@@ -50,16 +50,31 @@ Miinimumnõuded arvestuseks (nõudefailist):
 
 **Jäänud iteratsiooniks 2:** päris AI API ühendus (praegu fallback-küsimused).
 
-## Iteratsioon 2 — AI
+## Iteratsioon 2 — AI (Gemini 2.5 Flash)
 
-(Täidetakse iteratsiooni lõpus.)
+Testitud 2026-05-14 (`feature/iter2-gemini` branch). AI pakkujaks valiti
+Gemini Flash (free tier) OpenAI asemel — vt
+[iteration-2-ai.md](iterations/iteration-2-ai.md) põhjenduse jaoks.
 
 | Test | Tulemus | Märkused |
 |------|---------|----------|
-| Päris OpenAI API-ühendus tagastab valiidse JSON-i | ☐ | |
-| Prompt asub failis `prompts/question-generation.md` | ☐ | |
-| **US5** Kahe järjestikuse mängu küsimustest on vähemalt osa erinev | ☐ | |
-| Puuduva API-võtme korral kasutatakse fallback'i | ☐ | |
+| `pyproject.toml`-s on `google-genai` (mitte `openai`) | ✅ | |
+| `.env.example` viitab `GEMINI_API_KEY`-le | ✅ | |
+| `prompts/question-generation.md` sisaldab täielikku prompti | ✅ | System instruction + user template, raskusastmed dokumenteeritud |
+| Päris Gemini API-ühendus tagastab valiidse JSON-i | ✅ | Mockitud testiga `test_generate_via_gemini_returns_parsed_questions` |
+| **US5** Kahe järjestikuse mängu prompid erinevad | ✅ | Mockitud testiga `test_two_calls_send_different_nonces` — iga päring saab uue nonce |
+| Puuduva API-võtme korral kasutatakse fallback'i | ✅ | `test_fallback_when_api_key_missing` + logitakse hoiatus |
+| API-vea korral langetakse fallback'ile | ✅ | `test_fallback_when_gemini_raises` |
+| Vigane vastus (vale küsimuste arv, puuduvad väljad) lükatakse tagasi | ✅ | `_parse_response` testid |
+| Üksusetestid (`pytest`) läbivad | ✅ | 25/25 (17 vana + 8 uut) |
+| HTTP smoke-test läbib | ✅ | 17/17 kontrolli; mäng töötab fallback'iga ilma API-võtmeta |
+
+### Lõpp-otsast-lõpuni test päris võtmega
+
+⚠️ Kasutaja test: lisa `.env`-i `GEMINI_API_KEY=...` ja mängi 1 mäng. Oodatud
+tulemus: AI küsimused on uue mängu jaoks erinevad fallback'i küsimustest ja
+seotud `input/001` ülesande sisuga (kalkulaator). Logides ei tohi olla
+„using fallback questions" hoiatust.
 
 ## Iteratsioon 3 — Õlekõrred
 
