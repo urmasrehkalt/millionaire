@@ -1,4 +1,4 @@
-import { startGame, submitAnswer, useLifeline } from "../api.js";
+import { quitGame, startGame, submitAnswer, useLifeline } from "../api.js";
 
 const SCORE_LADDER = [
     100, 200, 300, 500, 1_000,
@@ -55,6 +55,7 @@ function renderLayout(root) {
                         <button type="button" data-lifeline="hint">Vihje</button>
                         <button type="button" data-lifeline="swap">Vaheta</button>
                     </div>
+                    <button type="button" class="quit-button" id="q-quit">Lõpeta mäng</button>
                     <button class="next-button" id="q-next" hidden>Järgmine küsimus →</button>
                 </div>
             </div>
@@ -69,6 +70,7 @@ function renderLayout(root) {
         options: root.querySelector("#q-options"),
         feedback: root.querySelector("#q-feedback"),
         next: root.querySelector("#q-next"),
+        quit: root.querySelector("#q-quit"),
         ladder: root.querySelector("#ladder"),
     };
 
@@ -84,7 +86,34 @@ function renderLayout(root) {
         handleLifeline(button.dataset.lifeline);
     });
 
+    elements.quit.addEventListener("click", handleQuit);
+
     renderLadder();
+}
+
+async function handleQuit() {
+    if (!state || state.locked) return;
+
+    const score = formatScore(state.score);
+    const message = state.score > 0
+        ? `Kas oled kindel, et soovid lõpetada? Lahkud ${score} punktiga.`
+        : "Kas oled kindel, et soovid lõpetada? Sul pole veel ühtegi punkti.";
+    if (!window.confirm(message)) return;
+
+    let response;
+    try {
+        response = await quitGame(state.sessionId);
+    } catch (err) {
+        showFeedback(`Mängust väljumine ebaõnnestus: ${err.message}`, "wrong");
+        return;
+    }
+
+    state.onFinish({
+        status: "quit",
+        score: response.score,
+        answered: response.answered_questions ?? [],
+        assignment: state.assignment,
+    });
 }
 
 function paintQuestion() {
