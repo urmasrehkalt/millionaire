@@ -1,4 +1,4 @@
-import { startGame, submitAnswer } from "../api.js";
+import { startGame, submitAnswer, useLifeline } from "../api.js";
 
 const SCORE_LADDER = [
     100, 200, 300, 500, 1_000,
@@ -28,6 +28,8 @@ export async function startNewGame(root, assignment, onFinish) {
         questionNumber: start.question_number,
         totalQuestions: start.total_questions,
         score: start.score,
+        lifelines: start.lifelines,
+        disabledOptions: [],
         locked: false,
         onFinish,
     };
@@ -45,6 +47,11 @@ function renderLayout(root) {
                     <span id="q-score"></span>
                 </div>
                 <p class="question-text" id="q-text"></p>
+                <div class="lifelines" id="lifelines">
+                    <button type="button" data-lifeline="fifty_fifty">50:50</button>
+                    <button type="button" data-lifeline="hint">Vihje</button>
+                    <button type="button" data-lifeline="swap">Vaheta küsimus</button>
+                </div>
                 <div class="options" id="q-options"></div>
                 <div id="q-feedback" hidden></div>
                 <button class="next-button" id="q-next" hidden>Järgmine küsimus →</button>
@@ -56,6 +63,7 @@ function renderLayout(root) {
         meta: root.querySelector("#q-meta"),
         score: root.querySelector("#q-score"),
         text: root.querySelector("#q-text"),
+        lifelines: root.querySelector("#lifelines"),
         options: root.querySelector("#q-options"),
         feedback: root.querySelector("#q-feedback"),
         next: root.querySelector("#q-next"),
@@ -64,7 +72,14 @@ function renderLayout(root) {
 
     elements.next.addEventListener("click", () => {
         elements.next.hidden = true;
+        state.disabledOptions = [];
         paintQuestion();
+    });
+
+    elements.lifelines.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-lifeline]");
+        if (!button) return;
+        handleLifeline(button.dataset.lifeline);
     });
 
     renderLadder();
@@ -83,6 +98,10 @@ function paintQuestion() {
         btn.type = "button";
         btn.className = "option";
         btn.innerHTML = `<span class="letter">${"ABCD"[idx]}</span><span>${escapeHtml(option)}</span>`;
+        if (state.disabledOptions.includes(idx)) {
+            btn.disabled = true;
+            btn.classList.add("eliminated");
+        }
         btn.addEventListener("click", () => handleAnswer(idx, btn));
         elements.options.appendChild(btn);
     });
@@ -92,11 +111,42 @@ function paintQuestion() {
     elements.next.hidden = true;
 
     renderLadder();
+    renderLifelines();
+}
+
+async function handleLifeline(lifeline) {
+    if (state.locked || state.lifelines[lifeline]) return;
+
+    let response;
+    try {
+        response = await useLifeline(state.sessionId, lifeline);
+    } catch (err) {
+        showFeedback(`Õlekõrre kasutamine ebaõnnestus: ${err.message}`, "wrong");
+        return;
+    }
+
+    state.lifelines = response.lifelines;
+
+    if (response.disabled_options) {
+        state.disabledOptions = response.disabled_options;
+        paintQuestion();
+    }
+    if (response.hint) {
+        showFeedback(response.hint, "hint");
+    }
+    if (response.question) {
+        state.currentQuestion = response.question;
+        state.disabledOptions = [];
+        paintQuestion();
+    }
+
+    renderLifelines();
 }
 
 async function handleAnswer(idx, button) {
     if (state.locked) return;
     state.locked = true;
+    renderLifelines();
 
     const optionButtons = elements.options.querySelectorAll(".option");
     optionButtons.forEach((b) => (b.disabled = true));
@@ -122,6 +172,7 @@ async function handleAnswer(idx, button) {
     if (response.status === "in_progress") {
         state.currentQuestion = response.next_question;
         state.questionNumber = response.question_number;
+        state.disabledOptions = [];
         renderLadder();
         elements.next.hidden = false;
     } else {
@@ -135,6 +186,14 @@ async function handleAnswer(idx, button) {
             assignment: state.assignment,
         });
     }
+}
+
+function renderLifelines() {
+    elements.lifelines.querySelectorAll("button[data-lifeline]").forEach((button) => {
+        const used = state.lifelines[button.dataset.lifeline];
+        button.disabled = used || state.locked;
+        button.classList.toggle("used", used);
+    });
 }
 
 function showFeedback(text, kind) {

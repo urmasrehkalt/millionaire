@@ -11,6 +11,7 @@ from backend.app.services.game_logic import (
     clear_sessions_for_tests,
     create_session,
     submit_answer,
+    use_lifeline,
 )
 
 
@@ -40,6 +41,7 @@ def test_create_session_returns_first_question() -> None:
     assert response.score == 0
     assert response.question.question == "Q1"
     assert len(response.question.options) == 4
+    assert response.lifelines == {"fifty_fifty": False, "hint": False, "swap": False}
 
 
 def test_create_session_rejects_wrong_question_count() -> None:
@@ -118,3 +120,55 @@ def test_cannot_answer_after_game_ended() -> None:
 def test_unknown_session_raises() -> None:
     with pytest.raises(SessionNotFoundError):
         submit_answer("bogus-uuid", 0)
+
+
+def test_fifty_fifty_lifeline_removes_two_wrong_answers() -> None:
+    start = create_session("001", _make_questions())
+
+    response = use_lifeline(start.session_id, "fifty_fifty")
+
+    assert response.disabled_options is not None
+    assert len(response.disabled_options) == 2
+    assert 0 not in response.disabled_options
+    assert response.lifelines["fifty_fifty"] is True
+
+
+def test_hint_lifeline_returns_stored_or_fallback_hint() -> None:
+    questions = _make_questions()
+    questions[0].hint = "Vaata sisendi valideerimist."
+    start = create_session("001", questions)
+
+    response = use_lifeline(start.session_id, "hint")
+
+    assert response.hint == "Vaata sisendi valideerimist."
+    assert response.lifelines["hint"] is True
+
+
+def test_swap_lifeline_replaces_current_question_from_reserves() -> None:
+    reserve = Question(
+        level=QuestionLevel.EASY,
+        question="Replacement",
+        options=["A", "B", "C", "D"],
+        correctIndex=0,
+        explanation="Reserve explanation",
+    )
+    start = create_session(
+        "001",
+        _make_questions(),
+        reserve_questions={QuestionLevel.EASY: [reserve]},
+    )
+
+    response = use_lifeline(start.session_id, "swap")
+
+    assert response.question is not None
+    assert response.question.question == "Replacement"
+    answer = submit_answer(start.session_id, 0)
+    assert answer.explanation == "Reserve explanation"
+
+
+def test_lifeline_cannot_be_used_twice() -> None:
+    start = create_session("001", _make_questions())
+    use_lifeline(start.session_id, "hint")
+
+    with pytest.raises(ValueError):
+        use_lifeline(start.session_id, "hint")

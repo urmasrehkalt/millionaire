@@ -1,0 +1,654 @@
+{
+  "questions": [
+    {
+      "level": 1,
+      "question": "Kirjeldus: luua veebileht, mis loeb kasutajate andmed JSON-failist ja kuvab need nimekirjas. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Eesmärk",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Luua veebileht, mis loeb kasutajate andmed JSON-failist ja kuvab need nimekirjas.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Eesmärk”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: src/data.json sisaldab kasutajate nimekirja. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Andmebaas",
+        "data.json",
+        "Sisselogimine",
+        "Faili kirjutus"
+      ],
+      "correctIndex": 1,
+      "explanation": "src/data.json sisaldab kasutajate nimekirja.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „data.json”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: igal kasutajal on nimi, vanus ja linn. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Sisselogimine",
+        "Faili kirjutus",
+        "Kasutaja väljad",
+        "Pildigalerii"
+      ],
+      "correctIndex": 2,
+      "explanation": "Igal kasutajal on nimi, vanus ja linn.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kasutaja väljad”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: jSON-failis peab olema vähemalt kolm kasutajat. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Faili kirjutus",
+        "Pildigalerii",
+        "Kalkulaator",
+        "3 kasutajat"
+      ],
+      "correctIndex": 3,
+      "explanation": "JSON-failis peab olema vähemalt kolm kasutajat.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „3 kasutajat”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: src/app.js laadib andmed, parsib JSON-i ja kuvab tulemuse lehel. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "app.js",
+        "Pildigalerii",
+        "Kalkulaator",
+        "CLI menüü"
+      ],
+      "correctIndex": 0,
+      "explanation": "src/app.js laadib andmed, parsib JSON-i ja kuvab tulemuse lehel.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „app.js”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: andmefail laaditakse brauseris fetch() abil. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Kalkulaator",
+        "fetch()",
+        "CLI menüü",
+        "Serveripäring"
+      ],
+      "correctIndex": 1,
+      "explanation": "Andmefail laaditakse brauseris fetch() abil.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „fetch()”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: response.json() teisendab HTTP vastuse JavaScripti andmestruktuuriks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "CLI menüü",
+        "Serveripäring",
+        "response.json()",
+        "CSS animatsioon"
+      ],
+      "correctIndex": 2,
+      "explanation": "response.json() teisendab HTTP vastuse JavaScripti andmestruktuuriks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „response.json()”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: kasutajad kuvatakse semantilises ul-loetelus. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Serveripäring",
+        "CSS animatsioon",
+        "Andmebaas",
+        "ul loetelu"
+      ],
+      "correctIndex": 3,
+      "explanation": "Kasutajad kuvatakse semantilises ul-loetelus.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „ul loetelu”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: iga kasutaja kuvatakse eraldi li elemendis. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "li elemendid",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Iga kasutaja kuvatakse eraldi li elemendis.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „li elemendid”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: andmete laadimise vea korral näidatakse kasutajale veateadet. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Andmebaas",
+        "Veateade",
+        "Sisselogimine",
+        "Faili kirjutus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Andmete laadimise vea korral näidatakse kasutajale veateadet.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Veateade”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: lahendus peab kasutama async/await süntaksit. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Sisselogimine",
+        "Faili kirjutus",
+        "async/await",
+        "Pildigalerii"
+      ],
+      "correctIndex": 2,
+      "explanation": "Lahendus peab kasutama async/await süntaksit.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „async/await”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: lehel on filterväli kasutajate nime järgi filtreerimiseks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Faili kirjutus",
+        "Pildigalerii",
+        "Kalkulaator",
+        "Filterväli"
+      ],
+      "correctIndex": 3,
+      "explanation": "Lehel on filterväli kasutajate nime järgi filtreerimiseks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Filterväli”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: filter peab töötama sõltumata suur- ja väiketähtedest. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Tõstutundetu filter",
+        "Pildigalerii",
+        "Kalkulaator",
+        "CLI menüü"
+      ],
+      "correctIndex": 0,
+      "explanation": "Filter peab töötama sõltumata suur- ja väiketähtedest.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tõstutundetu filter”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: modernses JavaScriptis kasutatakse sobivalt const ja let võtmesõnu. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Kalkulaator",
+        "const/let",
+        "CLI menüü",
+        "Serveripäring"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modernses JavaScriptis kasutatakse sobivalt const ja let võtmesõnu.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „const/let”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: kasutajate HTML koostatakse template literalite abil. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "CLI menüü",
+        "Serveripäring",
+        "Template literal",
+        "CSS animatsioon"
+      ],
+      "correctIndex": 2,
+      "explanation": "Kasutajate HTML koostatakse template literalite abil.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Template literal”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: allUsers hoiab täielikku kasutajate nimekirja filtreerimise jaoks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Serveripäring",
+        "CSS animatsioon",
+        "Andmebaas",
+        "allUsers"
+      ],
+      "correctIndex": 3,
+      "explanation": "allUsers hoiab täielikku kasutajate nimekirja filtreerimise jaoks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „allUsers”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: kui filtreeritud nimekirjas pole kasutajaid, kuvatakse teade, et kedagi ei leitud. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Tühi tulemus",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kui filtreeritud nimekirjas pole kasutajaid, kuvatakse teade, et kedagi ei leitud.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi tulemus”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: loadUsers vastutab andmete laadimise, parsimise ja esmase renderdamise eest. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Andmebaas",
+        "loadUsers",
+        "Sisselogimine",
+        "Faili kirjutus"
+      ],
+      "correctIndex": 1,
+      "explanation": "loadUsers vastutab andmete laadimise, parsimise ja esmase renderdamise eest.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „loadUsers”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: response.ok kontroll tuvastab HTTP vea enne JSON-i parsimist. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Sisselogimine",
+        "Faili kirjutus",
+        "response.ok",
+        "Pildigalerii"
+      ],
+      "correctIndex": 2,
+      "explanation": "response.ok kontroll tuvastab HTTP vea enne JSON-i parsimist.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „response.ok”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: kui vastus ei ole ok, visatakse viga tekstiga HTTP <staatus>. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Faili kirjutus",
+        "Pildigalerii",
+        "Kalkulaator",
+        "HTTP staatus"
+      ],
+      "correctIndex": 3,
+      "explanation": "Kui vastus ei ole ok, visatakse viga tekstiga HTTP <staatus>.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „HTTP staatus”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: try/catch püüab laadimise või parsimise vead ja kuvab need kasutajale. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "try/catch",
+        "Pildigalerii",
+        "Kalkulaator",
+        "CLI menüü"
+      ],
+      "correctIndex": 0,
+      "explanation": "try/catch püüab laadimise või parsimise vead ja kuvab need kasutajale.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „try/catch”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: render saab kasutajate massiivi ja uuendab userList elemendi sisu. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Kalkulaator",
+        "render()",
+        "CLI menüü",
+        "Serveripäring"
+      ],
+      "correctIndex": 1,
+      "explanation": "render saab kasutajate massiivi ja uuendab userList elemendi sisu.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „render()”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: map loob iga kasutaja HTML-i ning join ühendab need üheks stringiks. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "CLI menüü",
+        "Serveripäring",
+        "map + join",
+        "CSS animatsioon"
+      ],
+      "correctIndex": 2,
+      "explanation": "map loob iga kasutaja HTML-i ning join ühendab need üheks stringiks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „map + join”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: kasutaja nimi kuvatakse strong elemendis esiletõstetult. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Serveripäring",
+        "CSS animatsioon",
+        "Andmebaas",
+        "strong nimi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Kasutaja nimi kuvatakse strong elemendis esiletõstetult.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „strong nimi”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: filterväli kuulab input sündmust, et reageerida igale sisestuse muutusele. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "input sündmus",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Filterväli kuulab input sündmust, et reageerida igale sisestuse muutusele.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „input sündmus”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: sisestatud otsing teisendatakse väiketähtedeks enne võrdlust. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Andmebaas",
+        "toLowerCase",
+        "Sisselogimine",
+        "Faili kirjutus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sisestatud otsing teisendatakse väiketähtedeks enne võrdlust.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „toLowerCase”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: includes kontrollib, kas kasutaja nimi sisaldab otsinguteksti. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Sisselogimine",
+        "Faili kirjutus",
+        "includes()",
+        "Pildigalerii"
+      ],
+      "correctIndex": 2,
+      "explanation": "includes kontrollib, kas kasutaja nimi sisaldab otsinguteksti.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „includes()”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: pärast filtreerimist renderdatakse ainult sobivad kasutajad. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Faili kirjutus",
+        "Pildigalerii",
+        "Kalkulaator",
+        "render(filtered)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pärast filtreerimist renderdatakse ainult sobivad kasutajad.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „render(filtered)”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: faili lõpus kutsutakse loadUsers välja, et andmed lehe avamisel laadida. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "loadUsers()",
+        "Pildigalerii",
+        "Kalkulaator",
+        "CLI menüü"
+      ],
+      "correctIndex": 0,
+      "explanation": "Faili lõpus kutsutakse loadUsers välja, et andmed lehe avamisel laadida.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „loadUsers()”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: innerHTML on mugav, kuid päris kasutajaandmete korral tuleks arvestada HTML-i süstimise riskiga. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Kalkulaator",
+        "innerHTML",
+        "CLI menüü",
+        "Serveripäring"
+      ],
+      "correctIndex": 1,
+      "explanation": "innerHTML on mugav, kuid päris kasutajaandmete korral tuleks arvestada HTML-i süstimise riskiga.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „innerHTML”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: allUsers eraldab algandmed parajasti nähtavast filtreeritud nimekirjast. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "CLI menüü",
+        "Serveripäring",
+        "Andmete olek",
+        "CSS animatsioon"
+      ],
+      "correctIndex": 2,
+      "explanation": "allUsers eraldab algandmed parajasti nähtavast filtreeritud nimekirjast.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Andmete olek”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: ul ja li kasutamine täidab semantilise HTML-i nõuet. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Serveripäring",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Semantiline HTML"
+      ],
+      "correctIndex": 3,
+      "explanation": "ul ja li kasutamine täidab semantilise HTML-i nõuet.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Semantiline HTML”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: kui data.json on vigane, jõuab erind catch-plokki ja kuvatakse veateade. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Vigane JSON",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kui data.json on vigane, jõuab erind catch-plokki ja kuvatakse veateade.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Vigane JSON”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: fetch(\"src/data.json\") eeldab, et HTML-i suhtes on andmefail src kaustas. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Andmebaas",
+        "src/data.json",
+        "Sisselogimine",
+        "Faili kirjutus"
+      ],
+      "correctIndex": 1,
+      "explanation": "fetch(\"src/data.json\") eeldab, et HTML-i suhtes on andmefail src kaustas.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „src/data.json”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: fetch võib lokaalse file:// avamise korral ebaõnnestuda, seega tuleks lehte serveerida HTTP kaudu. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Sisselogimine",
+        "Faili kirjutus",
+        "HTTP serveerimine",
+        "Pildigalerii"
+      ],
+      "correctIndex": 2,
+      "explanation": "fetch võib lokaalse file:// avamise korral ebaõnnestuda, seega tuleks lehte serveerida HTTP kaudu.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „HTTP serveerimine”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: kui JSON tuleks usaldamata allikast, võiks innerHTML asemel luua DOM elemendid textContentiga. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Faili kirjutus",
+        "Pildigalerii",
+        "Kalkulaator",
+        "XSS risk"
+      ],
+      "correctIndex": 3,
+      "explanation": "Kui JSON tuleks usaldamata allikast, võiks innerHTML asemel luua DOM elemendid textContentiga.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „XSS risk”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: lahendus ei valideeri eraldi, kas igal kasutajal on nimi, vanus ja linn. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Skeemi kontroll",
+        "Pildigalerii",
+        "Kalkulaator",
+        "CLI menüü"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lahendus ei valideeri eraldi, kas igal kasutajal on nimi, vanus ja linn.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Skeemi kontroll”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: väga suure kasutajate arvu korral võiks filtreerimist debouncida või optimeerida. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Kalkulaator",
+        "Debounce",
+        "CLI menüü",
+        "Serveripäring"
+      ],
+      "correctIndex": 1,
+      "explanation": "Väga suure kasutajate arvu korral võiks filtreerimist debouncida või optimeerida.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Debounce”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: veateade li elemendis hoiab loetelu struktuuri alles ka vea korral. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "CLI menüü",
+        "Serveripäring",
+        "Veateate UX",
+        "CSS animatsioon"
+      ],
+      "correctIndex": 2,
+      "explanation": "Veateade li elemendis hoiab loetelu struktuuri alles ka vea korral.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Veateate UX”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: tühi otsingutekst tagastab kõik kasutajad, sest iga nimi sisaldab tühja stringi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Serveripäring",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Tühi otsing"
+      ],
+      "correctIndex": 3,
+      "explanation": "Tühi otsingutekst tagastab kõik kasutajad, sest iga nimi sisaldab tühja stringi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi otsing”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: render(allUsers) käivitatakse alles pärast await response.json() lõppu. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "await järjestus",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "render(allUsers) käivitatakse alles pärast await response.json() lõppu.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „await järjestus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: try/catch katab nii HTTP vea viskamise kui JSON-i parsimise vea. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Andmebaas",
+        "Vea püüdmine",
+        "Sisselogimine",
+        "Faili kirjutus"
+      ],
+      "correctIndex": 1,
+      "explanation": "try/catch katab nii HTTP vea viskamise kui JSON-i parsimise vea.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Vea püüdmine”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: allUsers kirjutatakse üle ainult edukal laadimisel, mitte iga filtri sündmusega. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Sisselogimine",
+        "Faili kirjutus",
+        "allUsers olek",
+        "Pildigalerii"
+      ],
+      "correctIndex": 2,
+      "explanation": "allUsers kirjutatakse üle ainult edukal laadimisel, mitte iga filtri sündmusega.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „allUsers olek”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: toLowerCase lahendab suur- ja väiketähed, kuid ei normaliseeri diakriitikuid. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Faili kirjutus",
+        "Pildigalerii",
+        "Kalkulaator",
+        "Diakriitikud"
+      ],
+      "correctIndex": 3,
+      "explanation": "toLowerCase lahendab suur- ja väiketähed, kuid ei normaliseeri diakriitikuid.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Diakriitikud”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: divide kasutades saaks visuaalselt sama tulemuse, kuid semantika oleks nõrgem. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Semantika",
+        "Pildigalerii",
+        "Kalkulaator",
+        "CLI menüü"
+      ],
+      "correctIndex": 0,
+      "explanation": "Divide kasutades saaks visuaalselt sama tulemuse, kuid semantika oleks nõrgem.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Semantika”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: see lahendus loeb JSON-i, kuid ei kirjuta kasutajaid faili tagasi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Kalkulaator",
+        "Ainult lugemine",
+        "CLI menüü",
+        "Serveripäring"
+      ],
+      "correctIndex": 1,
+      "explanation": "See lahendus loeb JSON-i, kuid ei kirjuta kasutajaid faili tagasi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Ainult lugemine”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: brauseri JavaScript ei saa turvaliselt lokaalseid faile suvaliselt muuta. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "CLI menüü",
+        "Serveripäring",
+        "Brauseri piirang",
+        "CSS animatsioon"
+      ],
+      "correctIndex": 2,
+      "explanation": "Brauseri JavaScript ei saa turvaliselt lokaalseid faile suvaliselt muuta.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Brauseri piirang”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: err.message kuvamine aitab arendamisel, kuid lõppkasutajale võiks olla sõbralikum tekst. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Serveripäring",
+        "CSS animatsioon",
+        "Andmebaas",
+        "err.message"
+      ],
+      "correctIndex": 3,
+      "explanation": "err.message kuvamine aitab arendamisel, kuid lõppkasutajale võiks olla sõbralikum tekst.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „err.message”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: template literal muudab märgenduse kompaktseks, kuid keerukama UI puhul võiks kasutada DOM loomist. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Mall string",
+        "CSS animatsioon",
+        "Andmebaas",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Template literal muudab märgenduse kompaktseks, kuid keerukama UI puhul võiks kasutada DOM loomist.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Mall string”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: kui index.html asukoht muutub, tuleb fetch tee uuesti üle kontrollida. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Andmebaas",
+        "Failitee",
+        "Sisselogimine",
+        "Faili kirjutus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Kui index.html asukoht muutub, tuleb fetch tee uuesti üle kontrollida.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Failitee”."
+    }
+  ]
+}

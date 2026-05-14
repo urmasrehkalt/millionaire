@@ -114,6 +114,45 @@ body {
     font-weight: 600;
 }
 
+.new-topic-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+}
+
+.new-topic-card h2 {
+    color: var(--accent);
+    font-size: 1.15rem;
+    margin-bottom: 0.35rem;
+}
+
+.new-topic-card p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.new-topic-card form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.new-topic-card input,
+.new-topic-card textarea {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font: inherit;
+    padding: 0.75rem;
+}
+
+.form-status {
+    color: var(--text-muted);
+    min-height: 1.25rem;
+}
+
 .empty-state, .error-state {
     text-align: center;
     padding: 2rem 1rem;
@@ -222,6 +261,38 @@ body {
     background: rgba(211, 59, 59, 0.2);
 }
 
+.option.eliminated {
+    opacity: 0.3;
+    text-decoration: line-through;
+}
+
+.lifelines {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.lifelines button {
+    background: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    color: var(--accent);
+    cursor: pointer;
+    font: inherit;
+    padding: 0.5rem 0.85rem;
+}
+
+.lifelines button:hover:not(:disabled) {
+    background: rgba(245, 197, 24, 0.12);
+}
+
+.lifelines button:disabled {
+    border-color: var(--border);
+    color: var(--text-muted);
+    cursor: default;
+    opacity: 0.55;
+}
+
 .feedback {
     background: var(--bg-soft);
     border-left: 3px solid var(--accent);
@@ -229,6 +300,10 @@ body {
     border-radius: 4px;
     font-size: 0.95rem;
     line-height: 1.4;
+}
+
+.feedback.hint {
+    border-left-color: var(--accent);
 }
 
 .next-button {

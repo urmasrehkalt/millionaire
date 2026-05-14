@@ -16,6 +16,13 @@ export function listAssignments() {
     return request("/assignments");
 }
 
+export function createTopic(title, descriptionMd) {
+    return request("/assignments", {
+        method: "POST",
+        body: JSON.stringify({ title, description_md: descriptionMd }),
+    });
+}
+
 export function startGame(assignmentId) {
     return request("/game/start", {
         method: "POST",
@@ -27,5 +34,12 @@ export function submitAnswer(sessionId, answerIndex) {
     return request("/game/answer", {
         method: "POST",
         body: JSON.stringify({ session_id: sessionId, answer_index: answerIndex }),
+    });
+}
+
+export function useLifeline(sessionId, lifeline) {
+    return request("/game/lifeline", {
+        method: "POST",
+        body: JSON.stringify({ session_id: sessionId, lifeline }),
     });
 }

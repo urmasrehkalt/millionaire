@@ -1,0 +1,654 @@
+{
+  "questions": [
+    {
+      "level": 1,
+      "question": "Kirjeldus: luua veebipõhine kalkulaator kahe arvu nelja põhitehte jaoks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Eesmärk",
+        "CSS värvid",
+        "Serveripäring",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Luua veebipõhine kalkulaator kahe arvu nelja põhitehte jaoks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Eesmärk”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: lehel peab olema kaks sisendvälja kahe arvu sisestamiseks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Serveripäring",
+        "Kaks sisendit",
+        "Sisselogimine",
+        "Pildifail"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lehel peab olema kaks sisendvälja kahe arvu sisestamiseks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kaks sisendit”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: lehel peavad olema nupud liitmise, lahutamise, korrutamise ja jagamise jaoks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Sisselogimine",
+        "Pildifail",
+        "Tehtenupud",
+        "Andmebaas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Lehel peavad olema nupud liitmise, lahutamise, korrutamise ja jagamise jaoks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tehtenupud”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: pärast nupuvajutust kuvatakse arvutuse tulemus eraldi alal. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Pildifail",
+        "Andmebaas",
+        "JSON laadimine",
+        "Tulemuse ala"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pärast nupuvajutust kuvatakse arvutuse tulemus eraldi alal.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tulemuse ala”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: sisestatud väärtused tuleb enne arvutamist teisendada arvudeks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Arvuks teisendus",
+        "Andmebaas",
+        "JSON laadimine",
+        "Kasutajaprofiil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sisestatud väärtused tuleb enne arvutamist teisendada arvudeks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Arvuks teisendus”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: kui sisend ei ole arv, kuvatakse kasutajale veateade. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "JSON laadimine",
+        "Sisendi viga",
+        "Kasutajaprofiil",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Kui sisend ei ole arv, kuvatakse kasutajale veateade.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Sisendi viga”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: nulliga jagamise korral kuvatakse eraldi veateade. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Kasutajaprofiil",
+        "Animatsioon",
+        "Nulliga jagamine",
+        "CSS värvid"
+      ],
+      "correctIndex": 2,
+      "explanation": "Nulliga jagamise korral kuvatakse eraldi veateade.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Nulliga jagamine”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: lahendus koosneb kolmest failist: index.html, style.css ja script.js. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Animatsioon",
+        "CSS värvid",
+        "Serveripäring",
+        "Kolm faili"
+      ],
+      "correctIndex": 3,
+      "explanation": "Lahendus koosneb kolmest failist: index.html, style.css ja script.js.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kolm faili”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: index.html määrab kalkulaatori lehe struktuuri. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "HTML struktuur",
+        "CSS värvid",
+        "Serveripäring",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "index.html määrab kalkulaatori lehe struktuuri.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „HTML struktuur”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: style.css vastutab kalkulaatori visuaalse kujunduse eest. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Serveripäring",
+        "Kujundus",
+        "Sisselogimine",
+        "Pildifail"
+      ],
+      "correctIndex": 1,
+      "explanation": "style.css vastutab kalkulaatori visuaalse kujunduse eest.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kujundus”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: script.js sisaldab kasutaja tegevustele reageerivat loogikat. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Sisselogimine",
+        "Pildifail",
+        "JS loogika",
+        "Andmebaas"
+      ],
+      "correctIndex": 2,
+      "explanation": "script.js sisaldab kasutaja tegevustele reageerivat loogikat.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „JS loogika”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: nupud seotakse sündmustega addEventListener abil. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Pildifail",
+        "Andmebaas",
+        "JSON laadimine",
+        "Sündmuse kuulaja"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nupud seotakse sündmustega addEventListener abil.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Sündmuse kuulaja”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: lahendus ei tohiks kasutada HTML-is inline onclick atribuute. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Inline onclick",
+        "Andmebaas",
+        "JSON laadimine",
+        "Kasutajaprofiil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lahendus ei tohiks kasutada HTML-is inline onclick atribuute.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Inline onclick”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: veateated peavad olema kasutajasõbralikud ja eestikeelsed. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "JSON laadimine",
+        "Eestikeelne viga",
+        "Kasutajaprofiil",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Veateated peavad olema kasutajasõbralikud ja eestikeelsed.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Eestikeelne viga”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: kasutajaliides peab olema selge ja loetav. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Kasutajaprofiil",
+        "Animatsioon",
+        "Selge UI",
+        "CSS värvid"
+      ],
+      "correctIndex": 2,
+      "explanation": "Kasutajaliides peab olema selge ja loetav.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Selge UI”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: kalkulaator toetab liitmist, lahutamist, korrutamist ja jagamist. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Animatsioon",
+        "CSS värvid",
+        "Serveripäring",
+        "Neli tehet"
+      ],
+      "correctIndex": 3,
+      "explanation": "Kalkulaator toetab liitmist, lahutamist, korrutamist ja jagamist.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Neli tehet”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: näites annab 10 ja 3 liitmine tulemuseks 13. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Tulemus 13",
+        "CSS värvid",
+        "Serveripäring",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Näites annab 10 ja 3 liitmine tulemuseks 13.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tulemus 13”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: parseInputs loeb mõlema välja väärtused, teisendab need arvudeks ja tagastab paari. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Serveripäring",
+        "parseInputs",
+        "Sisselogimine",
+        "Pildifail"
+      ],
+      "correctIndex": 1,
+      "explanation": "parseInputs loeb mõlema välja väärtused, teisendab need arvudeks ja tagastab paari.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „parseInputs”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: sisendis asendatakse koma punktiga, et toetada komaga sisestatud kümnendarve. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Sisselogimine",
+        "Pildifail",
+        "Kümnendkoma",
+        "Andmebaas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sisendis asendatakse koma punktiga, et toetada komaga sisestatud kümnendarve.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kümnendkoma”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: number.isNaN aitab tuvastada, kas teisendatud väärtus ei ole arv. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Pildifail",
+        "Andmebaas",
+        "JSON laadimine",
+        "NaN kontroll"
+      ],
+      "correctIndex": 3,
+      "explanation": "Number.isNaN aitab tuvastada, kas teisendatud väärtus ei ole arv.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „NaN kontroll”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: tühja sisendi korral tagastab parseInputs nulli ja arvutust ei tehta. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Tühi väli",
+        "Andmebaas",
+        "JSON laadimine",
+        "Kasutajaprofiil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tühja sisendi korral tagastab parseInputs nulli ja arvutust ei tehta.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi väli”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: showResult paneb tulemuse teksti resultDiv elementi ja määrab tulemuse klassi. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "JSON laadimine",
+        "showResult",
+        "Kasutajaprofiil",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "showResult paneb tulemuse teksti resultDiv elementi ja määrab tulemuse klassi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „showResult”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: showError kasutab showResult funktsiooni error-tüüpi teate kuvamiseks. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Kasutajaprofiil",
+        "Animatsioon",
+        "showError",
+        "CSS värvid"
+      ],
+      "correctIndex": 2,
+      "explanation": "showError kasutab showResult funktsiooni error-tüüpi teate kuvamiseks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „showError”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: calculate saab argumendina tehte nime, näiteks add või divide. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Animatsioon",
+        "CSS värvid",
+        "Serveripäring",
+        "operation"
+      ],
+      "correctIndex": 3,
+      "explanation": "calculate saab argumendina tehte nime, näiteks add või divide.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „operation”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: switch valib tehte vastavalt operation väärtusele. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "switch",
+        "CSS värvid",
+        "Serveripäring",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "switch valib tehte vastavalt operation väärtusele.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „switch”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: jagamisel kontrollitakse enne arvutamist, kas teine arv on null. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Serveripäring",
+        "Jagamise kontroll",
+        "Sisselogimine",
+        "Pildifail"
+      ],
+      "correctIndex": 1,
+      "explanation": "Jagamisel kontrollitakse enne arvutamist, kas teine arv on null.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Jagamise kontroll”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: tundmatu tehte korral kuvatakse veateade ja funktsioon lõpetab töö. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Sisselogimine",
+        "Pildifail",
+        "default haru",
+        "Andmebaas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Tundmatu tehte korral kuvatakse veateade ja funktsioon lõpetab töö.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „default haru”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: const { a, b } = inputs võtab sisendiobjektist kaks arvu eraldi muutujatesse. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Pildifail",
+        "Andmebaas",
+        "JSON laadimine",
+        "a ja b"
+      ],
+      "correctIndex": 3,
+      "explanation": "const { a, b } = inputs võtab sisendiobjektist kaks arvu eraldi muutujatesse.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „a ja b”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: eduka arvutuse korral kuvatakse tekst kujul Tulemus: <väärtus>. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Tulemus tekstina",
+        "Andmebaas",
+        "JSON laadimine",
+        "Kasutajaprofiil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eduka arvutuse korral kuvatakse tekst kujul Tulemus: <väärtus>.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tulemus tekstina”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: add nupu click sündmus käivitab calculate(\"add\"). Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "JSON laadimine",
+        "add nupp",
+        "Kasutajaprofiil",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "add nupu click sündmus käivitab calculate(\"add\").",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „add nupp”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: divide nupu click sündmus käivitab calculate(\"divide\"). Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Kasutajaprofiil",
+        "Animatsioon",
+        "divide nupp",
+        "CSS värvid"
+      ],
+      "correctIndex": 2,
+      "explanation": "divide nupu click sündmus käivitab calculate(\"divide\").",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „divide nupp”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: vea korral kasutatakse returni, et vältida vigase arvutuse jätkamist. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Animatsioon",
+        "CSS värvid",
+        "Serveripäring",
+        "Varajane return"
+      ],
+      "correctIndex": 3,
+      "explanation": "Vea korral kasutatakse returni, et vältida vigase arvutuse jätkamist.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Varajane return”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: veateate kuvamisel muudetakse tulemuse elemendi klassiks result error. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "error klass",
+        "CSS värvid",
+        "Serveripäring",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Veateate kuvamisel muudetakse tulemuse elemendi klassiks result error.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „error klass”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: hTML, CSS ja JavaScript on eraldi failides, mis teeb lahenduse hooldatavamaks. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Serveripäring",
+        "Failide jaotus",
+        "Sisselogimine",
+        "Pildifail"
+      ],
+      "correctIndex": 1,
+      "explanation": "HTML, CSS ja JavaScript on eraldi failides, mis teeb lahenduse hooldatavamaks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Failide jaotus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: tühja välja eraldi kontroll on oluline, sest Number(\"\") annaks muidu 0. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Sisselogimine",
+        "Pildifail",
+        "Tühi string",
+        "Andmebaas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Tühja välja eraldi kontroll on oluline, sest Number(\"\") annaks muidu 0.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi string”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: replace(\",\", \".\") asendab ainult esimese koma, kuid tüüpilise ühe kümnendkohaga sisendi jaoks sellest piisab. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Pildifail",
+        "Andmebaas",
+        "JSON laadimine",
+        "Üks koma"
+      ],
+      "correctIndex": 3,
+      "explanation": "replace(\",\", \".\") asendab ainult esimese koma, kuid tüüpilise ühe kümnendkohaga sisendi jaoks sellest piisab.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Üks koma”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: textContent kasutamine tulemuse kuvamisel vähendab HTML-i süstimise riski. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "textContent",
+        "Andmebaas",
+        "JSON laadimine",
+        "Kasutajaprofiil"
+      ],
+      "correctIndex": 0,
+      "explanation": "textContent kasutamine tulemuse kuvamisel vähendab HTML-i süstimise riski.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „textContent”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: lahendus kontrollib arvu kehtivust, kuid ei piira väga suuri ega lõpmatuid väärtusi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "JSON laadimine",
+        "Valideerimise piir",
+        "Kasutajaprofiil",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lahendus kontrollib arvu kehtivust, kuid ei piira väga suuri ega lõpmatuid väärtusi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Valideerimise piir”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: uue tehte lisamiseks tuleks lisada nupp, event listener ja switchi haru. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Kasutajaprofiil",
+        "Animatsioon",
+        "Uus tehe",
+        "CSS värvid"
+      ],
+      "correctIndex": 2,
+      "explanation": "Uue tehte lisamiseks tuleks lisada nupp, event listener ja switchi haru.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Uus tehe”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: arvutusloogikat oleks lihtsam testida, kui puhas arvutus oleks DOM-ist eraldi funktsioonis. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Animatsioon",
+        "CSS värvid",
+        "Serveripäring",
+        "Testitavus"
+      ],
+      "correctIndex": 3,
+      "explanation": "Arvutusloogikat oleks lihtsam testida, kui puhas arvutus oleks DOM-ist eraldi funktsioonis.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Testitavus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: kalkulaatori ligipääsetavust parandaksid selged labelid ja klaviatuuriga kasutatavus. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Ligipääsetavus",
+        "CSS värvid",
+        "Serveripäring",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kalkulaatori ligipääsetavust parandaksid selged labelid ja klaviatuuriga kasutatavus.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Ligipääsetavus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: komaga sisendi toetamine arvestab eesti kasutaja harjumusega kümnendkoma kasutada. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Serveripäring",
+        "Kümnendkoma",
+        "Sisselogimine",
+        "Pildifail"
+      ],
+      "correctIndex": 1,
+      "explanation": "Komaga sisendi toetamine arvestab eesti kasutaja harjumusega kümnendkoma kasutada.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kümnendkoma”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: kõik vead jõuavad showError kaudu samasse kuvamismehhanismi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Sisselogimine",
+        "Pildifail",
+        "Ühtne veavoog",
+        "Andmebaas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Kõik vead jõuavad showError kaudu samasse kuvamismehhanismi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Ühtne veavoog”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: javaScripti ujukomaarvud võivad jagamisel anda ümarduslikke tulemusi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Pildifail",
+        "Andmebaas",
+        "JSON laadimine",
+        "Ujukomaarv"
+      ],
+      "correctIndex": 3,
+      "explanation": "JavaScripti ujukomaarvud võivad jagamisel anda ümarduslikke tulemusi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Ujukomaarv”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: nulliga jagamist kontrollitakse divide harus enne result väärtustamist. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Divide haru",
+        "Andmebaas",
+        "JSON laadimine",
+        "Kasutajaprofiil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nulliga jagamist kontrollitakse divide harus enne result väärtustamist.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Divide haru”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: addEventListener hoiab käitumise JavaScriptis, mitte HTML-i atribuutides. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "JSON laadimine",
+        "JS sündmused",
+        "Kasutajaprofiil",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "addEventListener hoiab käitumise JavaScriptis, mitte HTML-i atribuutides.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „JS sündmused”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: className määramine on lihtne, kuid suuremas rakenduses tuleks klasside haldus täpsemalt läbi mõelda. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Kasutajaprofiil",
+        "Animatsioon",
+        "DOM uuendus",
+        "CSS värvid"
+      ],
+      "correctIndex": 2,
+      "explanation": "className määramine on lihtne, kuid suuremas rakenduses tuleks klasside haldus täpsemalt läbi mõelda.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „DOM uuendus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: default haru kaitseb funktsiooni ootamatu operation väärtuse eest. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Animatsioon",
+        "CSS värvid",
+        "Serveripäring",
+        "Vigane operation"
+      ],
+      "correctIndex": 3,
+      "explanation": "default haru kaitseb funktsiooni ootamatu operation väärtuse eest.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Vigane operation”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: mitme lisatehte korral oleks korduva event listener koodi vähendamiseks mõistlik kasutada kaarti või delegatsiooni. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Skaleerimine",
+        "CSS värvid",
+        "Serveripäring",
+        "Sisselogimine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mitme lisatehte korral oleks korduva event listener koodi vähendamiseks mõistlik kasutada kaarti või delegatsiooni.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Skaleerimine”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: arvutuse järel sisendite säilitamine aitab kasutajal kiiresti teist tehet proovida. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Serveripäring",
+        "UX",
+        "Sisselogimine",
+        "Pildifail"
+      ],
+      "correctIndex": 1,
+      "explanation": "Arvutuse järel sisendite säilitamine aitab kasutajal kiiresti teist tehet proovida.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „UX”."
+    }
+  ]
+}

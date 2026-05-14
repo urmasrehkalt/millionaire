@@ -1,0 +1,654 @@
+{
+  "questions": [
+    {
+      "level": 1,
+      "question": "Kirjeldus: luua komandoreal töötav Pythoni to-do nimekirja programm. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Eesmärk",
+        "Veebivaade",
+        "Pilveteenus",
+        "CSS reegel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Luua komandoreal töötav Pythoni to-do nimekirja programm.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Eesmärk”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: ülesanded peavad säilima pärast programmi sulgemist. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Pilveteenus",
+        "Püsivus",
+        "CSS reegel",
+        "Andmebaas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ülesanded peavad säilima pärast programmi sulgemist.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Püsivus”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: andmed salvestatakse faili todos.json. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "CSS reegel",
+        "Andmebaas",
+        "todos.json",
+        "Hiireklikk"
+      ],
+      "correctIndex": 2,
+      "explanation": "Andmed salvestatakse faili todos.json.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „todos.json”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: ülesanded hoitakse JSON-formaadis. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Andmebaas",
+        "Hiireklikk",
+        "Fetch päring",
+        "JSON"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ülesanded hoitakse JSON-formaadis.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „JSON”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: valik 1 kuvab ülesanded. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Vaata",
+        "Hiireklikk",
+        "Fetch päring",
+        "HTML vorm"
+      ],
+      "correctIndex": 0,
+      "explanation": "Valik 1 kuvab ülesanded.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Vaata”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: valik 2 lisab uue ülesande. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Fetch päring",
+        "Lisa",
+        "HTML vorm",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Valik 2 lisab uue ülesande.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Lisa”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: valik 3 märgib ülesande tehtuks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "HTML vorm",
+        "Animatsioon",
+        "Märgi tehtuks",
+        "Veebivaade"
+      ],
+      "correctIndex": 2,
+      "explanation": "Valik 3 märgib ülesande tehtuks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Märgi tehtuks”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: valik 4 kustutab ülesande. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Animatsioon",
+        "Veebivaade",
+        "Pilveteenus",
+        "Kustuta"
+      ],
+      "correctIndex": 3,
+      "explanation": "Valik 4 kustutab ülesande.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kustuta”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: valik 0 väljub programmist. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Välju",
+        "Veebivaade",
+        "Pilveteenus",
+        "CSS reegel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Valik 0 väljub programmist.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Välju”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: igal ülesandel on id, text ja done väljad. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Pilveteenus",
+        "id/text/done",
+        "CSS reegel",
+        "Andmebaas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Igal ülesandel on id, text ja done väljad.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „id/text/done”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: done on tõeväärtus, mis näitab kas ülesanne on valmis. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "CSS reegel",
+        "Andmebaas",
+        "Boolean",
+        "Hiireklikk"
+      ],
+      "correctIndex": 2,
+      "explanation": "done on tõeväärtus, mis näitab kas ülesanne on valmis.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Boolean”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: kui todos.json puudub, alustatakse tühja nimekirjaga. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Andmebaas",
+        "Hiireklikk",
+        "Fetch päring",
+        "Tühi nimekiri"
+      ],
+      "correctIndex": 3,
+      "explanation": "Kui todos.json puudub, alustatakse tühja nimekirjaga.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi nimekiri”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: lahendus peab olema jagatud vähemalt kolmeks funktsiooniks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "3 funktsiooni",
+        "Hiireklikk",
+        "Fetch päring",
+        "HTML vorm"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lahendus peab olema jagatud vähemalt kolmeks funktsiooniks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „3 funktsiooni”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: kehtetu menüüvaliku korral kuvatakse veateade ja menüü jätkub. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Fetch päring",
+        "Valideerimine",
+        "HTML vorm",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Kehtetu menüüvaliku korral kuvatakse veateade ja menüü jätkub.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Valideerimine”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: märkimisel ja kustutamisel kontrollitakse, kas antud id eksisteerib. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "HTML vorm",
+        "Animatsioon",
+        "ID kontroll",
+        "Veebivaade"
+      ],
+      "correctIndex": 2,
+      "explanation": "Märkimisel ja kustutamisel kontrollitakse, kas antud id eksisteerib.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „ID kontroll”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: lahendus kasutab Pythoni standardteeki json ja os.path. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "Animatsioon",
+        "Veebivaade",
+        "Pilveteenus",
+        "Standardteek"
+      ],
+      "correctIndex": 3,
+      "explanation": "Lahendus kasutab Pythoni standardteeki json ja os.path.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Standardteek”."
+    },
+    {
+      "level": 1,
+      "question": "Kirjeldus: fail loetakse ja kirjutatakse UTF-8 kodeeringuga. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "options": [
+        "UTF-8",
+        "Veebivaade",
+        "Pilveteenus",
+        "CSS reegel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fail loetakse ja kirjutatakse UTF-8 kodeeringuga.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „UTF-8”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: load_todos loeb olemasoleva todos.json faili või tagastab tühja nimekirja. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Pilveteenus",
+        "load_todos",
+        "CSS reegel",
+        "Andmebaas"
+      ],
+      "correctIndex": 1,
+      "explanation": "load_todos loeb olemasoleva todos.json faili või tagastab tühja nimekirja.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „load_todos”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: os.path.exists kontrollib, kas andmefail on olemas. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "CSS reegel",
+        "Andmebaas",
+        "exists()",
+        "Hiireklikk"
+      ],
+      "correctIndex": 2,
+      "explanation": "os.path.exists kontrollib, kas andmefail on olemas.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „exists()”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: json.load teisendab failis oleva JSON-i Pythoni andmestruktuuriks. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Andmebaas",
+        "Hiireklikk",
+        "Fetch päring",
+        "json.load"
+      ],
+      "correctIndex": 3,
+      "explanation": "json.load teisendab failis oleva JSON-i Pythoni andmestruktuuriks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „json.load”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: save_todos kirjutab ülesannete nimekirja tagasi JSON-faili. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "save_todos",
+        "Hiireklikk",
+        "Fetch päring",
+        "HTML vorm"
+      ],
+      "correctIndex": 0,
+      "explanation": "save_todos kirjutab ülesannete nimekirja tagasi JSON-faili.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „save_todos”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: ensure_ascii=False säilitab eestikeelsed tähed loetavalt. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Fetch päring",
+        "ensure_ascii",
+        "HTML vorm",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "ensure_ascii=False säilitab eestikeelsed tähed loetavalt.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „ensure_ascii”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: indent=2 vormindab JSON-faili inimloetavaks. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "HTML vorm",
+        "Animatsioon",
+        "indent=2",
+        "Veebivaade"
+      ],
+      "correctIndex": 2,
+      "explanation": "indent=2 vormindab JSON-faili inimloetavaks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „indent=2”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: next_id leiab suurima olemasoleva id ja lisab sellele ühe. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Animatsioon",
+        "Veebivaade",
+        "Pilveteenus",
+        "next_id"
+      ],
+      "correctIndex": 3,
+      "explanation": "next_id leiab suurima olemasoleva id ja lisab sellele ühe.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „next_id”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: max(..., default=0) võimaldab id arvutada ka tühja nimekirja korral. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "default=0",
+        "Veebivaade",
+        "Pilveteenus",
+        "CSS reegel"
+      ],
+      "correctIndex": 0,
+      "explanation": "max(..., default=0) võimaldab id arvutada ka tühja nimekirja korral.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „default=0”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: kui nimekiri on tühi, kuvab show_todos vastava teate ja lõpetab. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Pilveteenus",
+        "Tühi vaade",
+        "CSS reegel",
+        "Andmebaas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Kui nimekiri on tühi, kuvab show_todos vastava teate ja lõpetab.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi vaade”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: tehtud ülesanne kuvatakse markeriga [x] ja tegemata [ ]. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "CSS reegel",
+        "Andmebaas",
+        "[x] marker",
+        "Hiireklikk"
+      ],
+      "correctIndex": 2,
+      "explanation": "Tehtud ülesanne kuvatakse markeriga [x] ja tegemata [ ].",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „[x] marker”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: add_todo lisab uue sõnastiku done=False väärtusega ja salvestab nimekirja. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Andmebaas",
+        "Hiireklikk",
+        "Fetch päring",
+        "add_todo"
+      ],
+      "correctIndex": 3,
+      "explanation": "add_todo lisab uue sõnastiku done=False väärtusega ja salvestab nimekirja.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „add_todo”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: mark_done otsib id järgi ülesande, muudab done väärtuse Trueks ja salvestab. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "mark_done",
+        "Hiireklikk",
+        "Fetch päring",
+        "HTML vorm"
+      ],
+      "correctIndex": 0,
+      "explanation": "mark_done otsib id järgi ülesande, muudab done väärtuse Trueks ja salvestab.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „mark_done”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: delete_todo eemaldab sobiva id-ga ülesande nimekirjast ja salvestab. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Fetch päring",
+        "delete_todo",
+        "HTML vorm",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "delete_todo eemaldab sobiva id-ga ülesande nimekirjast ja salvestab.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „delete_todo”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: ask_int püüab kasutaja sisendi täisarvuks teisendada ja vea korral tagastab None. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "HTML vorm",
+        "Animatsioon",
+        "ask_int",
+        "Veebivaade"
+      ],
+      "correctIndex": 2,
+      "explanation": "ask_int püüab kasutaja sisendi täisarvuks teisendada ja vea korral tagastab None.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „ask_int”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: main kasutab while True tsüklit, et menüüd korduvalt näidata. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Animatsioon",
+        "Veebivaade",
+        "Pilveteenus",
+        "while True"
+      ],
+      "correctIndex": 3,
+      "explanation": "main kasutab while True tsüklit, et menüüd korduvalt näidata.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „while True”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: strip eemaldab kasutaja sisendi algusest ja lõpust tühikud. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "strip()",
+        "Veebivaade",
+        "Pilveteenus",
+        "CSS reegel"
+      ],
+      "correctIndex": 0,
+      "explanation": "strip eemaldab kasutaja sisendi algusest ja lõpust tühikud.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „strip()”."
+    },
+    {
+      "level": 2,
+      "question": "Lahenduse töövoos on kirjeldatud: if __name__ == \"__main__\" käivitab main funktsiooni ainult otse käivitamisel. Mis on selle osa nimi või eesmärk?",
+      "options": [
+        "Pilveteenus",
+        "__main__",
+        "CSS reegel",
+        "Andmebaas"
+      ],
+      "correctIndex": 1,
+      "explanation": "if __name__ == \"__main__\" käivitab main funktsiooni ainult otse käivitamisel.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „__main__”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: kui todos.json sisaldab vigast JSON-i, võib json.load erindiga programmi katkestada. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "CSS reegel",
+        "Andmebaas",
+        "Katkine JSON",
+        "Hiireklikk"
+      ],
+      "correctIndex": 2,
+      "explanation": "Kui todos.json sisaldab vigast JSON-i, võib json.load erindiga programmi katkestada.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Katkine JSON”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: save_todos kirjutab otse sihtfaili; turvalisem oleks kirjutada ajutisse faili ja asendada. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Andmebaas",
+        "Hiireklikk",
+        "Fetch päring",
+        "Atomaarne kirjutus"
+      ],
+      "correctIndex": 3,
+      "explanation": "save_todos kirjutab otse sihtfaili; turvalisem oleks kirjutada ajutisse faili ja asendada.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Atomaarne kirjutus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: next_id ei taaskasuta kustutatud id-sid, vaid jätkab suurimast id-st edasi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "ID järjepidevus",
+        "Hiireklikk",
+        "Fetch päring",
+        "HTML vorm"
+      ],
+      "correctIndex": 0,
+      "explanation": "next_id ei taaskasuta kustutatud id-sid, vaid jätkab suurimast id-st edasi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „ID järjepidevus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: lahendus eeldab, et failis on korrektsete väljadega ülesanded. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Fetch päring",
+        "Mudeli kontroll",
+        "HTML vorm",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lahendus eeldab, et failis on korrektsete väljadega ülesanded.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Mudeli kontroll”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: lisa valikus kontrollitakse, et ülesande tekst ei oleks tühi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "HTML vorm",
+        "Animatsioon",
+        "Tühi tekst",
+        "Veebivaade"
+      ],
+      "correctIndex": 2,
+      "explanation": "Lisa valikus kontrollitakse, et ülesande tekst ei oleks tühi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi tekst”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: mark_done tagastab True õnnestumisel ja False kui id-d ei leitud. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Animatsioon",
+        "Veebivaade",
+        "Pilveteenus",
+        "True/False"
+      ],
+      "correctIndex": 3,
+      "explanation": "mark_done tagastab True õnnestumisel ja False kui id-d ei leitud.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „True/False”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: delete_todo kasutab enumerate tulemust, et eemaldada leitud element indeksiga. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Indeksiga pop",
+        "Veebivaade",
+        "Pilveteenus",
+        "CSS reegel"
+      ],
+      "correctIndex": 0,
+      "explanation": "delete_todo kasutab enumerate tulemust, et eemaldada leitud element indeksiga.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Indeksiga pop”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: delete_todo lõpetab pärast pop operatsiooni kohe returniga, vältides jätkuvat iteratsiooni muudetud listil. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Pilveteenus",
+        "Kohe return",
+        "CSS reegel",
+        "Andmebaas"
+      ],
+      "correctIndex": 1,
+      "explanation": "delete_todo lõpetab pärast pop operatsiooni kohe returniga, vältides jätkuvat iteratsiooni muudetud listil.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kohe return”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: muutused salvestatakse kohe pärast lisamist, märkimist või kustutamist. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "CSS reegel",
+        "Andmebaas",
+        "Kohe salvestus",
+        "Hiireklikk"
+      ],
+      "correctIndex": 2,
+      "explanation": "Muutused salvestatakse kohe pärast lisamist, märkimist või kustutamist.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kohe salvestus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: komandorea liides on lihtne, kuid ei sobi samaaegseks mitme kasutaja tööks. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Andmebaas",
+        "Hiireklikk",
+        "Fetch päring",
+        "CLI piirang"
+      ],
+      "correctIndex": 3,
+      "explanation": "Komandorea liides on lihtne, kuid ei sobi samaaegseks mitme kasutaja tööks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „CLI piirang”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: dATA_FILE on suhteline tee, seega fail tekib käivitamise töökataloogi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Suhteline tee",
+        "Hiireklikk",
+        "Fetch päring",
+        "HTML vorm"
+      ],
+      "correctIndex": 0,
+      "explanation": "DATA_FILE on suhteline tee, seega fail tekib käivitamise töökataloogi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Suhteline tee”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: funktsioonideks jaotamine teeb load, save ja muutmisloogika eraldi testitavaks. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Fetch päring",
+        "Testitavus",
+        "HTML vorm",
+        "Animatsioon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Funktsioonideks jaotamine teeb load, save ja muutmisloogika eraldi testitavaks.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Testitavus”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: faili lugemise ja kirjutamise IO vigu ei käsitleta eraldi. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "HTML vorm",
+        "Animatsioon",
+        "IO erindid",
+        "Veebivaade"
+      ],
+      "correctIndex": 2,
+      "explanation": "Faili lugemise ja kirjutamise IO vigu ei käsitleta eraldi.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „IO erindid”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: kood töötab ilma tüübivihjeteta, kuid suuremas projektis parandaksid need loetavust. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Animatsioon",
+        "Veebivaade",
+        "Pilveteenus",
+        "Tüübivihjed"
+      ],
+      "correctIndex": 3,
+      "explanation": "Kood töötab ilma tüübivihjeteta, kuid suuremas projektis parandaksid need loetavust.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tüübivihjed”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: uue menüüvaliku lisamiseks tuleb lisada print rida ja vastav elif haru. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Uus valik",
+        "Veebivaade",
+        "Pilveteenus",
+        "CSS reegel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Uue menüüvaliku lisamiseks tuleb lisada print rida ja vastav elif haru.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Uus valik”."
+    },
+    {
+      "level": 3,
+      "question": "Koodi ülevaatusel märkad: uTF-8 tagab, et eestikeelsed ülesannete tekstid säilivad õigesti. Millist riski, piirangut või otsust see puudutab?",
+      "options": [
+        "Pilveteenus",
+        "UTF-8 mõju",
+        "CSS reegel",
+        "Andmebaas"
+      ],
+      "correctIndex": 1,
+      "explanation": "UTF-8 tagab, et eestikeelsed ülesannete tekstid säilivad õigesti.",
+      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „UTF-8 mõju”."
+    }
+  ]
+}

@@ -22,6 +22,7 @@ class Question(BaseModel):
     options: list[str]
     correct_index: int = Field(..., alias="correctIndex", ge=0, le=3)
     explanation: str
+    hint: str | None = None
 
     model_config = {"populate_by_name": True}
 
@@ -80,6 +81,7 @@ class StartGameResponse(BaseModel):
     total_questions: int
     score: int
     question: PublicQuestion
+    lifelines: dict[str, bool]
 
 
 class AnswerRequest(BaseModel):
@@ -106,3 +108,26 @@ class AnswerResponse(BaseModel):
     next_question: PublicQuestion | None = None
     question_number: int | None = None
     answered_questions: list[AnsweredQuestion] | None = None
+
+
+class LifelineRequest(BaseModel):
+    session_id: str
+    lifeline: Literal["fifty_fifty", "hint", "swap"]
+
+
+class LifelineResponse(BaseModel):
+    lifeline: Literal["fifty_fifty", "hint", "swap"]
+    lifelines: dict[str, bool]
+    disabled_options: list[int] | None = None
+    hint: str | None = None
+    question: PublicQuestion | None = None
+
+
+class CreateTopicRequest(BaseModel):
+    title: str = Field(..., min_length=3, max_length=120)
+    description_md: str = Field(..., min_length=10, max_length=8000)
+
+
+class CreateTopicResponse(BaseModel):
+    assignment: AssignmentSummary
+    question_count: int

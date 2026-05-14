@@ -7,10 +7,9 @@ TAK25 grupi õppeprojekt.
 
 Õppevahend, mis aitab kontrollida, kas õppija saab aru enda või kellegi teise tehtud
 tarkvaraülesande lahendusest. Rakendus loeb `input/<NNN>/` kaustadest ülesandeid
-ja nende lahendusi ning palub OpenAI API-l genereerida 15 raskenevat valikvastusega
-küsimust. Õppija mängib küsimused läbi nagu „Kes tahab saada miljonäriks?" mängus —
-3 turvataset (1 000 / 32 000 / 1 000 000 punkti) ja 3 õlekõrt (50:50, AI vihje,
-publiku küsitlus).
+ja salvestatud küsimusepanku. Õppija mängib küsimused läbi nagu „Kes tahab saada
+miljonäriks?" mängus — 3 turvataset (1 000 / 32 000 / 1 000 000 punkti) ja 3
+õlekõrt (50:50, vihje, küsimuse vahetamine).
 
 ## Kasutatud tehnoloogiad
 
@@ -26,7 +25,7 @@ publiku küsitlus).
 ### Eeldused
 
 - Python 3.12 või uuem
-- Gemini API võti (tasuta saab [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey); ilma võtmeta töötab fallback-küsimustega)
+- Gemini API võti uue teema loomiseks (tasuta saab [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey); olemasolevad teemad töötavad ilma võtmeta)
 
 ### Käivitamine
 
@@ -38,11 +37,11 @@ cd millionaire
 # 2. Loo virtuaalne keskkond ja installi sõltuvused
 python3.12 -m venv .venv
 source .venv/bin/activate          # Windowsis: .venv\Scripts\activate
-pip install -e ".[dev]"
+python -m pip install -e ".[dev]"
 
 # 3. Seadista .env
 cp .env.example .env
-# Ava .env ja lisa GEMINI_API_KEY=... (valikuline; ilma selleta töötab fallback)
+# Ava .env ja lisa GEMINI_API_KEY=... (vajalik ainult uue teema AI-loomiseks)
 
 # 4. Käivita server
 uvicorn backend.app.main:app --reload --port 8005
@@ -85,26 +84,22 @@ input/
 Ülesande pealkiri võetakse `assignment.md` esimesest H1-pealkirjast (näiteks
 `# JavaScripti kalkulaator`).
 
-Uue ülesande lisamiseks loo lihtsalt uus numbriline kaust ja värskenda brauserit —
-rakendust ei pea taaskäivitama.
+Olemasolevatel teemadel on samas kaustas `questions.json` küsimusepank. Uue teema
+saab lisada ka veebivormist: AI loob siis teema jaoks salvestatud küsimusepanga.
 
-## AI küsimuste genereerimise loogika
+## Küsimuste ja AI loogika
 
-Iga mängu alguses koondab rakendus valitud ülesande failid (assignment.md +
-lahendusfailid) ühte konteksti ja saadab Google Gemini API-le (mudel
-`gemini-2.5-flash`, free tier). Prompt asub failis
-[`prompts/question-generation.md`](prompts/question-generation.md) ja palub AI-l
-genereerida 15 valikvastusega küsimust JSON-formaadis: 5 lihtsat, 5 keskmist ja
-5 rasket. Iga küsimusega kaasneb 4 vastusevarianti, õige vastuse indeks ja lühike
-selgitus.
+Mäng ei kutsu AI-d iga mängu alguses. Olemasolevate teemade puhul loetakse
+küsimused `input/<id>/questions.json` failist. Igas pangas on umbes 50 küsimust,
+tasemetega 1-3. Mäng valib igal alustamisel juhuslikult 5 lihtsat, 5 keskmist ja
+5 rasket küsimust ning hoiab ülejäänud sama taseme küsimused vahetamise õlekõrre
+jaoks varus.
 
-Vastuse struktuur jõustatakse Gemini `response_schema`-ga. Variatsiooni
-tagamiseks (US5) kasutatakse `temperature=0.9` ja igal päringul lisatakse
-promptisse muutuv nonce.
-
-Kui `GEMINI_API_KEY` puudub või API-päring ebaõnnestub / annab vigase JSON-i,
-kasutatakse fallback-küsimusi failist
-`backend/app/services/fallback_questions.json`.
+AI-d kasutatakse ainult uue teema loomisel. Veebivorm saadab teema pealkirja ja
+kirjelduse backendile, mis palub Google Gemini API-l (`gemini-2.5-flash`) luua
+50 küsimusega `questions.json` panga. Prompt asub failis
+[`prompts/question-generation.md`](prompts/question-generation.md). Kui
+`GEMINI_API_KEY` puudub või päring ebaõnnestub, uut teemat ei looda.
 
 ## Mängu reeglid
 
@@ -115,16 +110,14 @@ kasutatakse fallback-küsimusi failist
 - Vale vastusega kukub punktisumma viimasele saavutatud turvatasemele
 - 3 õlekõrt, igaüks kasutatav 1 kord:
   - **50:50** — eemaldab kaks valet vastust
-  - **AI vihje** — annab lühikese suunava vihje
-  - **Küsi publikult** — simuleeritud hääletustulemus
-- Mängu saab pooleli jätta, hetkeseis salvestub `localStorage`-isse
+  - **Vihje** — kuvab küsimusepangas salvestatud suunava vihje
+  - **Vaheta küsimus** — asendab küsimuse sama raskusastme varuküsimusega
 
 ## Teadaolevad piirangud
 
 - Mängusessioonid hoitakse mälusiseses dictionary'is — serveri taaskäivitamisel kaovad
-- Suuremate kui ~32 KB lahendusfailide korral kärbib rakendus konteksti, et hoida
-  promptide pikkust kontrolli all
-- Binaarfaile (pildid, PDF jne) ei saadeta AI-le
+- Uue teema loomine nõuab töötavat `GEMINI_API_KEY` väärtust
+- Mängusessioonid ei püsi serveri taaskäivituse üle
 
 ## Edasiarenduse võimalused
 

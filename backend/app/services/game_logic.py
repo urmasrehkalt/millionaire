@@ -8,14 +8,17 @@ is fine for iteration 1.
 from __future__ import annotations
 
 import uuid
+import random
 from dataclasses import dataclass, field
 from typing import Final
 
 from backend.app.models.schemas import (
     AnsweredQuestion,
     AnswerResponse,
+    LifelineResponse,
     PublicQuestion,
     Question,
+    QuestionLevel,
     StartGameResponse,
 )
 
@@ -40,8 +43,10 @@ class GameSession:
     session_id: str
     assignment_id: str
     questions: list[Question]
+    reserve_questions: dict[QuestionLevel, list[Question]] = field(default_factory=dict)
     current_index: int = 0
     answered: list[AnsweredQuestion] = field(default_factory=list)
+    used_lifelines: set[str] = field(default_factory=set)
     finished: bool = False
     final_score: int | None = None
 
@@ -49,7 +54,11 @@ class GameSession:
 _sessions: dict[str, GameSession] = {}
 
 
-def create_session(assignment_id: str, questions: list[Question]) -> StartGameResponse:
+def create_session(
+    assignment_id: str,
+    questions: list[Question],
+    reserve_questions: dict[QuestionLevel, list[Question]] | None = None,
+) -> StartGameResponse:
     if len(questions) != len(SCORE_LADDER):
         raise ValueError(f"Expected {len(SCORE_LADDER)} questions, got {len(questions)}")
 
@@ -58,6 +67,7 @@ def create_session(assignment_id: str, questions: list[Question]) -> StartGameRe
         session_id=session_id,
         assignment_id=assignment_id,
         questions=questions,
+        reserve_questions=reserve_questions or {},
     )
     _sessions[session_id] = session
 
@@ -67,6 +77,7 @@ def create_session(assignment_id: str, questions: list[Question]) -> StartGameRe
         total_questions=len(questions),
         score=0,
         question=_public(questions[0]),
+        lifelines=_lifeline_state(session),
     )
 
 
@@ -135,6 +146,48 @@ def submit_answer(session_id: str, answer_index: int) -> AnswerResponse:
     )
 
 
+def use_lifeline(session_id: str, lifeline: str) -> LifelineResponse:
+    session = get_session(session_id)
+    if session.finished:
+        raise ValueError("Game already finished")
+    if lifeline in session.used_lifelines:
+        raise ValueError("Lifeline already used")
+
+    current = session.questions[session.current_index]
+    if lifeline == "fifty_fifty":
+        session.used_lifelines.add(lifeline)
+        wrong_indices = [idx for idx in range(4) if idx != current.correct_index]
+        disabled = sorted(random.sample(wrong_indices, 2))
+        return LifelineResponse(
+            lifeline="fifty_fifty",
+            lifelines=_lifeline_state(session),
+            disabled_options=disabled,
+        )
+
+    if lifeline == "hint":
+        session.used_lifelines.add(lifeline)
+        return LifelineResponse(
+            lifeline="hint",
+            lifelines=_lifeline_state(session),
+            hint=current.hint or _fallback_hint(current),
+        )
+
+    if lifeline == "swap":
+        reserves = session.reserve_questions.get(current.level, [])
+        if not reserves:
+            raise ValueError("No replacement question available")
+        session.used_lifelines.add(lifeline)
+        replacement = reserves.pop(0)
+        session.questions[session.current_index] = replacement
+        return LifelineResponse(
+            lifeline="swap",
+            lifelines=_lifeline_state(session),
+            question=_public(replacement),
+        )
+
+    raise ValueError("Unknown lifeline")
+
+
 def _safety_score_for(current_index: int) -> int:
     """Return the score the player drops to after answering wrong on question
     `current_index` (0-based)."""
@@ -154,6 +207,18 @@ def _public(question: Question) -> PublicQuestion:
         question=question.question,
         options=question.options,
     )
+
+
+def _lifeline_state(session: GameSession) -> dict[str, bool]:
+    return {
+        "fifty_fifty": "fifty_fifty" in session.used_lifelines,
+        "hint": "hint" in session.used_lifelines,
+        "swap": "swap" in session.used_lifelines,
+    }
+
+
+def _fallback_hint(question: Question) -> str:
+    return f"Vihje: keskendu raskusastme {int(question.level)} põhiteemale ja välista vastused, mis ei sobi ülesande nõuetega."
 
 
 def clear_sessions_for_tests() -> None:

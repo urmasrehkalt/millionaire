@@ -1,9 +1,8 @@
-"""Generates the 15-question set for a game.
+"""Generates AI question banks for newly-created topics.
 
-The real implementation calls Google Gemini (2.5 Flash by default) using the
-google-genai SDK. If the API key is missing or the call fails / returns
-invalid JSON, we fall back to a static set bundled in fallback_questions.json
-so the game stays playable.
+Existing topics use stored `questions.json` banks during gameplay. This module
+is kept for creating a new topic bank through Google Gemini and for the legacy
+fallback helper used by tests.
 
 The prompt itself lives in `prompts/question-generation.md` (documentation
 requirement from the assignment). This module parses that file at load time
@@ -92,7 +91,14 @@ def generate_questions(assignment: Assignment) -> list[Question]:
     return _sorted(questions)
 
 
-def _generate_via_gemini(assignment: Assignment) -> list[Question]:
+def generate_question_bank(assignment: Assignment, question_count: int = 50) -> list[Question]:
+    """Generate and validate a stored question bank for a new topic."""
+    if not settings.gemini_api_key:
+        raise RuntimeError("GEMINI_API_KEY not set — cannot generate a new question bank")
+    return _sorted(_generate_via_gemini(assignment, question_count=question_count))
+
+
+def _generate_via_gemini(assignment: Assignment, question_count: int = 15) -> list[Question]:
     """Make the actual Gemini call and validate the response."""
     # Imported lazily so tests and the fallback path don't require the SDK.
     from google import genai
@@ -102,6 +108,11 @@ def _generate_via_gemini(assignment: Assignment) -> list[Question]:
     user_prompt = _build_user_prompt(
         assignment, user_template, nonce=secrets.token_hex(4)
     )
+    if question_count != 15:
+        user_prompt += (
+            f"\n\nOLULINE ÜLEKIRJUTUS: loo täpselt {question_count} küsimust. "
+            "Jaota need võimalikult võrdselt raskusastmete 1, 2 ja 3 vahel."
+        )
 
     client = genai.Client(api_key=settings.gemini_api_key)
     response = client.models.generate_content(
@@ -119,7 +130,7 @@ def _generate_via_gemini(assignment: Assignment) -> list[Question]:
                         "items": {
                             "type": "object",
                             "properties": {
-                                "level": {"type": "integer", "enum": [1, 2, 3]},
+                                "level": {"type": "integer", "minimum": 1, "maximum": 3},
                                 "question": {"type": "string"},
                                 "options": {
                                     "type": "array",
@@ -133,6 +144,7 @@ def _generate_via_gemini(assignment: Assignment) -> list[Question]:
                                     "maximum": 3,
                                 },
                                 "explanation": {"type": "string"},
+                                "hint": {"type": "string"},
                             },
                             "required": [
                                 "level",
@@ -140,6 +152,7 @@ def _generate_via_gemini(assignment: Assignment) -> list[Question]:
                                 "options",
                                 "correctIndex",
                                 "explanation",
+                                "hint",
                             ],
                         },
                     }
@@ -149,10 +162,10 @@ def _generate_via_gemini(assignment: Assignment) -> list[Question]:
         ),
     )
 
-    return _parse_response(response.text)
+    return _parse_response(response.text, expected_count=question_count)
 
 
-def _parse_response(raw_text: str | None) -> list[Question]:
+def _parse_response(raw_text: str | None, expected_count: int = 15) -> list[Question]:
     if not raw_text:
         raise ValueError("Empty Gemini response")
 
@@ -162,8 +175,8 @@ def _parse_response(raw_text: str | None) -> list[Question]:
 
     questions = [Question.model_validate(q) for q in payload["questions"]]
 
-    if len(questions) != 15:
-        raise ValueError(f"Expected 15 questions, got {len(questions)}")
+    if len(questions) != expected_count:
+        raise ValueError(f"Expected {expected_count} questions, got {len(questions)}")
 
     return questions
 

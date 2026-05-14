@@ -20,13 +20,13 @@ fi
 source .venv/bin/activate
 
 echo "==> Installin sõltuvused"
-pip install --quiet --upgrade pip
-pip install --quiet -e ".[dev]"
+python -m pip install --quiet --upgrade pip
+python -m pip install --quiet -e ".[dev]"
 
 if [ ! -f .env ]; then
   echo "==> Loon .env (.env.example põhjal)"
   cp .env.example .env
-  echo "    Lisa .env-i OPENAI_API_KEY=sk-... (valikuline)"
+  echo "    Lisa .env-i GEMINI_API_KEY=... (valikuline)"
 fi
 
 echo "==> Käivitan serveri: http://localhost:$PORT"

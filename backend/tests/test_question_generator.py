@@ -9,7 +9,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from backend.app.config import settings
-from backend.app.models.schemas import Assignment, AssignmentFile, Question
+from backend.app.models.schemas import Assignment, AssignmentFile
 from backend.app.services import question_generator
 
 

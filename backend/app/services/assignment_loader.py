@@ -111,6 +111,8 @@ class AssignmentLoader:
                 continue
             if path.name == "assignment.md":
                 continue
+            if path.name == "questions.json":
+                continue
             if any(part in SKIP_DIRS for part in path.relative_to(assignment_dir).parts):
                 continue
             if path.suffix.lower() in SKIP_EXTENSIONS:
