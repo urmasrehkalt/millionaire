@@ -1,8 +1,21 @@
 # Trello kaardid — kopeerimiseks
 
-See fail sisaldab kõiki Trello kaarte valmis vormingus. Iga kaart on jaotatud
-selgete sektsioonidega: **pealkiri**, **kirjeldus**, **vastuvõtutingimused** (kui
-on), **sildid** ja **veerg**, kuhu kaart kuulub algselt.
+> ⚠️ **Ajalooline hetkeolek (iter-0, 2026-05-07).** See fail sisaldab algse
+> backlogi kaardid, mille kasutasime töötahvli (urmas-agiilne-tracker)
+> esmaseks täitmiseks. Iteratsioonide #1–#8 jooksul on backlog evolutsioneerunud:
+> osad kasutajalood asendati (`Küsi publikult` → `Vaheta küsimus`), mõned
+> arendusülesanded ühendati issue'desse #3–#8, ja juurde tuli uusi
+> kasutajalugusid (`US10` küsimusepank, `US11` AI uue teema, `US12` GitHub
+> Pages demo).
+>
+> **Praegune backlog on [`backlog.md`](backlog.md)** — selles on iga loo
+> juures olek (✅ Done / ⬜ Backlog) ja viide PR-ile. Trello kaartide tekstid
+> allpool on seetõttu mõnevõrra aegunud; need on alles ainult kursusele
+> esitamiseks ja iter-0 dokumenteerimise jaoks.
+
+Iga kaart on jaotatud selgete sektsioonidega: **pealkiri**, **kirjeldus**,
+**vastuvõtutingimused** (kui on), **sildid** ja **veerg**, kuhu kaart kuulub
+algselt.
 
 ## Kuidas kaardid Trellosse panna
 
