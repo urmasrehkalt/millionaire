@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "level": 1,
+      "question": "Mis on selle ülesande peamine eesmärk?",
+      "options": [
+        "Luua tekstiredaktor",
+        "Luua veebipõhine kalkulaator, mis teostab nelja põhitehet",
+        "Luua kasutaja sisselogimise süsteem",
+        "Luua pildigalerii brauseris"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ülesanne nõuab veebipõhise kalkulaatori loomist, mis teostab liitmise, lahutamise, korrutamise ja jagamise."
+    },
+    {
+      "level": 1,
+      "question": "Millises failis asub kalkulaatori paigutus (HTML)?",
+      "options": [
+        "script.js",
+        "style.css",
+        "index.html",
+        "assignment.md"
+      ],
+      "correctIndex": 2,
+      "explanation": "HTML-paigutus on lahenduses failis index.html."
+    },
+    {
+      "level": 1,
+      "question": "Mitu sisendvälja peab kasutajaliideses olema?",
+      "options": [
+        "Üks",
+        "Kaks",
+        "Kolm",
+        "Neli"
+      ],
+      "correctIndex": 1,
+      "explanation": "Kasutaja sisestab kaks arvu, seega on vajalik kaks sisendvälja."
+    },
+    {
+      "level": 1,
+      "question": "Millise märgendi sisse on JavaScripti fail lehe lõpus kaasatud?",
+      "options": [
+        "<style>",
+        "<link>",
+        "<script>",
+        "<meta>"
+      ],
+      "correctIndex": 2,
+      "explanation": "Välise JavaScripti faili kaasamiseks kasutatakse <script src=\"...\"> märgendit."
+    },
+    {
+      "level": 1,
+      "question": "Milleks kasutatakse failis style.css olevat koodi?",
+      "options": [
+        "Kasutaja tegevustele reageerimiseks",
+        "Kalkulaatori kujundamiseks",
+        "Arvude jagamiseks",
+        "Veateadete kuvamiseks"
+      ],
+      "correctIndex": 1,
+      "explanation": "CSS-fail vastutab visuaalse kujunduse eest: värvid, fondid, paigutus."
+    },
+    {
+      "level": 2,
+      "question": "Miks teisendab funktsioon parseInputs kasutaja sisendi Number()-iga arvuks?",
+      "options": [
+        "Et hoida kokku failiruumi",
+        "Sest input-välja väärtus tuleb stringina ja stringe ei saa otse liita arvuna",
+        "Et muuta arv negatiivseks",
+        "Et tagada andmebaasiühendus"
+      ],
+      "correctIndex": 1,
+      "explanation": "input.value on string. Ilma teisenduseta annaks „10\" + „3\" tulemuse „103\", mitte 13."
+    },
+    {
+      "level": 2,
+      "question": "Miks kasutatakse koodis addEventListener-it (mitte näiteks inline onclick-i)?",
+      "options": [
+        "Et HTML-faili automaatselt salvestada",
+        "Et reageerida kasutaja tegevusele eraldades HTML ja JS",
+        "Et muuta JavaScripti fail CSS-failiks",
+        "Et laadida brauserisse uus font"
+      ],
+      "correctIndex": 1,
+      "explanation": "addEventListener seob sündmuse käitleja JS-failis, hoides HTML markup'i puhtana ja võimaldades sama sündmust mitmel käitlejal."
+    },
+    {
+      "level": 2,
+      "question": "Mis juhtub, kui kasutaja sisestab esimesse välja teksti „abc\"?",
+      "options": [
+        "Kalkulaator arvutab 0",
+        "Number(\"abc\") tagastab NaN ja funktsioon kuvab veateate",
+        "JavaScript visatakse exception",
+        "Kalkulaator avaneb uuesti"
+      ],
+      "correctIndex": 1,
+      "explanation": "Number(\"abc\") = NaN; kood kontrollib seda Number.isNaN-iga ja kuvab kasutajale veateate."
+    },
+    {
+      "level": 2,
+      "question": "Kuidas käsitleb kood koma-eraldusega kümnendarvu, näiteks „1,5\"?",
+      "options": [
+        "Lükkab tagasi",
+        "Asendab koma punktiga enne Number()-i kutset",
+        "Kasutab eraldi funktsiooni parseEstonian()",
+        "Ei toeta üldse"
+      ],
+      "correctIndex": 1,
+      "explanation": "Funktsioon parseInputs teeb value.replace(\",\", \".\") enne Number()-i kutset, et eesti kümnendarv töötaks."
+    },
+    {
+      "level": 2,
+      "question": "Kuhu suunatakse arvutuse tulemus pärast vajutust?",
+      "options": [
+        "Konsooli (console.log)",
+        "Brauseri tiitliribale",
+        "DIV-i id-ga „result\"",
+        "Eraldi modaalaknasse"
+      ],
+      "correctIndex": 2,
+      "explanation": "Funktsioon showResult muudab elemendi id=\"result\" textContent'i ja className'i."
+    },
+    {
+      "level": 3,
+      "question": "Milline turvarisk tekiks, kui kasutaja sisend pandaks tulemusse innerHTML-iga (textContent asemel)?",
+      "options": [
+        "Brauser hangub",
+        "Kalkulaator töötaks aeglasemalt",
+        "XSS — pahatahtlik HTML/JS kasutaja sisendist käivituks brauseris",
+        "Tekstiriba muutuks lillaks"
+      ],
+      "correctIndex": 2,
+      "explanation": "innerHTML interpreteerib stringi HTML-ina, mistõttu kasutaja sisendisse pandud <script>-tag käivituks. textContent kuvab teksti turvaliselt."
+    },
+    {
+      "level": 3,
+      "question": "Kuidas oleks kõige puhtam viis lisada uus tehe (nt astendamine), ilma korduvat koodi tekitamata?",
+      "options": [
+        "Kopeerida calculate-funktsioon uue tehte jaoks",
+        "Lisada uus case calculate-funktsiooni switch-i ja eraldada operatsioonid objekti/Map'i kaudu",
+        "Kirjutada HTML-i otse Math.pow",
+        "Lisada uus HTML-fail"
+      ],
+      "correctIndex": 1,
+      "explanation": "Switch'i laiendamine on lihtsaim. Veel puhtam oleks teha objektiline mapping {add: (a,b)=>a+b, ...} ja kutsuda operations[op](a,b)."
+    },
+    {
+      "level": 3,
+      "question": "Miks on DOM-elementide otsimine (getElementById) tehtud faili tipus, mitte iga calculate-i kutse sees?",
+      "options": [
+        "Pole vahet",
+        "Et säästa DOM-i läbimist — otsing tehakse üks kord lehe laadimisel, mitte korduvalt iga klõpsu juures",
+        "Sest brauser nõuab seda",
+        "Et CSS töötaks"
+      ],
+      "correctIndex": 1,
+      "explanation": "DOM-otsing on suhteliselt kallis operatsioon. Tipus tehtud otsing salvestab viite muutujasse ja taaskasutab seda — see on tüüpiline performance-paranduse muster."
+    },
+    {
+      "level": 3,
+      "question": "Kui kasutaja vajutab nuppu enne arvude sisestamist (väljad tühjad), siis kood…",
+      "options": [
+        "Arvutab 0 + 0 = 0",
+        "Tagastab veateate „Palun sisesta mõlemasse välja arv\" — parseInputs tagastab null",
+        "Käivitab exception'i",
+        "Avab brauseri arendaja tööriistad"
+      ],
+      "correctIndex": 1,
+      "explanation": "parseInputs kontrollib eraldi, et väärtus poleks tühi string, ja tagastab null; calculate kuvab seejärel veateate."
+    },
+    {
+      "level": 3,
+      "question": "Milline lahenduse osa võiks põhjustada probleemi, kui ülesannet laiendada paljude sisendväljadega (nt 100 lahtrit)?",
+      "options": [
+        "CSS-i värvid",
+        "Käsitsi getElementById ja addEventListener iga elemendi jaoks ei skaleeru — vaja oleks tsükli/delegeerimisega lähenemist",
+        "HTML märgendite arv brauseris on piiratud",
+        "JavaScript ei oska 100 muutujat hallata"
+      ],
+      "correctIndex": 1,
+      "explanation": "Iga elemendi käsitsi seostamine on vaevarikkust ja vigade allikas. Skaleeruv lähenemine kasutab vanematele elementidele kinnitatud sündmuste delegeerimist või tsüklit kõikide vajalike elementide üle."
+    }
+  ]
+}
