@@ -16,7 +16,7 @@ publiku küsitlus).
 
 - **Backend:** Python 3.12+ ja [FastAPI](https://fastapi.tiangolo.com/)
 - **Frontend:** vanilla HTML/CSS/JS (ilma raamistikuta)
-- **AI:** [OpenAI API](https://platform.openai.com/) (mudel `gpt-4o-mini` vaikimisi)
+- **AI:** [Google Gemini API](https://ai.google.dev/) (mudel `gemini-2.5-flash` vaikimisi, free tier)
 - **Markdown ja koodivärvimine:** `marked` ja `highlight.js` CDN-ist
 - **Versioonihaldus:** Git + GitHub
 - **Projektihaldus:** Trello (`Backlog → Todo → In progress → Review/Test → Done`)
@@ -26,7 +26,7 @@ publiku küsitlus).
 ### Eeldused
 
 - Python 3.12 või uuem
-- OpenAI API võti (vajalik AI-küsimuste genereerimiseks; ilma võtmeta töötab fallback)
+- Gemini API võti (tasuta saab [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey); ilma võtmeta töötab fallback-küsimustega)
 
 ### Käivitamine
 
@@ -42,7 +42,7 @@ pip install -e ".[dev]"
 
 # 3. Seadista .env
 cp .env.example .env
-# Ava .env ja lisa OPENAI_API_KEY=sk-... (valikuline; ilma selleta töötab fallback)
+# Ava .env ja lisa GEMINI_API_KEY=... (valikuline; ilma selleta töötab fallback)
 
 # 4. Käivita server
 uvicorn backend.app.main:app --reload --port 8005
@@ -91,14 +91,20 @@ rakendust ei pea taaskäivitama.
 ## AI küsimuste genereerimise loogika
 
 Iga mängu alguses koondab rakendus valitud ülesande failid (assignment.md +
-lahendusfailid) ühte konteksti ja saadab OpenAI API-le. Prompt asub failis
+lahendusfailid) ühte konteksti ja saadab Google Gemini API-le (mudel
+`gemini-2.5-flash`, free tier). Prompt asub failis
 [`prompts/question-generation.md`](prompts/question-generation.md) ja palub AI-l
 genereerida 15 valikvastusega küsimust JSON-formaadis: 5 lihtsat, 5 keskmist ja
 5 rasket. Iga küsimusega kaasneb 4 vastusevarianti, õige vastuse indeks ja lühike
 selgitus.
 
-Kui `OPENAI_API_KEY` puudub või API-päring ebaõnnestub, kasutatakse fallback-küsimusi
-failist `backend/app/services/fallback_questions.json`.
+Vastuse struktuur jõustatakse Gemini `response_schema`-ga. Variatsiooni
+tagamiseks (US5) kasutatakse `temperature=0.9` ja igal päringul lisatakse
+promptisse muutuv nonce.
+
+Kui `GEMINI_API_KEY` puudub või API-päring ebaõnnestub / annab vigase JSON-i,
+kasutatakse fallback-küsimusi failist
+`backend/app/services/fallback_questions.json`.
 
 ## Mängu reeglid
 
