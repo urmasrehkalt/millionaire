@@ -1,6 +1,6 @@
 const GAME = {
     id: "001",
-    title: "Noorem tarkvaraarendaja",
+    title: "Esimese aasta kordamismäng",
 };
 
 export function renderMenu(root, onSelect) {
@@ -8,11 +8,12 @@ export function renderMenu(root, onSelect) {
         <section class="hero-card" aria-labelledby="hero-title">
             <div class="hero-copy">
                 <p class="eyebrow">15 küsimust. 3 raskusastet. Üks mäng.</p>
-                <h2 id="hero-title">Kontrolli, kas mõistad noorem­arendaja põhitõdesid.</h2>
+                <h2 id="hero-title">Korda olulisemaid teemasid.</h2>
                 <p>
-                    Küsimused keskenduvad veebiarendusele, JavaScriptile, Gitile,
-                    API-dele, testimisele, turvalisusele ja koodi loetavusele.
-                    Iga mäng valib küsimused juhuslikult 150 küsimuse pangast.
+                    Küsimused põhinevad õppeainetel nagu: agiilne arendus,
+                    andmebaasid, dokumentatsioon, JavaScript, märgendikeeled, SQL,
+                    testimine, klient-server rakendused ja veebiteenused. Iga mäng
+                    valib küsimused juhuslikult 150 küsimuse pangast.
                 </p>
             </div>
             <div class="start-panel" aria-label="Mängu kokkuvõte">

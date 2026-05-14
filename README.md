@@ -1,23 +1,25 @@
-# Nooremarendaja miljonimäng
+# Esimese aasta miljonimäng
 
 AI-põhise ülesande valideerimise ideest lähtuv õppeprojekt „Kes tahab saada
-miljonäriks?” formaadis. Rakendus kontrollib, kas õppija mõistab nooremale
-tarkvaraarendajale vajalikke põhimõisteid, loogikat, riske ja alternatiivseid
-lahendusi.
+miljonäriks?” formaadis. Rakendus aitab korrata esimese õppeaasta lõpuks kogunenud
+tarkvaraarenduse teadmisi ning kontrollib mõistmist, mitte päheõppimist.
 
 **Mängi otse brauseris:** <https://urmasrehkalt.github.io/millionaire/>
 
 ## Projekti kirjeldus
 
 Õppevahend aitab kontrollida arusaamist, mitte failinimede või vastuste
-päheõppimist. Avalehel on üks mäng: **Noorem tarkvaraarendaja teadmiste
-kontroll**. Iga käivitus valib juhuslikult 15 küsimust 150 küsimusega pangast:
-5 lihtsat, 5 keskmist ja 5 rasket.
+päheõppimist. Avalehel on üks mäng: **Esimese aasta kordamismäng**. Iga käivitus
+valib juhuslikult 15 küsimust 150 küsimusega pangast: 5 lihtsat, 5 keskmist ja
+5 rasket.
 
-Küsimused katavad HTML-i, CSS-i, JavaScripti, DOM-i, API/JSON-i, Git-i,
-testimist, veakäsitlust, turvalisust ja koodi hooldatavust. Küsimused on eesti
-keeles ning igal küsimusel on 4 vastusevarianti, üks õige vastus, vihje ja lühike
-selgitus.
+Küsimusepank on koostatud Tahvlis nähtavate Henno Tähe õppeainete põhjal:
+agiilne tarkvaraarendus, agiilse tarkvaraarenduse projekt, andmebaaside alused,
+andmebaaside projekteerimine, dokumentatsiooni koostamine, JavaScript,
+märgendikeeled, SQL keele alused, sissejuhatus programmeerimisse, testimise
+alused, testimise tüübid ja automatiseerimine, klient-server veebirakendused ning
+veebiteenused. Küsimused on eesti keeles ning igal küsimusel on 4 vastusevarianti,
+üks õige vastus, vihje ja lühike selgitus.
 
 ## Kasutatud tehnoloogiad
 

@@ -1,36 +1,42 @@
-# Noorem tarkvaraarendaja teadmiste kontroll
+# Esimese aasta kordamismäng
 
 ## Ülesande kirjeldus
 
-Rakendus kontrollib miljonimängu vormis, kas õppija mõistab nooremale
-tarkvaraarendajale vajalikke põhimõisteid ja oskab neid praktilistes olukordades
-rakendada. Küsimused ei küsi failinimesid ega päheõpitud detaile, vaid selgitavad,
-kas õppija saab aru valikutest, loogikast, riskidest ja võimalikest parandustest.
+Rakendus kontrollib miljonimängu vormis esimese õppeaasta lõpuks kogunenud
+teadmisi. Küsimusepank põhineb Tahvli õppekavas nähtavatel Henno Tähe
+õppeainetel ning on mõeldud kordamiseks ja õppimiseks, mitte ainult lihtsaks
+viktoriiniks. Küsimused ei küsi failinimesid ega päheõpitud detaile, vaid
+kontrollivad, kas õppija mõistab mõisteid, valikuid, loogikat, riske ja võimalikke
+parandusi.
 
 ## Valdkonnad
 
-Küsimusepank katab järgmisi teemasid:
+Küsimusepank katab järgmisi Henno Tähe õppeaineid:
 
-1. HTML-i semantika, vormid ja ligipääsetavus
-2. CSS-i paigutus, responsiivsus ja kasutajaliidese loetavus
-3. JavaScripti põhimõisted, DOM, sündmused ja moodulid
-4. Andmete käsitlemine, JSON, API-päringud ja asünkroonne loogika
-5. Sisendi valideerimine, veakäsitlus ja kasutajasõbralik tagasiside
-6. Git, harud, commit'id ja koostöövoog
-7. Testimine, regressioonide ennetamine ja vastuvõtutingimused
-8. Turvalisus, näiteks XSS, saladuste hoidmine ja usaldamatu sisend
-9. Koodistruktuur, loetavus, väikesed funktsioonid ja hooldatavus
-10. Lahenduse vastavus lähteülesande nõuetele ja erijuhtudele
+1. Agiilne tarkvaraarendus
+2. Agiilse tarkvaraarenduse projekt
+3. Andmebaaside alused
+4. Andmebaaside projekteerimine
+5. Dokumentatsiooni koostamine
+6. JavaScript
+7. Märgendikeeled
+8. SQL keele alused
+9. Sissejuhatus programmeerimisse
+10. Testimise alused
+11. Testimise tüübid ja automatiseerimine
+12. Veebirakenduste loomine klient-server raamistikul
+13. Veebiteenused
 
 ## Raskusastmed
 
-- Lihtsad küsimused kontrollivad põhimõisteid ja üldist arusaamist.
-- Keskmised küsimused kontrollivad andmevoogu, rakenduse loogikat ja praktilisi valikuid.
-- Rasked küsimused kontrollivad riskide märkamist, alternatiivseid lahendusi,
-  turvalisust, testitavust ja hooldatavust.
+- Lihtsad küsimused kontrollivad põhimõisteid, kuid eeldavad, et õppija tunneb
+  õppeainete sõnavara.
+- Keskmised küsimused kontrollivad praktilisi olukordi ja valikute põhjendamist.
+- Rasked küsimused kontrollivad kompromisside, riskide, erijuhtude ja alternatiivide
+  märkamist.
 
 ## Hindamiskriteeriumid
 
-Mäng loetakse eesmärgipäraseks, kui õppija suudab põhjendada, miks konkreetne
-tehniline lahendus töötab, millised vead võivad tekkida ja kuidas lahendust
-turvalisemaks või paremini hooldatavaks muuta.
+Mäng loetakse eesmärgipäraseks, kui õppija suudab õppeainete vahel seoseid luua,
+põhjendada tehnilisi otsuseid, märgata vigade ja turvalisuse riske ning selgitada,
+kuidas lahendust testida või paremini hooldatavaks muuta.

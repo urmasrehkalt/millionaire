@@ -1,16 +1,20 @@
 # Õpiväljundid
 
-Õppija mõistab veebirakenduse põhistruktuuri, oskab kirjeldada HTML-i, CSS-i ja
-JavaScripti rolli ning selgitada, kuidas kasutaja tegevusest jõutakse nähtava
-tulemuseni.
+Õppija kordab esimese õppeaasta lõpuks Henno Tähe õppeainetes käsitletud
+teemasid: agiilne töö, projektitöö, andmebaasid, andmemudelid, dokumentatsioon,
+JavaScript, märgendikeeled, SQL, programmeerimise alused, testimine,
+testiautomaatika, klient-server rakendused ja veebiteenused.
 
-Õppija oskab põhjendada, miks sisendit valideeritakse, miks API vastust tuleb
-kontrollida, miks saladusi ei hoita kliendikoodis ja miks kasutaja sisendit ei
-lisata lehele otse `innerHTML` kaudu.
+Õppija oskab põhjendada, miks konkreetne tehniline valik on sobiv: näiteks millal
+kasutada JOIN-i, miks sisendit valideerida, kuidas API lepingut dokumenteerida,
+miks testid peavad katma ka veajuhtumeid ja miks server peab kontrollima olulisi
+ärireegleid.
 
-Õppija tunneb Gitiga töötamise tavapärast voogu: muudatused tehakse harus,
-commit on väike ja sisukas ning enne ühendamist kontrollitakse vastuvõtutingimusi.
+Õppija tunneb agiilse arendusprotsessi ja projektitöö seoseid: issue,
+vastuvõtutingimused, branch, commit, pull request, review, demo ja retrospektiiv
+on osa ühest töövoost, mitte eraldi formaalsused.
 
-Õppija oskab mõelda testimisele ja hooldatavusele: funktsioonid peaksid olema
-selged, kõrvalmõjud piiratud, veateated kasutajasõbralikud ja erijuhud enne
-valmis lugemist läbi proovitud.
+Õppija oskab mõelda süsteemi kvaliteedile tervikuna: andmemudel peab olema
+põhjendatud, SQL peab olema turvaline, kood peab olema loetav, API peab olema
+stabiilne, testid peavad olema usaldusväärsed ja dokumentatsioon peab vastama
+tegelikule lahendusele.

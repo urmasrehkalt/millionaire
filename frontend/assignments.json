@@ -1,6 +1,6 @@
 {
   "_comment": "Manifest for the static build. The UI starts one predefined game from input/001; the Pages build regenerates this file from input/.",
   "assignments": [
-    { "id": "001", "title": "Noorem tarkvaraarendaja" }
+    { "id": "001", "title": "Esimese aasta kordamismäng" }
   ]
 }
