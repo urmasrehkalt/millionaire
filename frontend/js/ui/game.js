@@ -15,7 +15,7 @@ export async function startNewGame(root, assignment, onFinish) {
 
     let start;
     try {
-        start = await startGame(assignment.id);
+        start = await startGame(assignment.id, assignment.mode);
     } catch (err) {
         root.innerHTML = `<div class="error-state">Mängu alustamine ebaõnnestus: ${err.message}</div>`;
         return;
@@ -136,6 +136,7 @@ function paintQuestion() {
         btn.addEventListener("click", () => handleAnswer(idx, btn));
         elements.options.appendChild(btn);
     });
+    equalizeOptionHeights();
 
     elements.feedback.hidden = true;
     elements.feedback.innerHTML = "";
@@ -143,6 +144,20 @@ function paintQuestion() {
 
     renderLadder();
     renderLifelines();
+}
+
+function equalizeOptionHeights() {
+    const optionButtons = [...elements.options.querySelectorAll(".option")];
+    optionButtons.forEach((button) => {
+        button.style.minHeight = "";
+    });
+
+    requestAnimationFrame(() => {
+        const maxHeight = Math.max(...optionButtons.map((button) => button.offsetHeight));
+        optionButtons.forEach((button) => {
+            button.style.minHeight = `${maxHeight}px`;
+        });
+    });
 }
 
 async function handleLifeline(lifeline) {

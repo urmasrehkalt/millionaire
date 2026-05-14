@@ -10,6 +10,10 @@ from pathlib import Path
 from backend.app.models.schemas import Question, QuestionLevel
 
 QUESTION_BANK_FILENAME = "questions.json"
+QUESTION_BANK_FILES = {
+    "simple": "questions.json",
+    "harder": "questions-hard.json",
+}
 QUESTIONS_PER_LEVEL = 5
 
 
@@ -17,8 +21,8 @@ class QuestionBankError(Exception):
     """Raised when a stored question bank is missing or invalid."""
 
 
-def load_question_bank(input_root: Path, assignment_id: str) -> list[Question]:
-    path = input_root / assignment_id / QUESTION_BANK_FILENAME
+def load_question_bank(input_root: Path, assignment_id: str, mode: str = "simple") -> list[Question]:
+    path = input_root / assignment_id / QUESTION_BANK_FILES.get(mode, QUESTION_BANK_FILENAME)
     if not path.exists():
         raise QuestionBankError(f"Question bank not found: {path}")
 

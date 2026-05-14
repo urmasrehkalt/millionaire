@@ -29,7 +29,7 @@ def start_game(req: StartGameRequest) -> StartGameResponse:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
 
     try:
-        question_bank = load_question_bank(settings.input_dir, assignment.id)
+        question_bank = load_question_bank(settings.input_dir, assignment.id, req.mode)
     except QuestionBankError as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 

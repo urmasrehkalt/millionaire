@@ -66,10 +66,11 @@ def test_select_game_questions_picks_five_per_level_with_reserves() -> None:
     assert len(reserves[QuestionLevel.EASY]) == 3
 
 
-def test_single_junior_developer_bank_has_required_volume_and_schema() -> None:
+@pytest.mark.parametrize("mode", ["simple", "harder"])
+def test_single_junior_developer_banks_have_required_volume_and_schema(mode: str) -> None:
     project_root = Path(__file__).resolve().parents[2]
 
-    questions = load_question_bank(project_root / "input", "001")
+    questions = load_question_bank(project_root / "input", "001", mode)
 
     assert len(questions) == 150
     assert [q.level for q in questions].count(QuestionLevel.EASY) == 50

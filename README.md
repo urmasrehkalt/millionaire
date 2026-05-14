@@ -9,8 +9,9 @@ tarkvaraarenduse teadmisi ning kontrollib mõistmist, mitte päheõppimist.
 ## Projekti kirjeldus
 
 Õppevahend aitab kontrollida arusaamist, mitte failinimede või vastuste
-päheõppimist. Avalehel on üks mäng: **Esimese aasta kordamismäng**. Iga käivitus
-valib juhuslikult 15 küsimust 150 küsimusega pangast: 5 lihtsat, 5 keskmist ja
+päheõppimist. Avalehel on üks mäng: **Tarkvaraarendaja miljonimäng**. Enne
+alustamist saab valida režiimi **Lihtne** või **Keerulisem**. Iga käivitus valib
+juhuslikult 15 küsimust valitud 150 küsimusega pangast: 5 lihtsat, 5 keskmist ja
 5 rasket.
 
 Küsimusepank on koostatud Tahvlis nähtavate Henno Tähe õppeainete põhjal:
@@ -19,7 +20,8 @@ andmebaaside projekteerimine, dokumentatsiooni koostamine, JavaScript,
 märgendikeeled, SQL keele alused, sissejuhatus programmeerimisse, testimise
 alused, testimise tüübid ja automatiseerimine, klient-server veebirakendused ning
 veebiteenused. Küsimused on eesti keeles ning igal küsimusel on 4 vastusevarianti,
-üks õige vastus, vihje ja lühike selgitus.
+üks õige vastus, vihje ja lühike selgitus. Keerulisem režiim kasutab tehnilisemaid
+küsimusi ja usutavamaid valesid vastuseid.
 
 ## Kasutatud tehnoloogiad
 
@@ -76,7 +78,8 @@ input/
   001/
     assignment.md              # teadmiste kontrolli kirjeldus
     learning-outcomes.md       # õpiväljundid ja rõhuasetused
-    questions.json             # 150 küsimust: 50 lihtsat, 50 keskmist, 50 rasket
+    questions.json             # Lihtne režiim: 50 lihtsat, 50 keskmist, 50 rasket
+    questions-hard.json        # Keerulisem režiim: 50 lihtsat, 50 keskmist, 50 rasket
 ```
 
 Küsimusepank on JSON-kujul. Iga kirje sisaldab `level`, `question`, `options`,
@@ -84,11 +87,12 @@ Küsimusepank on JSON-kujul. Iga kirje sisaldab `level`, `question`, `options`,
 
 ## Küsimuste ja AI loogika
 
-Mäng ei kutsu AI-d iga mängu alguses. Küsimused loetakse failist
-[`input/001/questions.json`](input/001/questions.json). Mängumootor jagab panga
-raskusastmete järgi kolmeks, segab iga taseme küsimused ja valib mänguks 5
-lihtsat, 5 keskmist ning 5 rasket küsimust. Ülejäänud sama raskusastme küsimused
-jäävad küsimuse vahetamise õlekõrre jaoks varuks.
+Mäng ei kutsu AI-d iga mängu alguses. Lihtne režiim loeb küsimused failist
+[`input/001/questions.json`](input/001/questions.json), keerulisem režiim failist
+[`input/001/questions-hard.json`](input/001/questions-hard.json). Mängumootor jagab
+valitud panga raskusastmete järgi kolmeks, segab iga taseme küsimused ja valib
+mänguks 5 lihtsat, 5 keskmist ning 5 rasket küsimust. Ülejäänud sama raskusastme
+küsimused jäävad küsimuse vahetamise õlekõrre jaoks varuks.
 
 AI kasutamise loogika ja prompt on dokumenteeritud failis
 [`prompts/question-generation.md`](prompts/question-generation.md). Prompt kirjeldab,

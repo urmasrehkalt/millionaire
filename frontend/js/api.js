@@ -9,8 +9,8 @@ import {
     useLifeline as engineUseLifeline,
 } from "./engine.js";
 
-export async function startGame(assignmentId) {
-    return startGameFor(assignmentId);
+export async function startGame(assignmentId, mode = "simple") {
+    return startGameFor(assignmentId, mode);
 }
 
 export async function submitAnswer(sessionId, answerIndex) {

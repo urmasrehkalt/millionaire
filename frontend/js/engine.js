@@ -239,10 +239,16 @@ function fallbackHint(question) {
     return `Vihje: keskendu raskusastme ${question.level} põhiteemale ja välista vastused, mis ei sobi ülesande nõuetega.`;
 }
 
-export async function loadQuestionBank(assignmentId) {
-    const response = await fetch(`input/${assignmentId}/questions.json`);
+const QUESTION_BANK_FILES = {
+    simple: "questions.json",
+    harder: "questions-hard.json",
+};
+
+export async function loadQuestionBank(assignmentId, mode = "simple") {
+    const filename = QUESTION_BANK_FILES[mode] || QUESTION_BANK_FILES.simple;
+    const response = await fetch(`input/${assignmentId}/${filename}`);
     if (!response.ok) {
-        throw new QuestionBankError(`Question bank not found for ${assignmentId}`);
+        throw new QuestionBankError(`Question bank not found for ${assignmentId} (${mode})`);
     }
     const payload = await response.json();
     if (!Array.isArray(payload.questions)) {
@@ -251,8 +257,8 @@ export async function loadQuestionBank(assignmentId) {
     return payload.questions;
 }
 
-export async function startGameFor(assignmentId) {
-    const bank = await loadQuestionBank(assignmentId);
+export async function startGameFor(assignmentId, mode = "simple") {
+    const bank = await loadQuestionBank(assignmentId, mode);
     const { selected, reserves } = selectGameQuestions(bank);
     return createSession(assignmentId, selected, reserves);
 }

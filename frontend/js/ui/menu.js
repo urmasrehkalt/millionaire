@@ -3,6 +3,11 @@ const GAME = {
     title: "Esimese aasta kordamismäng",
 };
 
+const MODES = {
+    simple: "Lihtne",
+    harder: "Raskem",
+};
+
 export function renderMenu(root, onSelect) {
     root.innerHTML = `
         <section class="hero-card" aria-labelledby="hero-title">
@@ -20,6 +25,16 @@ export function renderMenu(root, onSelect) {
                 <div class="stat-row"><span>Lihtsad</span><strong>50 varianti</strong></div>
                 <div class="stat-row"><span>Keskmised</span><strong>50 varianti</strong></div>
                 <div class="stat-row"><span>Rasked</span><strong>50 varianti</strong></div>
+                <fieldset class="mode-toggle" aria-label="Vali küsimuste keerukus">
+                    <label>
+                        <input type="radio" name="question-mode" value="simple" checked>
+                        <span>${MODES.simple}</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question-mode" value="harder">
+                        <span>${MODES.harder}</span>
+                    </label>
+                </fieldset>
                 <button class="btn primary" id="start-game" type="button">Alusta mängu</button>
             </div>
         </section>
@@ -33,5 +48,8 @@ export function renderMenu(root, onSelect) {
             </div>
         </section>`;
 
-    root.querySelector("#start-game").addEventListener("click", () => onSelect(GAME));
+    root.querySelector("#start-game").addEventListener("click", () => {
+        const mode = root.querySelector('input[name="question-mode"]:checked').value;
+        onSelect({ ...GAME, mode, modeLabel: MODES[mode] });
+    });
 }

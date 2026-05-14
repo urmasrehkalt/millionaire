@@ -73,6 +73,7 @@ class PublicQuestion(BaseModel):
 
 class StartGameRequest(BaseModel):
     assignment_id: str
+    mode: Literal["simple", "harder"] = "simple"
 
 
 class StartGameResponse(BaseModel):

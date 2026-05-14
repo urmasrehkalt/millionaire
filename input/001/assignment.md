@@ -3,11 +3,11 @@
 ## Ülesande kirjeldus
 
 Rakendus kontrollib miljonimängu vormis esimese õppeaasta lõpuks kogunenud
-teadmisi. Küsimusepank põhineb Tahvli õppekavas nähtavatel Henno Tähe
+teadmisi. Küsimusepangad põhinevad Tahvli õppekavas nähtavatel Henno Tähe
 õppeainetel ning on mõeldud kordamiseks ja õppimiseks, mitte ainult lihtsaks
-viktoriiniks. Küsimused ei küsi failinimesid ega päheõpitud detaile, vaid
-kontrollivad, kas õppija mõistab mõisteid, valikuid, loogikat, riske ja võimalikke
-parandusi.
+viktoriiniks. Kasutaja saab valida lihtsa või keerulisema režiimi. Küsimused ei
+küsi failinimesid ega päheõpitud detaile, vaid kontrollivad, kas õppija mõistab
+mõisteid, valikuid, loogikat, riske ja võimalikke parandusi.
 
 ## Valdkonnad
 
@@ -29,6 +29,9 @@ Küsimusepank katab järgmisi Henno Tähe õppeaineid:
 
 ## Raskusastmed
 
+- Lihtne režiim sobib mõistete kordamiseks ja põhiliste seoste kinnistamiseks.
+- Keerulisem režiim kasutab tehnilisemaid stsenaariume ning vastusevariandid on
+  omavahel sarnasemad, et õige vastus ei oleks ilmselge märksõna järgi leitav.
 - Lihtsad küsimused kontrollivad põhimõisteid, kuid eeldavad, et õppija tunneb
   õppeainete sõnavara.
 - Keskmised küsimused kontrollivad praktilisi olukordi ja valikute põhjendamist.

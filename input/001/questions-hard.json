@@ -1,0 +1,1954 @@
+{
+  "questions": [
+    {
+      "level": 1,
+      "question": "Agiilne tarkvaraarendus: mõiste 'sprint backlog' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "kogu toote pikaajaline soovinimekiri",
+        "sprindi eesmärgiga seotud valitud töö ja selle täitmise plaan",
+        "ainult arendajate isiklik ülesannete tabel",
+        "sprindi lõpus koostatud vigade raport"
+      ],
+      "correctIndex": 1,
+      "explanation": "'sprint backlog' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Agiilne tarkvaraarendus' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Agiilne tarkvaraarendus: lahenduses kasutatakse 'sprint backlog', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'sprint backlog' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'sprint backlog' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Agiilne tarkvaraarendus: 'sprint backlog' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'sprint backlog' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Agiilne tarkvaraarendus: mõiste 'Definition of Done' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "kasutaja soovide prioriteetide tabel",
+        "ainult disainisüsteemi kirjeldus",
+        "tiimi ühine kontrollnimekiri valmis töö kvaliteedile",
+        "sprindi kestust määrav kalender"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Definition of Done' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Agiilne tarkvaraarendus' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Agiilne tarkvaraarendus: lahenduses kasutatakse 'Definition of Done', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'Definition of Done' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'Definition of Done' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Agiilne tarkvaraarendus: 'Definition of Done' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'Definition of Done' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Agiilne tarkvaraarendus: mõiste 'velocity' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "lubadus järgmise sprindi täpseks mahuks",
+        "toote äriväärtuse otsene mõõdik",
+        "testidega kaetuse protsent",
+        "ajalooline abimõõdik planeerimiseks, mitte kvaliteedi eesmärk"
+      ],
+      "correctIndex": 3,
+      "explanation": "'velocity' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Agiilne tarkvaraarendus' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Agiilne tarkvaraarendus: lahenduses kasutatakse 'velocity', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'velocity' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'velocity' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Agiilne tarkvaraarendus: 'velocity' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'velocity' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Agiilne tarkvaraarendus: mõiste 'scope creep' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ulatuse hiiliv kasv ilma mõju läbi rääkimata",
+        "sprint backlogi tavapärane täpsustamine",
+        "tehnilise võla teadlik vähendamine",
+        "valmis töö demo sidusrühmadele"
+      ],
+      "correctIndex": 0,
+      "explanation": "'scope creep' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Agiilne tarkvaraarendus' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Agiilne tarkvaraarendus: lahenduses kasutatakse 'scope creep', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'scope creep' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'scope creep' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Agiilne tarkvaraarendus: 'scope creep' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'scope creep' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Agiilse tarkvaraarenduse projekt: mõiste 'pull request' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "automaatselt productionisse deployv skript",
+        "muudatuste ülevaatuse ja arutelu koht enne ühendamist",
+        "ainult lokaalne commit ilma remote'ita",
+        "andmebaasi migratsiooni failivorming"
+      ],
+      "correctIndex": 1,
+      "explanation": "'pull request' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Agiilse tarkvaraarenduse projekt' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Agiilse tarkvaraarenduse projekt: lahenduses kasutatakse 'pull request', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'pull request' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'pull request' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Agiilse tarkvaraarenduse projekt: 'pull request' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'pull request' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Agiilse tarkvaraarenduse projekt: mõiste 'merge conflict' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "GitHubi autentimise viga",
+        "testide aeglane käivitumine",
+        "sama koodiosa eri muudatuste teadlik lahendamisvajadus",
+        "CSS kaskaadi konflikt brauseris"
+      ],
+      "correctIndex": 2,
+      "explanation": "'merge conflict' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Agiilse tarkvaraarenduse projekt' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Agiilse tarkvaraarenduse projekt: lahenduses kasutatakse 'merge conflict', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'merge conflict' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'merge conflict' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Agiilse tarkvaraarenduse projekt: 'merge conflict' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'merge conflict' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Agiilse tarkvaraarenduse projekt: mõiste 'issue traceability' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "commit'i hash'i käsitsi lühendamine",
+        "haru nime automaatne genereerimine",
+        "koodi minimeerimine enne deploy'd",
+        "muudatuse seos probleemi, otsuse ja vastuvõtutingimustega"
+      ],
+      "correctIndex": 3,
+      "explanation": "'issue traceability' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Agiilse tarkvaraarenduse projekt' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Agiilse tarkvaraarenduse projekt: lahenduses kasutatakse 'issue traceability', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'issue traceability' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'issue traceability' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Agiilse tarkvaraarenduse projekt: 'issue traceability' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'issue traceability' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Agiilse tarkvaraarenduse projekt: mõiste 'increment demo' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "valmis väärtuse näitamine kasutaja või sidusrühma vaates",
+        "ainult failistruktuuri tutvustus",
+        "sisemise Git logi ettelugemine",
+        "testitulemuste peitmine kuni release'ini"
+      ],
+      "correctIndex": 0,
+      "explanation": "'increment demo' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Agiilse tarkvaraarenduse projekt' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Agiilse tarkvaraarenduse projekt: lahenduses kasutatakse 'increment demo', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'increment demo' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'increment demo' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Agiilse tarkvaraarenduse projekt: 'increment demo' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'increment demo' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Andmebaaside alused: mõiste 'foreign key' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "päringu tulemuse sorteerimise reegel",
+        "tabelitevahelist seost ja viiteterviklust kirjeldav veerg",
+        "unikaalsust tagav primaarindeks samas tabelis",
+        "serveri ühenduse kasutajanimi"
+      ],
+      "correctIndex": 1,
+      "explanation": "'foreign key' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Andmebaaside alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Andmebaaside alused: lahenduses kasutatakse 'foreign key', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'foreign key' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'foreign key' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Andmebaaside alused: 'foreign key' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'foreign key' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Andmebaaside alused: mõiste 'transaction' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ühe SELECT päringu alias",
+        "tabeli kirjeldav kommentaar",
+        "seotud muudatuste atomaarne õnnestumine või tagasipööramine",
+        "andmebaasi kasutaja roll"
+      ],
+      "correctIndex": 2,
+      "explanation": "'transaction' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Andmebaaside alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Andmebaaside alused: lahenduses kasutatakse 'transaction', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'transaction' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'transaction' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Andmebaaside alused: 'transaction' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'transaction' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Andmebaaside alused: mõiste 'index' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "andmete kohustusliku olemasolu piirang",
+        "tabelite loogiline seos",
+        "automaatselt normaliseeritud veerg",
+        "andmestruktuur, mis võib lugemist kiirendada kirjutamiskulu hinnaga"
+      ],
+      "correctIndex": 3,
+      "explanation": "'index' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Andmebaaside alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Andmebaaside alused: lahenduses kasutatakse 'index', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'index' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'index' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Andmebaaside alused: 'index' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'index' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Andmebaaside alused: mõiste 'constraint' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "andmete lubatud olekut piirav reegel andmebaasis",
+        "päringu visuaalne vormindus",
+        "CSS klassi nimega sarnane alias",
+        "andmebaasi varukoopia formaat"
+      ],
+      "correctIndex": 0,
+      "explanation": "'constraint' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Andmebaaside alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Andmebaaside alused: lahenduses kasutatakse 'constraint', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'constraint' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'constraint' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Andmebaaside alused: 'constraint' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'constraint' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Andmebaaside projekteerimine: mõiste 'normal form' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "päringu tulemuste sorteerimisviis",
+        "mudeli reegel dubleerimise ja anomaaliate vähendamiseks",
+        "indeksite automaatne loomise tase",
+        "serveri mälu kasutuse mõõdik"
+      ],
+      "correctIndex": 1,
+      "explanation": "'normal form' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Andmebaaside projekteerimine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Andmebaaside projekteerimine: lahenduses kasutatakse 'normal form', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'normal form' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'normal form' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Andmebaaside projekteerimine: 'normal form' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'normal form' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Andmebaaside projekteerimine: mõiste 'junction table' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ainult auditilogide hoidla",
+        "primaarvõtme asendus igas tabelis",
+        "mitu-mitmele seose realiseerimise tabel",
+        "tabeli CSS paigutuse kirjeldus"
+      ],
+      "correctIndex": 2,
+      "explanation": "'junction table' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Andmebaaside projekteerimine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Andmebaaside projekteerimine: lahenduses kasutatakse 'junction table', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'junction table' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'junction table' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Andmebaaside projekteerimine: 'junction table' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'junction table' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Andmebaaside projekteerimine: mõiste 'cardinality' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "veeru maksimaalne tekstipikkus",
+        "päringu ooteaja piirang",
+        "indeksi füüsiline suurus kettal",
+        "seose osapoolte lubatud arvuline suhe"
+      ],
+      "correctIndex": 3,
+      "explanation": "'cardinality' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Andmebaaside projekteerimine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Andmebaaside projekteerimine: lahenduses kasutatakse 'cardinality', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'cardinality' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'cardinality' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Andmebaaside projekteerimine: 'cardinality' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'cardinality' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Andmebaaside projekteerimine: mõiste 'denormalization' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "teadlik dubleerimine lugemise või raportite lihtsustamiseks",
+        "kõigi võõrvõtmete eemaldamine juhuslikult",
+        "andmete krüptimine enne salvestamist",
+        "tabeli ümbernimetamine migratsioonis"
+      ],
+      "correctIndex": 0,
+      "explanation": "'denormalization' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Andmebaaside projekteerimine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Andmebaaside projekteerimine: lahenduses kasutatakse 'denormalization', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'denormalization' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'denormalization' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Andmebaaside projekteerimine: 'denormalization' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'denormalization' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Dokumentatsiooni koostamine: mõiste 'API contract' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ainult serveri sisemine logiformaat",
+        "kokkulepe päringute, vastuste, vigade ja staatuste kohta",
+        "CSS muutujate nimetamise juhend",
+        "arendaja isiklik märkmeleht"
+      ],
+      "correctIndex": 1,
+      "explanation": "'API contract' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Dokumentatsiooni koostamine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Dokumentatsiooni koostamine: lahenduses kasutatakse 'API contract', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'API contract' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'API contract' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Dokumentatsiooni koostamine: 'API contract' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'API contract' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Dokumentatsiooni koostamine: mõiste 'ADR' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "automaatselt genereeritud testiraport",
+        "andmebaasi indeksite nimekiri",
+        "arhitektuuriotsuse põhjus, alternatiivid ja tagajärjed",
+        "ainult kasutajaliidese ekraanipilt"
+      ],
+      "correctIndex": 2,
+      "explanation": "'ADR' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Dokumentatsiooni koostamine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Dokumentatsiooni koostamine: lahenduses kasutatakse 'ADR', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'ADR' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'ADR' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Dokumentatsiooni koostamine: 'ADR' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'ADR' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Dokumentatsiooni koostamine: mõiste 'README' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "saladuste hoidmiseks mõeldud fail",
+        "asendus automaattestidele",
+        "brauseris käivitatav production bundle",
+        "projekti mõistmise, käivitamise ja piirangute esmane juhend"
+      ],
+      "correctIndex": 3,
+      "explanation": "'README' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Dokumentatsiooni koostamine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Dokumentatsiooni koostamine: lahenduses kasutatakse 'README', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'README' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'README' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Dokumentatsiooni koostamine: 'README' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'README' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Dokumentatsiooni koostamine: mõiste 'acceptance criteria' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "kontrollitavad tingimused töö valmimise hindamiseks",
+        "sprinti osalejate nimekiri",
+        "koodi vormindaja seadistus",
+        "serveri CPU kasutuse graafik"
+      ],
+      "correctIndex": 0,
+      "explanation": "'acceptance criteria' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Dokumentatsiooni koostamine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Dokumentatsiooni koostamine: lahenduses kasutatakse 'acceptance criteria', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'acceptance criteria' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'acceptance criteria' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Dokumentatsiooni koostamine: 'acceptance criteria' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'acceptance criteria' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "JavaScript: mõiste 'Promise' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "DOM elemendi CSS klasside loend",
+        "asünkroonse töö tulevast tulemust kirjeldav objekt",
+        "SQL päringu koondfunktsioon",
+        "mooduli ekspordi staatiline tüüp"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Promise' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'JavaScript' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "JavaScript: lahenduses kasutatakse 'Promise', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'Promise' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'Promise' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "JavaScript: 'Promise' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'Promise' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "JavaScript: mõiste 'event loop' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "HTML elementide pesastamise reegel",
+        "andmebaasi transaktsiooni logi",
+        "mehhanism, mis ajastab call stacki ja järjekordade tööd",
+        "CSS animatsiooni easing väärtus"
+      ],
+      "correctIndex": 2,
+      "explanation": "'event loop' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'JavaScript' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "JavaScript: lahenduses kasutatakse 'event loop', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'event loop' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'event loop' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "JavaScript: 'event loop' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'event loop' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "JavaScript: mõiste 'closure' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "brauseri vahemälu tühjendamise käsk",
+        "HTTP vastuse päiste kogum",
+        "SQL tabeli sulgemise operatsioon",
+        "funktsioon koos ligipääsuga oma loomisskoobi muutujatele"
+      ],
+      "correctIndex": 3,
+      "explanation": "'closure' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'JavaScript' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "JavaScript: lahenduses kasutatakse 'closure', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'closure' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'closure' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "JavaScript: 'closure' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'closure' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "JavaScript: mõiste 'module side effect' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "importimisel käivituv kõrvaltegevus väljaspool ekspordi defineerimist",
+        "ainult kasutamata import",
+        "Promise'i resolve väärtus",
+        "CSS mooduli klassinimi"
+      ],
+      "correctIndex": 0,
+      "explanation": "'module side effect' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'JavaScript' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "JavaScript: lahenduses kasutatakse 'module side effect', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'module side effect' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'module side effect' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "JavaScript: 'module side effect' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'module side effect' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Märgendikeeled: mõiste 'semantic HTML' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ainult visuaalse värvi kirjeldus",
+        "elemendid, mis kirjeldavad sisu tähendust ja rolli",
+        "JavaScripti build-samm",
+        "andmebaasi normaliseerimise tase"
+      ],
+      "correctIndex": 1,
+      "explanation": "'semantic HTML' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Märgendikeeled' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Märgendikeeled: lahenduses kasutatakse 'semantic HTML', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'semantic HTML' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'semantic HTML' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Märgendikeeled: 'semantic HTML' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'semantic HTML' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Märgendikeeled: mõiste 'ARIA' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "CSS raamistiku reset reegel",
+        "serveripoolne autentimismeetod",
+        "abitehnoloogiale semantika täpsustamise vahend, kui native HTML ei piisa",
+        "SQL päringu alias"
+      ],
+      "correctIndex": 2,
+      "explanation": "'ARIA' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Märgendikeeled' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Märgendikeeled: lahenduses kasutatakse 'ARIA', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'ARIA' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'ARIA' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Märgendikeeled: 'ARIA' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'ARIA' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Märgendikeeled: mõiste 'DOM tree' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "Git commit'ide suunatud graaf",
+        "andmebaasi indeksite füüsiline puu",
+        "HTTP päringu päiste nimekiri",
+        "brauseri loodud dokumendi objektmudeli puu"
+      ],
+      "correctIndex": 3,
+      "explanation": "'DOM tree' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Märgendikeeled' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Märgendikeeled: lahenduses kasutatakse 'DOM tree', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'DOM tree' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'DOM tree' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Märgendikeeled: 'DOM tree' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'DOM tree' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Märgendikeeled: mõiste 'form semantics' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "väljade, siltide ja kontrollide tähenduslik seos",
+        "ainult nupu gradient",
+        "serveri logitaseme valik",
+        "SQL skeemi migratsioon"
+      ],
+      "correctIndex": 0,
+      "explanation": "'form semantics' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Märgendikeeled' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Märgendikeeled: lahenduses kasutatakse 'form semantics', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'form semantics' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'form semantics' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Märgendikeeled: 'form semantics' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'form semantics' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "SQL keele alused: mõiste 'JOIN cardinality' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "CSS grid veergude arv",
+        "liitmise tulemi ridade arvu mõjutav seose olemus",
+        "HTTP päringu keha pikkus",
+        "JavaScripti massiivi sortimisalgoritm"
+      ],
+      "correctIndex": 1,
+      "explanation": "'JOIN cardinality' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'SQL keele alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "SQL keele alused: lahenduses kasutatakse 'JOIN cardinality', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'JOIN cardinality' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'JOIN cardinality' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "SQL keele alused: 'JOIN cardinality' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'JOIN cardinality' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "SQL keele alused: mõiste 'GROUP BY' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "tabeli füüsiline jagamine failideks",
+        "andmete krüptimine enne SELECTi",
+        "ridade rühmitamine agregaatfunktsioonide kasutamiseks",
+        "päringu tulemuste peitmine"
+      ],
+      "correctIndex": 2,
+      "explanation": "'GROUP BY' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'SQL keele alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "SQL keele alused: lahenduses kasutatakse 'GROUP BY', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'GROUP BY' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'GROUP BY' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "SQL keele alused: 'GROUP BY' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'GROUP BY' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "SQL keele alused: mõiste 'parameterized query' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "SELECT tärni kasutamine kõigis päringutes",
+        "tabeli käsitsi ümbernimetamine",
+        "brauseri lokaalmälu puhastamine",
+        "sisendi edastamine väärtusena, mitte SQL süntaksi osana"
+      ],
+      "correctIndex": 3,
+      "explanation": "'parameterized query' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'SQL keele alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "SQL keele alused: lahenduses kasutatakse 'parameterized query', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'parameterized query' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'parameterized query' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "SQL keele alused: 'parameterized query' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'parameterized query' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "SQL keele alused: mõiste 'execution plan' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "andmebaasi valitud päringu täitmise strateegia",
+        "API dokumentatsiooni versioon",
+        "CSS renderdamise järjekord",
+        "Git merge'i konfliktimärk"
+      ],
+      "correctIndex": 0,
+      "explanation": "'execution plan' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'SQL keele alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "SQL keele alused: lahenduses kasutatakse 'execution plan', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'execution plan' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'execution plan' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "SQL keele alused: 'execution plan' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'execution plan' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Sissejuhatus programmeerimisse: mõiste 'pure function' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "funktsioon, mis muudab globaalset olekut",
+        "sama sisendi korral sama väljundiga kõrvalmõjudeta funktsioon",
+        "funktsioon, mis loeb otse DOM-i",
+        "funktsioon, mis teeb võrgupäringu"
+      ],
+      "correctIndex": 1,
+      "explanation": "'pure function' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Sissejuhatus programmeerimisse' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Sissejuhatus programmeerimisse: lahenduses kasutatakse 'pure function', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'pure function' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'pure function' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Sissejuhatus programmeerimisse: 'pure function' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'pure function' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Sissejuhatus programmeerimisse: mõiste 'mutation' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "uue väärtuse arvutamine ilma algset muutmata",
+        "kommentaari lisamine README-sse",
+        "olemasoleva väärtuse või objekti muutmine",
+        "SQL päringu alias"
+      ],
+      "correctIndex": 2,
+      "explanation": "'mutation' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Sissejuhatus programmeerimisse' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Sissejuhatus programmeerimisse: lahenduses kasutatakse 'mutation', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'mutation' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'mutation' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Sissejuhatus programmeerimisse: 'mutation' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'mutation' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Sissejuhatus programmeerimisse: mõiste 'control flow' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "andmebaasi füüsiline asukoht",
+        "CSS värvipaleti valik",
+        "Git remote URL",
+        "koodi täitmise järjekord ja harunemine"
+      ],
+      "correctIndex": 3,
+      "explanation": "'control flow' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Sissejuhatus programmeerimisse' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Sissejuhatus programmeerimisse: lahenduses kasutatakse 'control flow', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'control flow' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'control flow' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Sissejuhatus programmeerimisse: 'control flow' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'control flow' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Sissejuhatus programmeerimisse: mõiste 'complexity' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "sisendi kasvuga seotud aja või mälu kulu hinnang",
+        "funktsiooni faili laiend",
+        "HTML elemendi id pikkus",
+        "commit sõnumi stiil"
+      ],
+      "correctIndex": 0,
+      "explanation": "'complexity' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Sissejuhatus programmeerimisse' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Sissejuhatus programmeerimisse: lahenduses kasutatakse 'complexity', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'complexity' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'complexity' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Sissejuhatus programmeerimisse: 'complexity' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'complexity' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Testimise alused: mõiste 'regression' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "esimene edukas release",
+        "varem töötanud käitumise katkiminek uue muudatuse järel",
+        "koodi automaatne vormindus",
+        "andmebaasi varukoopia"
+      ],
+      "correctIndex": 1,
+      "explanation": "'regression' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Testimise alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Testimise alused: lahenduses kasutatakse 'regression', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'regression' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'regression' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Testimise alused: 'regression' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'regression' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Testimise alused: mõiste 'boundary case' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ainult kõige tavalisem kasutusvoog",
+        "testide käivitamise kellaaeg",
+        "sisendi või reegli piiril olev kontrollolukord",
+        "CSS faili suurus"
+      ],
+      "correctIndex": 2,
+      "explanation": "'boundary case' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Testimise alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Testimise alused: lahenduses kasutatakse 'boundary case', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'boundary case' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'boundary case' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Testimise alused: 'boundary case' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'boundary case' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Testimise alused: mõiste 'test isolation' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "kõigi testide sama andmebaasirida",
+        "testide käsitsi sorteerimine",
+        "assertionite eemaldamine",
+        "testi sõltumatus teiste testide olekust ja andmetest"
+      ],
+      "correctIndex": 3,
+      "explanation": "'test isolation' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Testimise alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Testimise alused: lahenduses kasutatakse 'test isolation', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'test isolation' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'test isolation' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Testimise alused: 'test isolation' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'test isolation' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Testimise alused: mõiste 'oracle' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "allikas või reegel, mille järgi oodatav tulemus määratakse",
+        "testi juhuslik nimi",
+        "CI serveri logo",
+        "brauseri vaikimisi font"
+      ],
+      "correctIndex": 0,
+      "explanation": "'oracle' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Testimise alused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Testimise alused: lahenduses kasutatakse 'oracle', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'oracle' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'oracle' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Testimise alused: 'oracle' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'oracle' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Testimise tüübid ja automatiseerimine: mõiste 'test pyramid' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ainult brauseritestide strateegia",
+        "palju kiireid väikseid teste ja vähem raskeid E2E teste",
+        "testide tähtsuse järjekord värvi järgi",
+        "coverage raporti kujundus"
+      ],
+      "correctIndex": 1,
+      "explanation": "'test pyramid' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Testimise tüübid ja automatiseerimine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Testimise tüübid ja automatiseerimine: lahenduses kasutatakse 'test pyramid', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'test pyramid' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'test pyramid' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Testimise tüübid ja automatiseerimine: 'test pyramid' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'test pyramid' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Testimise tüübid ja automatiseerimine: mõiste 'mock' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "production teenuse automaatne parandus",
+        "andmebaasi normaliseerimise liik",
+        "kontrollitud asendus välisele sõltuvusele testis",
+        "CSS klassi peitmine"
+      ],
+      "correctIndex": 2,
+      "explanation": "'mock' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Testimise tüübid ja automatiseerimine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Testimise tüübid ja automatiseerimine: lahenduses kasutatakse 'mock', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'mock' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'mock' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Testimise tüübid ja automatiseerimine: 'mock' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'mock' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Testimise tüübid ja automatiseerimine: mõiste 'flaky test' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "test, mis leiab alati sama vea",
+        "test, mis kontrollib ainult üht funktsiooni",
+        "test, mis on kirjutatud TypeScriptis",
+        "test, mis sama koodiga kord õnnestub ja kord ebaõnnestub"
+      ],
+      "correctIndex": 3,
+      "explanation": "'flaky test' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Testimise tüübid ja automatiseerimine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Testimise tüübid ja automatiseerimine: lahenduses kasutatakse 'flaky test', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'flaky test' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'flaky test' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Testimise tüübid ja automatiseerimine: 'flaky test' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'flaky test' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Testimise tüübid ja automatiseerimine: mõiste 'CI feedback' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "automaatne kvaliteedisignaal iga muudatuse kohta",
+        "arendaja privaatne käsitsi märkus",
+        "ainult production logide lugemine",
+        "sprint review slaid"
+      ],
+      "correctIndex": 0,
+      "explanation": "'CI feedback' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Testimise tüübid ja automatiseerimine' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Testimise tüübid ja automatiseerimine: lahenduses kasutatakse 'CI feedback', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'CI feedback' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'CI feedback' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Testimise tüübid ja automatiseerimine: 'CI feedback' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'CI feedback' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Veebirakenduste loomine klient-server raamistikul: mõiste 'server validation' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ainult placeholder tekst vormiväljal",
+        "serveris tehtav kontroll, mida klient ei saa usalduspiirist mööda saata",
+        "brauseri CSS validatsioon",
+        "README-s kirjeldatud soovitus"
+      ],
+      "correctIndex": 1,
+      "explanation": "'server validation' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Veebirakenduste loomine klient-server raamistikul' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Veebirakenduste loomine klient-server raamistikul: lahenduses kasutatakse 'server validation', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'server validation' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'server validation' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Veebirakenduste loomine klient-server raamistikul: 'server validation' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'server validation' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Veebirakenduste loomine klient-server raamistikul: mõiste 'session state' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ühe HTML elemendi hover olek",
+        "SQL tabeli kommentaar",
+        "kasutaja või mängu olek mitme päringu vahel",
+        "CSS media query"
+      ],
+      "correctIndex": 2,
+      "explanation": "'session state' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Veebirakenduste loomine klient-server raamistikul' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Veebirakenduste loomine klient-server raamistikul: lahenduses kasutatakse 'session state', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'session state' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'session state' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Veebirakenduste loomine klient-server raamistikul: 'session state' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'session state' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Veebirakenduste loomine klient-server raamistikul: mõiste 'content type' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "andmebaasi primaarvõtme tüüp",
+        "Git branchi nimevorming",
+        "serveri protsessori arhitektuur",
+        "päringu või vastuse keha formaati kirjeldav päis"
+      ],
+      "correctIndex": 3,
+      "explanation": "'content type' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Veebirakenduste loomine klient-server raamistikul' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Veebirakenduste loomine klient-server raamistikul: lahenduses kasutatakse 'content type', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'content type' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Piirjuhtum näitab, kas 'content type' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Veebirakenduste loomine klient-server raamistikul: 'content type' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'content type' lahendus läbiks kiiremini",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss"
+      ],
+      "correctIndex": 3,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Veebiteenused: mõiste 'REST resource' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "URL-iga esindatud domeeniobjekt või kogum",
+        "suvaline action string igas päringus",
+        "CSS komponentide nimekiri",
+        "serveri lokaalne failitee"
+      ],
+      "correctIndex": 0,
+      "explanation": "'REST resource' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Veebiteenused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Veebiteenused: lahenduses kasutatakse 'REST resource', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "märgi 'REST resource' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piirjuhtum näitab, kas 'REST resource' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Veebiteenused: 'REST resource' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'REST resource' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Veebiteenused: mõiste 'status code' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "ainult kasutajale kuvatav tõlkefail",
+        "HTTP vastuse standardne õnnestumise või vea signaal",
+        "andmebaasi indeksi järjekorranumber",
+        "JavaScripti muutujanime prefiks"
+      ],
+      "correctIndex": 1,
+      "explanation": "'status code' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Veebiteenused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Veebiteenused: lahenduses kasutatakse 'status code', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'status code' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piirjuhtum näitab, kas 'status code' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Veebiteenused: 'status code' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "eemalda vana kontroll, et uus 'status code' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 1,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    },
+    {
+      "level": 1,
+      "question": "Veebiteenused: mõiste 'pagination' tuleb ülesandes ära tunda konteksti järgi. Milline kirjeldus on kõige täpsem?",
+      "options": [
+        "kogu andmebaasi saatmine korraga",
+        "ainult tabeli sorteerimine CSS-is",
+        "suure andmekogu jagamine hallatavateks lehtedeks",
+        "API versiooni kustutamine"
+      ],
+      "correctIndex": 2,
+      "explanation": "'pagination' ei ole lihtsalt märksõna; õige kirjeldus peab sobima selle rolliga teema 'Veebiteenused' praktilises kasutuses.",
+      "hint": "Võrdle variante selle järgi, milline neist kirjeldab rolli süsteemis või töövoos."
+    },
+    {
+      "level": 2,
+      "question": "Veebiteenused: lahenduses kasutatakse 'pagination', kuid tekib piirjuhtum, mida algne test ei kata. Milline tegevus on tehniliselt kõige põhjendatum?",
+      "options": [
+        "märgi 'pagination' dokumentatsiooni piisavaks tõendiks ja jäta kood muutmata",
+        "muuda ainult kasutajaliidese teksti, sest põhivoog töötab",
+        "täpsusta eeldus, lisa piirjuhtumi test ja paranda loogika lepingu järgi",
+        "eemalda test, kui see ei sobi praeguse implementatsiooniga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Piirjuhtum näitab, kas 'pagination' on lahenduses õigesti mõistetud. Parandus peab kinnitama lepingu testiga, mitte peitma viga.",
+      "hint": "Otsi varianti, mis ühendab eelduse, testi ja tegeliku paranduse."
+    },
+    {
+      "level": 3,
+      "question": "Veebiteenused: 'pagination' muudatus parandab ühe vea, kuid võib rikkuda olemasoleva lepingu teise mooduli või kasutajavoo jaoks. Milline otsus on küpseim?",
+      "options": [
+        "eelista uut lahendust kohe, kui see töötab ühe käsitsi proovitud näitega",
+        "lükka vastuolu kasutaja vastutuseks, sest tehniline muudatus on lokaalne",
+        "hinda mõju lepingu tarbijatele, lisa regressioonikaitse ja dokumenteeri kompromiss",
+        "eemalda vana kontroll, et uus 'pagination' lahendus läbiks kiiremini"
+      ],
+      "correctIndex": 2,
+      "explanation": "Keerulisem otsus peab arvestama lepingu tarbijaid, regressiooniriski ja dokumenteeritud kompromissi, mitte ainult uut õnnelikku rada.",
+      "hint": "Mõtle mõjule väljaspool üht faili või üht õnnestunud näidet."
+    }
+  ]
+}
