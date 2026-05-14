@@ -19,7 +19,7 @@ export async function renderMenu(root, onSelect) {
         root.innerHTML = `
             <div class="empty-state">
                 <p>Ühtegi ülesannet ei leitud.</p>
-                <p>Loo <code>input/001/</code> kausta <code>assignment.md</code>-fail ja värskenda lehte.</p>
+                <p>Lisa kausta <code>input/001/</code> fail <code>assignment.md</code> ja värskenda lehte.</p>
             </div>`;
         return;
     }
@@ -27,22 +27,22 @@ export async function renderMenu(root, onSelect) {
     const newTopicSection = backendOnline ? `
         <section class="new-topic-card">
             <h2>Lisa uus teema</h2>
-            <p>AI-d kasutatakse ainult siin: uue teema põhjal luuakse salvestatud küsimusepank.</p>
+            <p>AI koostab teema kirjelduse põhjal 50 küsimusega panga, mis salvestub ülesande kausta.</p>
             <form id="new-topic-form">
                 <input id="topic-title" name="title" type="text" minlength="3" maxlength="120" placeholder="Teema pealkiri" required>
                 <textarea id="topic-description" name="description" minlength="10" maxlength="8000" rows="5" placeholder="Kirjelda teemat, õpieesmärke ja olulisi nõudeid" required></textarea>
-                <button class="btn" type="submit">Loo teema AI abil</button>
+                <button class="btn" type="submit">Loo teema AI abiga</button>
                 <div class="form-status" id="topic-status" aria-live="polite"></div>
             </form>
         </section>` : `
         <p class="static-note">
-            See on GitHub Pages demo — uue teema loomine vajab töötavat backendi.
-            <a href="https://github.com/urmasrehkalt/millionaire#k%C3%A4ivitamise-juhend">Käivita lokaalselt</a>,
-            et lisada AI abil uusi teemasid.
+            See on GitHub Pages demo — uute teemade lisamiseks tuleb rakendus
+            <a href="https://github.com/urmasrehkalt/millionaire#k%C3%A4ivitamise-juhend">lokaalselt käivitada</a>.
+            Olemasolevaid teemasid saad demos ikka mängida.
         </p>`;
 
     root.innerHTML = `
-        <p class="menu-intro">Vali ülesanne, mille kohta tahad mängu mängida.</p>
+        <p class="menu-intro">Vali ülesanne, mille üle soovid end proovile panna.</p>
         <div class="assignment-grid" id="grid"></div>
         ${newTopicSection}`;
 
@@ -70,10 +70,10 @@ export async function renderMenu(root, onSelect) {
         const description = form.querySelector("#topic-description").value.trim();
 
         button.disabled = true;
-        status.textContent = "Loon teemat ja 50 küsimusega panka…";
+        status.textContent = "Loon teemat ja genereerin 50 küsimust…";
         try {
             const created = await createTopic(title, description);
-            status.textContent = `Teema loodud: ${created.assignment.title}. Küsimusi: ${created.question_count}.`;
+            status.textContent = `Teema „${created.assignment.title}” loodud. Pangas on ${created.question_count} küsimust.`;
             form.reset();
             renderMenu(root, onSelect);
         } catch (err) {

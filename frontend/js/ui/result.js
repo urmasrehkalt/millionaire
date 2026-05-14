@@ -1,24 +1,24 @@
 export function renderResult(root, result, callbacks) {
     const verdictText = {
-        won: "🏆 Sa võitsid!",
-        lost: "💥 Mäng läbi",
-        quit: "👋 Mäng katkestatud",
-    }[result.status] || "Mäng lõppes";
+        won: "🏆 Võitsid mängu!",
+        lost: "💥 Mäng on läbi",
+        quit: "👋 Lahkusid mängust",
+    }[result.status] || "Mäng on lõppenud";
 
     const cardClass = result.status === "won" ? "won" : result.status === "lost" ? "lost" : "";
 
     root.innerHTML = `
         <div class="result-card ${cardClass}">
             <div class="verdict">${verdictText}</div>
-            <div class="score">${formatScore(result.score)} p</div>
+            <div class="score">${formatScore(result.score)} punkti</div>
             <p>${escapeHtml(result.assignment.title)}</p>
             <div class="actions">
-                <button class="btn" id="play-again">Mängi sama ülesannet uuesti</button>
-                <button class="btn secondary" id="back-to-menu">Tagasi ülesannete juurde</button>
+                <button class="btn" id="play-again">Proovi sama ülesannet uuesti</button>
+                <button class="btn secondary" id="back-to-menu">Vali teine ülesanne</button>
             </div>
         </div>
         <section class="review">
-            <h2>Vastatud küsimused</h2>
+            <h2>Sinu vastused</h2>
             <div id="review-list"></div>
         </section>`;
 

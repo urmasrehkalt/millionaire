@@ -1,10 +1,10 @@
-# Pythoni komandoreal käivituv To-Do nimekiri
+# Pythoni käsurea To-Do nimekiri
 
 ## Ülesande kirjeldus
 
 Loo Pythoni programm, mis võimaldab kasutajal hallata oma ülesandeid (to-do
-nimekirja) komandorea kaudu. Andmed peavad **säilima** ka pärast programmi
-sulgemist — kasuta selleks JSON-faili.
+nimekirja) käsurealt. Andmed peavad **säilima** ka pärast programmi sulgemist —
+kasuta selleks JSON-faili.
 
 ## Nõuded
 

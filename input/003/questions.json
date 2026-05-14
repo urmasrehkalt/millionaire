@@ -2,7 +2,7 @@
   "questions": [
     {
       "level": 1,
-      "question": "Kirjeldus: luua komandoreal töötav Pythoni to-do nimekirja programm. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Kirjeldus: luua käsurealt töötav Pythoni to-do nimekirja programm. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
       "options": [
         "Eesmärk",
         "Veebivaade",
@@ -10,7 +10,7 @@
         "CSS reegel"
       ],
       "correctIndex": 0,
-      "explanation": "Luua komandoreal töötav Pythoni to-do nimekirja programm.",
+      "explanation": "Luua käsurealt töötav Pythoni to-do nimekirja programm.",
       "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Eesmärk”."
     },
     {
@@ -561,7 +561,7 @@
     },
     {
       "level": 3,
-      "question": "Koodi ülevaatusel märkad: komandorea liides on lihtne, kuid ei sobi samaaegseks mitme kasutaja tööks. Millist riski, piirangut või otsust see puudutab?",
+      "question": "Koodi ülevaatusel märkad: käsurea liides on lihtne, kuid ei sobi samaaegseks mitme kasutaja tööks. Millist riski, piirangut või otsust see puudutab?",
       "options": [
         "Andmebaas",
         "Hiireklikk",
