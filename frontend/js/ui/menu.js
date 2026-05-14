@@ -1,95 +1,36 @@
-import { createTopic, isBackendAvailable, listAssignments } from "../api.js";
+const GAME = {
+    id: "001",
+    title: "Noorem tarkvaraarendaja",
+};
 
-export async function renderMenu(root, onSelect) {
-    root.innerHTML = `<div class="loading">Laen ülesandeid…</div>`;
-
-    let assignments;
-    let backendOnline = false;
-    try {
-        [assignments, backendOnline] = await Promise.all([
-            listAssignments(),
-            isBackendAvailable(),
-        ]);
-    } catch (err) {
-        root.innerHTML = `<div class="error-state">Ülesannete laadimine ebaõnnestus: ${err.message}</div>`;
-        return;
-    }
-
-    if (assignments.length === 0) {
-        root.innerHTML = `
-            <div class="empty-state">
-                <p>Ühtegi ülesannet ei leitud.</p>
-                <p>Lisa kausta <code>input/001/</code> fail <code>assignment.md</code> ja värskenda lehte.</p>
-            </div>`;
-        return;
-    }
-
-    const newTopicSection = backendOnline ? `
-        <section class="new-topic-card">
-            <h2>Lisa uus teema</h2>
-            <p>AI koostab teema kirjelduse põhjal 50 küsimusega panga, mis salvestub ülesande kausta.</p>
-            <form id="new-topic-form">
-                <input id="topic-title" name="title" type="text" minlength="3" maxlength="120" placeholder="Teema pealkiri" required>
-                <textarea id="topic-description" name="description" minlength="10" maxlength="8000" rows="5" placeholder="Kirjelda teemat, õpieesmärke ja olulisi nõudeid" required></textarea>
-                <button class="btn" type="submit">Loo teema AI abiga</button>
-                <div class="form-status" id="topic-status" aria-live="polite"></div>
-            </form>
-        </section>` : `
-        <p class="static-note">
-            See on GitHub Pages demo — uute teemade lisamiseks tuleb rakendus
-            <a href="https://github.com/urmasrehkalt/millionaire#k%C3%A4ivitamise-juhend">lokaalselt käivitada</a>.
-            Olemasolevaid teemasid saad demos ikka mängida.
-        </p>`;
-
+export function renderMenu(root, onSelect) {
     root.innerHTML = `
-        <p class="menu-intro">Vali ülesanne, mille üle soovid end proovile panna.</p>
-        <div class="assignment-grid" id="grid"></div>
-        ${newTopicSection}`;
+        <section class="hero-card" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">15 küsimust. 3 raskusastet. Üks mäng.</p>
+                <h2 id="hero-title">Kontrolli, kas mõistad noorem­arendaja põhitõdesid.</h2>
+                <p>
+                    Küsimused keskenduvad veebiarendusele, JavaScriptile, Gitile,
+                    API-dele, testimisele, turvalisusele ja koodi loetavusele.
+                    Iga mäng valib küsimused juhuslikult 150 küsimuse pangast.
+                </p>
+            </div>
+            <div class="start-panel" aria-label="Mängu kokkuvõte">
+                <div class="stat-row"><span>Lihtsad</span><strong>50 varianti</strong></div>
+                <div class="stat-row"><span>Keskmised</span><strong>50 varianti</strong></div>
+                <div class="stat-row"><span>Rasked</span><strong>50 varianti</strong></div>
+                <button class="btn primary" id="start-game" type="button">Alusta mängu</button>
+            </div>
+        </section>
+        <section class="rules-card" aria-labelledby="rules-title">
+            <h3 id="rules-title">Mängu reeglid</h3>
+            <div class="rule-grid">
+                <p><strong>15 küsimust</strong><span>5 küsimust igast raskusastmest</span></p>
+                <p><strong>4 vastusevarianti</strong><span>ainult üks vastus on õige</span></p>
+                <p><strong>3 õlekõrt</strong><span>50:50, vihje ja küsimuse vahetamine</span></p>
+                <p><strong>Turvatasemed</strong><span>1 000, 32 000 ja 1 000 000 punkti</span></p>
+            </div>
+        </section>`;
 
-    const grid = root.querySelector("#grid");
-    for (const a of assignments) {
-        const card = document.createElement("button");
-        card.type = "button";
-        card.className = "assignment-card";
-        card.innerHTML = `
-            <span class="num">${a.id}</span>
-            <span class="title">${escapeHtml(a.title)}</span>`;
-        card.addEventListener("click", () => onSelect(a));
-        grid.appendChild(card);
-    }
-
-    const newTopicForm = root.querySelector("#new-topic-form");
-    if (!newTopicForm) return;
-
-    newTopicForm.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        const form = event.currentTarget;
-        const status = root.querySelector("#topic-status");
-        const button = form.querySelector("button");
-        const title = form.querySelector("#topic-title").value.trim();
-        const description = form.querySelector("#topic-description").value.trim();
-
-        button.disabled = true;
-        status.textContent = "Loon teemat ja genereerin 50 küsimust…";
-        try {
-            const created = await createTopic(title, description);
-            status.textContent = `Teema „${created.assignment.title}” loodud. Pangas on ${created.question_count} küsimust.`;
-            form.reset();
-            renderMenu(root, onSelect);
-        } catch (err) {
-            status.textContent = `Teema loomine ebaõnnestus: ${err.message}`;
-        } finally {
-            button.disabled = false;
-        }
-    });
-}
-
-function escapeHtml(str) {
-    return str.replace(/[&<>"']/g, (ch) => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;",
-    }[ch]));
+    root.querySelector("#start-game").addEventListener("click", () => onSelect(GAME));
 }

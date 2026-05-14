@@ -1,8 +1,8 @@
 export function renderResult(root, result, callbacks) {
     const verdictText = {
-        won: "🏆 Võitsid mängu!",
-        lost: "💥 Mäng on läbi",
-        quit: "👋 Lahkusid mängust",
+        won: "Võitsid mängu",
+        lost: "Mäng on läbi",
+        quit: "Lõpetasid mängu",
     }[result.status] || "Mäng on lõppenud";
 
     const cardClass = result.status === "won" ? "won" : result.status === "lost" ? "lost" : "";
@@ -13,8 +13,8 @@ export function renderResult(root, result, callbacks) {
             <div class="score">${formatScore(result.score)} punkti</div>
             <p>${escapeHtml(result.assignment.title)}</p>
             <div class="actions">
-                <button class="btn" id="play-again">Proovi sama ülesannet uuesti</button>
-                <button class="btn secondary" id="back-to-menu">Vali teine ülesanne</button>
+                <button class="btn primary" id="play-again">Mängi uuesti</button>
+                <button class="btn secondary" id="back-to-menu">Tagasi avalehele</button>
             </div>
         </div>
         <section class="review">

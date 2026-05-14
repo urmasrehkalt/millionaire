@@ -2,653 +2,1953 @@
   "questions": [
     {
       "level": 1,
-      "question": "Kirjeldus: luua veebipõhine kalkulaator kahe arvu nelja põhitehte jaoks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: HTML-i semantiline `main` element tähistab lehe peamist sisu. Milline valik sobib kõige paremini?",
       "options": [
-        "Eesmärk",
-        "CSS värvid",
-        "Serveripäring",
-        "Sisselogimine"
+        "peamine sisu",
+        "kujunduse reegel",
+        "API päring",
+        "parool"
       ],
       "correctIndex": 0,
-      "explanation": "Luua veebipõhine kalkulaator kahe arvu nelja põhitehte jaoks.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Eesmärk”."
+      "explanation": "Semantiline HTML annab sisule tähenduse ja aitab brauseril ning abitehnoloogial lehte mõista.",
+      "hint": "Mõtle elemendile, mis kirjeldab sisu rolli."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: lehel peab olema kaks sisendvälja kahe arvu sisestamiseks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Vormiväli vajab nähtavat kirjeldust ja seost ekraanilugeja jaoks. Milline valik sobib kõige paremini?",
       "options": [
-        "Serveripäring",
-        "Kaks sisendit",
-        "Sisselogimine",
-        "Pildifail"
+        "div",
+        "label",
+        "canvas",
+        "script"
       ],
       "correctIndex": 1,
-      "explanation": "Lehel peab olema kaks sisendvälja kahe arvu sisestamiseks.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kaks sisendit”."
+      "explanation": "Label seob kirjelduse sisendväljaga ja parandab vormi kasutatavust.",
+      "hint": "Mõtle vormivälja nimele."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: lehel peavad olema nupud liitmise, lahutamise, korrutamise ja jagamise jaoks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Pildi sisu peab olema mõistetav ka siis, kui pilti ei nähta. Milline valik sobib kõige paremini?",
       "options": [
-        "Sisselogimine",
-        "Pildifail",
-        "Tehtenupud",
-        "Andmebaas"
+        "z-index",
+        "git tag",
+        "alt tekst",
+        "API võti"
       ],
       "correctIndex": 2,
-      "explanation": "Lehel peavad olema nupud liitmise, lahutamise, korrutamise ja jagamise jaoks.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tehtenupud”."
+      "explanation": "Alt tekst kirjeldab pilti ja parandab ligipääsetavust.",
+      "hint": "Mõtle ekraanilugejale."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: pärast nupuvajutust kuvatakse arvutuse tulemus eraldi alal. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Vormi sees olev nupp ei tohi kogemata vormi saata. Milline valik sobib kõige paremini?",
       "options": [
-        "Pildifail",
-        "Andmebaas",
-        "JSON laadimine",
-        "Tulemuse ala"
+        "role=list",
+        "href=#",
+        "display=grid",
+        "type=button"
       ],
       "correctIndex": 3,
-      "explanation": "Pärast nupuvajutust kuvatakse arvutuse tulemus eraldi alal.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tulemuse ala”."
+      "explanation": "Vormi sees on button vaikimisi submit, seega tüüp tuleb vajadusel selgelt määrata.",
+      "hint": "Mõtle brauseri vaikekäitumisele."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: sisestatud väärtused tuleb enne arvutamist teisendada arvudeks. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Lehe navigeerimislinkide rühm vajab sobivat semantilist konteinerit. Milline valik sobib kõige paremini?",
       "options": [
-        "Arvuks teisendus",
-        "Andmebaas",
-        "JSON laadimine",
-        "Kasutajaprofiil"
+        "nav",
+        "span",
+        "code",
+        "style"
       ],
       "correctIndex": 0,
-      "explanation": "Sisestatud väärtused tuleb enne arvutamist teisendada arvudeks.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Arvuks teisendus”."
+      "explanation": "nav kirjeldab navigeerimisala ja teeb struktuuri arusaadavamaks.",
+      "hint": "Mõtle linkide rühmale."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: kui sisend ei ole arv, kuvatakse kasutajale veateade. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Elemendid tuleb paigutada ühte ritta ja väiksel ekraanil ümber reastada. Milline valik sobib kõige paremini?",
       "options": [
-        "JSON laadimine",
-        "Sisendi viga",
-        "Kasutajaprofiil",
-        "Animatsioon"
+        "localStorage",
+        "flexbox",
+        "JSON.parse",
+        "alert"
       ],
       "correctIndex": 1,
-      "explanation": "Kui sisend ei ole arv, kuvatakse kasutajale veateade.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Sisendi viga”."
+      "explanation": "Flexbox sobib ühemõõtmelise paigutuse ja paindliku reastamise jaoks.",
+      "hint": "Mõtle CSS-i paigutusele."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: nulliga jagamise korral kuvatakse eraldi veateade. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Telefonis ja desktopis peab vaade kohanema ekraani laiusega. Milline valik sobib kõige paremini?",
       "options": [
-        "Kasutajaprofiil",
-        "Animatsioon",
-        "Nulliga jagamine",
-        "CSS värvid"
+        "git merge",
+        "Promise",
+        "media query",
+        "HTTP 404"
       ],
       "correctIndex": 2,
-      "explanation": "Nulliga jagamise korral kuvatakse eraldi veateade.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Nulliga jagamine”."
+      "explanation": "Media query võimaldab rakendada CSS-i tingimuse, näiteks ekraani laiuse järgi.",
+      "hint": "Mõtle responsiivsele CSS-ile."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: lahendus koosneb kolmest failist: index.html, style.css ja script.js. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Fondi ja vahede mõõt peab paremini kasutaja seadistustega kohanema. Milline valik sobib kõige paremini?",
       "options": [
-        "Animatsioon",
-        "CSS värvid",
-        "Serveripäring",
-        "Kolm faili"
+        "px ainult",
+        "token",
+        "commit",
+        "rem"
       ],
       "correctIndex": 3,
-      "explanation": "Lahendus koosneb kolmest failist: index.html, style.css ja script.js.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kolm faili”."
+      "explanation": "rem on suhteline ühik ja aitab luua ühtlasemat mõõtkava.",
+      "hint": "Mõtle suhtelisele ühikule."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: index.html määrab kalkulaatori lehe struktuuri. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Tekst peab olema taustal hästi loetav. Milline valik sobib kõige paremini?",
       "options": [
-        "HTML struktuur",
-        "CSS värvid",
-        "Serveripäring",
-        "Sisselogimine"
+        "kontrast",
+        "branch",
+        "fetch",
+        "array"
       ],
       "correctIndex": 0,
-      "explanation": "index.html määrab kalkulaatori lehe struktuuri.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „HTML struktuur”."
+      "explanation": "Piisav kontrast on loetavuse ja ligipääsetavuse põhitingimus.",
+      "hint": "Mõtle värvide vahele."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: style.css vastutab kalkulaatori visuaalse kujunduse eest. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Klaviatuuriga liikudes peab olema näha, milline element on aktiivne. Milline valik sobib kõige paremini?",
       "options": [
-        "Serveripäring",
-        "Kujundus",
-        "Sisselogimine",
-        "Pildifail"
+        "hover ainult",
+        "focus olek",
+        "JSON skeem",
+        "serveri port"
       ],
       "correctIndex": 1,
-      "explanation": "style.css vastutab kalkulaatori visuaalse kujunduse eest.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kujundus”."
+      "explanation": "Focus olek aitab klaviatuurikasutajal asukohta jälgida.",
+      "hint": "Mõtle Tab-klahvile."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: script.js sisaldab kasutaja tegevustele reageerivat loogikat. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Väärtust hiljem ümber ei määrata. Milline valik sobib kõige paremini?",
       "options": [
-        "Sisselogimine",
-        "Pildifail",
-        "JS loogika",
-        "Andmebaas"
+        "var alati",
+        "await",
+        "const",
+        "class"
       ],
       "correctIndex": 2,
-      "explanation": "script.js sisaldab kasutaja tegevustele reageerivat loogikat.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „JS loogika”."
+      "explanation": "const teeb kavatsuse selgeks ja vähendab juhuslikku ümbermääramist.",
+      "hint": "Mõtle muutumatule viitele."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: nupud seotakse sündmustega addEventListener abil. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Korduvat loogikat tahetakse nimetada ja uuesti kasutada. Milline valik sobib kõige paremini?",
       "options": [
-        "Pildifail",
-        "Andmebaas",
-        "JSON laadimine",
-        "Sündmuse kuulaja"
+        "värv",
+        "parool",
+        "pilt",
+        "funktsioon"
       ],
       "correctIndex": 3,
-      "explanation": "Nupud seotakse sündmustega addEventListener abil.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Sündmuse kuulaja”."
+      "explanation": "Funktsioon eraldab nimetatud tegevuse ja teeb koodi loetavamaks.",
+      "hint": "Mõtle taaskasutatavale loogikale."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: lahendus ei tohiks kasutada HTML-is inline onclick atribuute. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Nupuvajutus peab käivitama JavaScripti loogika. Milline valik sobib kõige paremini?",
       "options": [
-        "Inline onclick",
-        "Andmebaas",
-        "JSON laadimine",
-        "Kasutajaprofiil"
+        "addEventListener",
+        "JSON.stringify",
+        "git status",
+        "border-radius"
       ],
       "correctIndex": 0,
-      "explanation": "Lahendus ei tohiks kasutada HTML-is inline onclick atribuute.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Inline onclick”."
+      "explanation": "addEventListener seob sündmuse ja funktsiooni ilma inline JavaScriptita.",
+      "hint": "Mõtle sündmuse kuulamisele."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: veateated peavad olema kasutajasõbralikud ja eestikeelsed. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Lehelt on vaja leida esimene CSS-selektorile vastav element. Milline valik sobib kõige paremini?",
       "options": [
-        "JSON laadimine",
-        "Eestikeelne viga",
-        "Kasutajaprofiil",
-        "Animatsioon"
+        "map",
+        "querySelector",
+        "push",
+        "uvicorn"
       ],
       "correctIndex": 1,
-      "explanation": "Veateated peavad olema kasutajasõbralikud ja eestikeelsed.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Eestikeelne viga”."
+      "explanation": "querySelector otsib DOM-ist esimese sobiva elemendi.",
+      "hint": "Mõtle DOM päringule."
     },
     {
       "level": 1,
-      "question": "Kirjeldus: kasutajaliides peab olema selge ja loetav. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
+      "question": "Põhimõiste: Kasutaja tekst tuleb lehele kuvada ilma HTML-i käivitamata. Milline valik sobib kõige paremini?",
       "options": [
-        "Kasutajaprofiil",
-        "Animatsioon",
-        "Selge UI",
-        "CSS värvid"
-      ],
-      "correctIndex": 2,
-      "explanation": "Kasutajaliides peab olema selge ja loetav.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Selge UI”."
-    },
-    {
-      "level": 1,
-      "question": "Kirjeldus: kalkulaator toetab liitmist, lahutamist, korrutamist ja jagamist. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
-      "options": [
-        "Animatsioon",
-        "CSS värvid",
-        "Serveripäring",
-        "Neli tehet"
-      ],
-      "correctIndex": 3,
-      "explanation": "Kalkulaator toetab liitmist, lahutamist, korrutamist ja jagamist.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Neli tehet”."
-    },
-    {
-      "level": 1,
-      "question": "Kirjeldus: näites annab 10 ja 3 liitmine tulemuseks 13. Millist nõuet või osa see kõige täpsemalt kirjeldab?",
-      "options": [
-        "Tulemus 13",
-        "CSS värvid",
-        "Serveripäring",
-        "Sisselogimine"
-      ],
-      "correctIndex": 0,
-      "explanation": "Näites annab 10 ja 3 liitmine tulemuseks 13.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tulemus 13”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: parseInputs loeb mõlema välja väärtused, teisendab need arvudeks ja tagastab paari. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Serveripäring",
-        "parseInputs",
-        "Sisselogimine",
-        "Pildifail"
-      ],
-      "correctIndex": 1,
-      "explanation": "parseInputs loeb mõlema välja väärtused, teisendab need arvudeks ja tagastab paari.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „parseInputs”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: sisendis asendatakse koma punktiga, et toetada komaga sisestatud kümnendarve. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Sisselogimine",
-        "Pildifail",
-        "Kümnendkoma",
-        "Andmebaas"
-      ],
-      "correctIndex": 2,
-      "explanation": "Sisendis asendatakse koma punktiga, et toetada komaga sisestatud kümnendarve.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kümnendkoma”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: number.isNaN aitab tuvastada, kas teisendatud väärtus ei ole arv. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Pildifail",
-        "Andmebaas",
-        "JSON laadimine",
-        "NaN kontroll"
-      ],
-      "correctIndex": 3,
-      "explanation": "Number.isNaN aitab tuvastada, kas teisendatud väärtus ei ole arv.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „NaN kontroll”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: tühja sisendi korral tagastab parseInputs nulli ja arvutust ei tehta. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Tühi väli",
-        "Andmebaas",
-        "JSON laadimine",
-        "Kasutajaprofiil"
-      ],
-      "correctIndex": 0,
-      "explanation": "Tühja sisendi korral tagastab parseInputs nulli ja arvutust ei tehta.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi väli”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: showResult paneb tulemuse teksti resultDiv elementi ja määrab tulemuse klassi. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "JSON laadimine",
-        "showResult",
-        "Kasutajaprofiil",
-        "Animatsioon"
-      ],
-      "correctIndex": 1,
-      "explanation": "showResult paneb tulemuse teksti resultDiv elementi ja määrab tulemuse klassi.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „showResult”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: showError kasutab showResult funktsiooni error-tüüpi teate kuvamiseks. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Kasutajaprofiil",
-        "Animatsioon",
-        "showError",
-        "CSS värvid"
-      ],
-      "correctIndex": 2,
-      "explanation": "showError kasutab showResult funktsiooni error-tüüpi teate kuvamiseks.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „showError”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: calculate saab argumendina tehte nime, näiteks add või divide. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Animatsioon",
-        "CSS värvid",
-        "Serveripäring",
-        "operation"
-      ],
-      "correctIndex": 3,
-      "explanation": "calculate saab argumendina tehte nime, näiteks add või divide.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „operation”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: switch valib tehte vastavalt operation väärtusele. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "switch",
-        "CSS värvid",
-        "Serveripäring",
-        "Sisselogimine"
-      ],
-      "correctIndex": 0,
-      "explanation": "switch valib tehte vastavalt operation väärtusele.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „switch”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: jagamisel kontrollitakse enne arvutamist, kas teine arv on null. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Serveripäring",
-        "Jagamise kontroll",
-        "Sisselogimine",
-        "Pildifail"
-      ],
-      "correctIndex": 1,
-      "explanation": "Jagamisel kontrollitakse enne arvutamist, kas teine arv on null.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Jagamise kontroll”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: tundmatu tehte korral kuvatakse veateade ja funktsioon lõpetab töö. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Sisselogimine",
-        "Pildifail",
-        "default haru",
-        "Andmebaas"
-      ],
-      "correctIndex": 2,
-      "explanation": "Tundmatu tehte korral kuvatakse veateade ja funktsioon lõpetab töö.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „default haru”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: const { a, b } = inputs võtab sisendiobjektist kaks arvu eraldi muutujatesse. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Pildifail",
-        "Andmebaas",
-        "JSON laadimine",
-        "a ja b"
-      ],
-      "correctIndex": 3,
-      "explanation": "const { a, b } = inputs võtab sisendiobjektist kaks arvu eraldi muutujatesse.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „a ja b”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: eduka arvutuse korral kuvatakse tekst kujul Tulemus: <väärtus>. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Tulemus tekstina",
-        "Andmebaas",
-        "JSON laadimine",
-        "Kasutajaprofiil"
-      ],
-      "correctIndex": 0,
-      "explanation": "Eduka arvutuse korral kuvatakse tekst kujul Tulemus: <väärtus>.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tulemus tekstina”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: add nupu click sündmus käivitab calculate(\"add\"). Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "JSON laadimine",
-        "add nupp",
-        "Kasutajaprofiil",
-        "Animatsioon"
-      ],
-      "correctIndex": 1,
-      "explanation": "add nupu click sündmus käivitab calculate(\"add\").",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „add nupp”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: divide nupu click sündmus käivitab calculate(\"divide\"). Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Kasutajaprofiil",
-        "Animatsioon",
-        "divide nupp",
-        "CSS värvid"
-      ],
-      "correctIndex": 2,
-      "explanation": "divide nupu click sündmus käivitab calculate(\"divide\").",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „divide nupp”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: vea korral kasutatakse returni, et vältida vigase arvutuse jätkamist. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Animatsioon",
-        "CSS värvid",
-        "Serveripäring",
-        "Varajane return"
-      ],
-      "correctIndex": 3,
-      "explanation": "Vea korral kasutatakse returni, et vältida vigase arvutuse jätkamist.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Varajane return”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: veateate kuvamisel muudetakse tulemuse elemendi klassiks result error. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "error klass",
-        "CSS värvid",
-        "Serveripäring",
-        "Sisselogimine"
-      ],
-      "correctIndex": 0,
-      "explanation": "Veateate kuvamisel muudetakse tulemuse elemendi klassiks result error.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „error klass”."
-    },
-    {
-      "level": 2,
-      "question": "Lahenduse töövoos on kirjeldatud: hTML, CSS ja JavaScript on eraldi failides, mis teeb lahenduse hooldatavamaks. Mis on selle osa nimi või eesmärk?",
-      "options": [
-        "Serveripäring",
-        "Failide jaotus",
-        "Sisselogimine",
-        "Pildifail"
-      ],
-      "correctIndex": 1,
-      "explanation": "HTML, CSS ja JavaScript on eraldi failides, mis teeb lahenduse hooldatavamaks.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Failide jaotus”."
-    },
-    {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: tühja välja eraldi kontroll on oluline, sest Number(\"\") annaks muidu 0. Millist riski, piirangut või otsust see puudutab?",
-      "options": [
-        "Sisselogimine",
-        "Pildifail",
-        "Tühi string",
-        "Andmebaas"
-      ],
-      "correctIndex": 2,
-      "explanation": "Tühja välja eraldi kontroll on oluline, sest Number(\"\") annaks muidu 0.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Tühi string”."
-    },
-    {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: replace(\",\", \".\") asendab ainult esimese koma, kuid tüüpilise ühe kümnendkohaga sisendi jaoks sellest piisab. Millist riski, piirangut või otsust see puudutab?",
-      "options": [
-        "Pildifail",
-        "Andmebaas",
-        "JSON laadimine",
-        "Üks koma"
-      ],
-      "correctIndex": 3,
-      "explanation": "replace(\",\", \".\") asendab ainult esimese koma, kuid tüüpilise ühe kümnendkohaga sisendi jaoks sellest piisab.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Üks koma”."
-    },
-    {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: textContent kasutamine tulemuse kuvamisel vähendab HTML-i süstimise riski. Millist riski, piirangut või otsust see puudutab?",
-      "options": [
+        "innerHTML alati",
+        "eval",
         "textContent",
-        "Andmebaas",
-        "JSON laadimine",
-        "Kasutajaprofiil"
-      ],
-      "correctIndex": 0,
-      "explanation": "textContent kasutamine tulemuse kuvamisel vähendab HTML-i süstimise riski.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „textContent”."
-    },
-    {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: lahendus kontrollib arvu kehtivust, kuid ei piira väga suuri ega lõpmatuid väärtusi. Millist riski, piirangut või otsust see puudutab?",
-      "options": [
-        "JSON laadimine",
-        "Valideerimise piir",
-        "Kasutajaprofiil",
-        "Animatsioon"
-      ],
-      "correctIndex": 1,
-      "explanation": "Lahendus kontrollib arvu kehtivust, kuid ei piira väga suuri ega lõpmatuid väärtusi.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Valideerimise piir”."
-    },
-    {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: uue tehte lisamiseks tuleks lisada nupp, event listener ja switchi haru. Millist riski, piirangut või otsust see puudutab?",
-      "options": [
-        "Kasutajaprofiil",
-        "Animatsioon",
-        "Uus tehe",
-        "CSS värvid"
+        "document.write"
       ],
       "correctIndex": 2,
-      "explanation": "Uue tehte lisamiseks tuleks lisada nupp, event listener ja switchi haru.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Uus tehe”."
+      "explanation": "textContent kuvab teksti ega tõlgenda seda HTML-ina.",
+      "hint": "Mõtle XSS vältimisele."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: arvutusloogikat oleks lihtsam testida, kui puhas arvutus oleks DOM-ist eraldi funktsioonis. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: API vastuses kasutatakse tekstipõhist andmevormingut objektide ja massiivide jaoks. Milline valik sobib kõige paremini?",
       "options": [
-        "Animatsioon",
-        "CSS värvid",
-        "Serveripäring",
-        "Testitavus"
+        "PNG",
+        "CSS",
+        "MP3",
+        "JSON"
       ],
       "correctIndex": 3,
-      "explanation": "Arvutusloogikat oleks lihtsam testida, kui puhas arvutus oleks DOM-ist eraldi funktsioonis.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Testitavus”."
+      "explanation": "JSON on veebis tavapärane andmevorming API vastuste jaoks.",
+      "hint": "Mõtle andmevormingule."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: kalkulaatori ligipääsetavust parandaksid selged labelid ja klaviatuuriga kasutatavus. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: Brauserist on vaja küsida andmeid HTTP kaudu. Milline valik sobib kõige paremini?",
       "options": [
-        "Ligipääsetavus",
-        "CSS värvid",
-        "Serveripäring",
-        "Sisselogimine"
+        "fetch",
+        "filter",
+        "alt",
+        "commit"
       ],
       "correctIndex": 0,
-      "explanation": "Kalkulaatori ligipääsetavust parandaksid selged labelid ja klaviatuuriga kasutatavus.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Ligipääsetavus”."
+      "explanation": "fetch teeb võrgupäringu ja tagastab Promise'i.",
+      "hint": "Mõtle serveriga suhtlemisele."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: komaga sisendi toetamine arvestab eesti kasutaja harjumusega kümnendkoma kasutada. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: HTTP vastus tuleb enne JSON-iks lugemist edukaks kontrollida. Milline valik sobib kõige paremini?",
       "options": [
-        "Serveripäring",
-        "Kümnendkoma",
-        "Sisselogimine",
-        "Pildifail"
+        "font-weight",
+        "response.ok",
+        "git push",
+        "aria-label"
       ],
       "correctIndex": 1,
-      "explanation": "Komaga sisendi toetamine arvestab eesti kasutaja harjumusega kümnendkoma kasutada.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Kümnendkoma”."
+      "explanation": "response.ok näitab, kas HTTP status jääb edukasse vahemikku.",
+      "hint": "Mõtle HTTP staatusele."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: kõik vead jõuavad showError kaudu samasse kuvamismehhanismi. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: Andmeid küsitakse serverist ilma neid muutmata. Milline valik sobib kõige paremini?",
       "options": [
-        "Sisselogimine",
-        "Pildifail",
-        "Ühtne veavoog",
-        "Andmebaas"
+        "DELETE",
+        "PATCH",
+        "GET",
+        "POST loomine"
       ],
       "correctIndex": 2,
-      "explanation": "Kõik vead jõuavad showError kaudu samasse kuvamismehhanismi.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Ühtne veavoog”."
+      "explanation": "GET sobib lugemiseks ja ei peaks serveri olekut muutma.",
+      "hint": "Mõtle lugemispäringule."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: javaScripti ujukomaarvud võivad jagamisel anda ümarduslikke tulemusi. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: Server ütleb, et küsitud ressurssi ei leitud. Milline valik sobib kõige paremini?",
       "options": [
-        "Pildifail",
-        "Andmebaas",
-        "JSON laadimine",
-        "Ujukomaarv"
+        "200",
+        "201",
+        "301",
+        "404"
       ],
       "correctIndex": 3,
-      "explanation": "JavaScripti ujukomaarvud võivad jagamisel anda ümarduslikke tulemusi.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Ujukomaarv”."
+      "explanation": "HTTP 404 tähendab, et ressurssi ei leitud.",
+      "hint": "Mõtle puuduvale aadressile."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: nulliga jagamist kontrollitakse divide harus enne result väärtustamist. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: Arendaja tahab näha, millised failid on muudetud. Milline valik sobib kõige paremini?",
       "options": [
-        "Divide haru",
-        "Andmebaas",
-        "JSON laadimine",
-        "Kasutajaprofiil"
+        "git status",
+        "git clone",
+        "git tag",
+        "git init"
       ],
       "correctIndex": 0,
-      "explanation": "Nulliga jagamist kontrollitakse divide harus enne result väärtustamist.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Divide haru”."
+      "explanation": "git status näitab tööpuu ja staging-ala seisu.",
+      "hint": "Mõtle tööseisu vaatamisele."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: addEventListener hoiab käitumise JavaScriptis, mitte HTML-i atribuutides. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: Muudatus tehakse eraldi arendusliinis. Milline valik sobib kõige paremini?",
       "options": [
-        "JSON laadimine",
-        "JS sündmused",
-        "Kasutajaprofiil",
-        "Animatsioon"
+        "cookie",
+        "branch",
+        "selector",
+        "endpoint"
       ],
       "correctIndex": 1,
-      "explanation": "addEventListener hoiab käitumise JavaScriptis, mitte HTML-i atribuutides.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „JS sündmused”."
+      "explanation": "Branch võimaldab tööd põhiharust eraldi teha.",
+      "hint": "Mõtle paralleelsele arendusele."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: className määramine on lihtne, kuid suuremas rakenduses tuleks klasside haldus täpsemalt läbi mõelda. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: Staged muudatused salvestatakse Git ajalukku sõnumiga. Milline valik sobib kõige paremini?",
       "options": [
-        "Kasutajaprofiil",
-        "Animatsioon",
-        "DOM uuendus",
-        "CSS värvid"
+        "pull",
+        "fetch",
+        "commit",
+        "reset"
       ],
       "correctIndex": 2,
-      "explanation": "className määramine on lihtne, kuid suuremas rakenduses tuleks klasside haldus täpsemalt läbi mõelda.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „DOM uuendus”."
+      "explanation": "Commit on loogiline salvestuspunkt projekti ajaloos.",
+      "hint": "Mõtle ajaloo salvestamisele."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: default haru kaitseb funktsiooni ootamatu operation väärtuse eest. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: Valmis haru soovitakse üle vaadata enne ühendamist. Milline valik sobib kõige paremini?",
       "options": [
-        "Animatsioon",
-        "CSS värvid",
-        "Serveripäring",
-        "Vigane operation"
+        "localStorage",
+        "media query",
+        "stack trace",
+        "pull request"
       ],
       "correctIndex": 3,
-      "explanation": "default haru kaitseb funktsiooni ootamatu operation väärtuse eest.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Vigane operation”."
+      "explanation": "Pull request koondab muudatused review ja arutelu jaoks.",
+      "hint": "Mõtle koodi ülevaatusele."
     },
     {
-      "level": 3,
-      "question": "Koodi ülevaatusel märkad: mitme lisatehte korral oleks korduva event listener koodi vähendamiseks mõistlik kasutada kaarti või delegatsiooni. Millist riski, piirangut või otsust see puudutab?",
+      "level": 1,
+      "question": "Põhimõiste: Failid nagu `.env` ja `node_modules` ei peaks reposse minema. Milline valik sobib kõige paremini?",
       "options": [
-        "Skaleerimine",
-        "CSS värvid",
-        "Serveripäring",
-        "Sisselogimine"
+        ".gitignore",
+        "README",
+        "package-lock",
+        "index.html"
       ],
       "correctIndex": 0,
-      "explanation": "Mitme lisatehte korral oleks korduva event listener koodi vähendamiseks mõistlik kasutada kaarti või delegatsiooni.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „Skaleerimine”."
+      "explanation": ".gitignore määrab, mida Git ei jälgi.",
+      "hint": "Mõtle ignoreeritavatele failidele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Ühe väikese funktsiooni tulemust kontrollitakse eraldi. Milline valik sobib kõige paremini?",
+      "options": [
+        "deploy",
+        "unit test",
+        "merge",
+        "favicon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Unit test kontrollib väikest koodiosa isoleeritult.",
+      "hint": "Mõtle väikesele üksusele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Kasutaja põhivoog mängitakse testis algusest lõpuni läbi. Milline valik sobib kõige paremini?",
+      "options": [
+        "lint",
+        "format",
+        "end-to-end test",
+        "commit"
+      ],
+      "correctIndex": 2,
+      "explanation": "End-to-end test kontrollib terviklikku kasutajateekonda.",
+      "hint": "Mõtle kasutaja vaatele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Koodireeglid ja lihtsad kvaliteedivead leitakse automaatselt. Milline valik sobib kõige paremini?",
+      "options": [
+        "server",
+        "canvas",
+        "database",
+        "linter"
+      ],
+      "correctIndex": 3,
+      "explanation": "Linter aitab hoida koodi ühtlase ja vigadevabama.",
+      "hint": "Mõtle automaatsele kontrollile."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Issue kirjeldab, millal töö võib valmis lugeda. Milline valik sobib kõige paremini?",
+      "options": [
+        "acceptance criteria",
+        "API key",
+        "z-index",
+        "font family"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vastuvõtutingimused annavad konkreetse kontrollnimekirja.",
+      "hint": "Mõtle valmisoleku tingimustele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Pärast UI muudatust kontrollitakse käsitsi, et põhiline voog töötab. Milline valik sobib kõige paremini?",
+      "options": [
+        "force push",
+        "smoke-test",
+        "CSS reset",
+        "binary file"
+      ],
+      "correctIndex": 1,
+      "explanation": "Smoke-test on kiire kontroll, et tähtsaimad vood pole katki.",
+      "hint": "Mõtle kiirele põhikontrollile."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Kasutaja sisend lisatakse lehele otse HTML-ina. Milline valik sobib kõige paremini?",
+      "options": [
+        "404 risk",
+        "merge risk",
+        "XSS risk",
+        "font risk"
+      ],
+      "correctIndex": 2,
+      "explanation": "Otse HTML-ina lisatud sisend võib käivitada pahatahtliku skripti.",
+      "hint": "Mõtle skripti süstimisele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: API võtit ei tohi brauserikoodi panna. Milline valik sobib kõige paremini?",
+      "options": [
+        "CSS ei tööta",
+        "HTML kaob",
+        "Git ei käivitu",
+        "see muutub avalikuks"
+      ],
+      "correctIndex": 3,
+      "explanation": "Frontend-kood on kasutajale nähtav, seega saladused peavad jääma serverisse või keskkonda.",
+      "hint": "Mõtle brauseris nähtavale koodile."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Keskkonnaseadistused tuleb hoida koodist eraldi. Milline valik sobib kõige paremini?",
+      "options": [
+        "keskkonnamuutuja",
+        "inline style",
+        "hardcode",
+        "alert"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keskkonnamuutujad võimaldavad local ja production seadistused lahus hoida.",
+      "hint": "Mõtle konfiguratsioonile."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Saladustega fail ei tohi minna avalikku reposse. Milline valik sobib kõige paremini?",
+      "options": [
+        "rohkem kommentaare",
+        ".env ignoreerimine",
+        "suurem font",
+        "uus logo"
+      ],
+      "correctIndex": 1,
+      "explanation": ".env võib sisaldada API võtmeid või paroole ja tuleb Gitist välja jätta.",
+      "hint": "Mõtle saladustele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Kasutajalt tulevaid andmeid ei saa vaikimisi usaldada. Milline valik sobib kõige paremini?",
+      "options": [
+        "CSS grid",
+        "git pull",
+        "sisendi valideerimine",
+        "alt tekst"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sisend võib olla tühi, vale formaadiga või pahatahtlik.",
+      "hint": "Mõtle usalduspiirile."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Failide vahel tuleb jagada ainult vajalikku koodi. Milline valik sobib kõige paremini?",
+      "options": [
+        "globaalne muutuja",
+        "inline onclick",
+        "magic number",
+        "moodul"
+      ],
+      "correctIndex": 3,
+      "explanation": "Moodulid aitavad vastutusi eraldada ja importida ainult vajaliku.",
+      "hint": "Mõtle importimisele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Sama loogika on mitmes kohas korduses. Milline valik sobib kõige paremini?",
+      "options": [
+        "DRY",
+        "XSS",
+        "404",
+        "HTTPS"
+      ],
+      "correctIndex": 0,
+      "explanation": "DRY vähendab dubleerimist ja hooldusvigu.",
+      "hint": "Mõtle korduse vältimisele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Muutuja nimi peab näitama, mida väärtus tähendab. Milline valik sobib kõige paremini?",
+      "options": [
+        "juhuslik täht",
+        "selge nimi",
+        "parool",
+        "värvikood"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tähenduslik nimi teeb koodi mõistetavaks ilma liigsete kommentaarideta.",
+      "hint": "Mõtle loetavusele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Kommentaar on kasulik siis, kui koodivalik pole iseenesest selge. Milline valik sobib kõige paremini?",
+      "options": [
+        "kordab rida",
+        "peidab vea",
+        "selgitab põhjust",
+        "asendab testi"
+      ],
+      "correctIndex": 2,
+      "explanation": "Hea kommentaar selgitab miks, mitte ainult mida rida teeb.",
+      "hint": "Mõtle põhjendusele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Funktsioon teeb korraga ühe selgelt nimetatava töö. Milline valik sobib kõige paremini?",
+      "options": [
+        "kõik ühes",
+        "globaalne olek",
+        "kopeeritud loogika",
+        "üks vastutus"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ühe vastutusega funktsiooni on lihtsam lugeda ja testida.",
+      "hint": "Mõtle väikesele fookusele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Miljonimängu voorus peab olema kindel arv küsimusi. Milline valik sobib kõige paremini?",
+      "options": [
+        "15 küsimust",
+        "3 küsimust",
+        "50 küsimust korraga",
+        "piiramatu arv"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nõue ütleb, et mängus on 15 küsimust.",
+      "hint": "Mõtle mängu pikkusele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Igal küsimusel peab olema kindel arv vastusevariante. Milline valik sobib kõige paremini?",
+      "options": [
+        "2 varianti",
+        "4 varianti",
+        "5 varianti",
+        "0 varianti"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mängu kontrolliloogika eeldab nelja varianti ja ühte õiget vastust.",
+      "hint": "Mõtle miljonimängu formaadile."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Vale vastuse korral ei pruugi skoor nulli kukkuda, kui vahe-eesmärk on saavutatud. Milline valik sobib kõige paremini?",
+      "options": [
+        "hover",
+        "README",
+        "turvatase",
+        "merge"
+      ],
+      "correctIndex": 2,
+      "explanation": "Turvatase määrab, millise punktisumma mängija alles jätab.",
+      "hint": "Mõtle 1 000 ja 32 000 punktile."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Mängija saab ühe korra valikuid vähendada. Milline valik sobib kõige paremini?",
+      "options": [
+        "404",
+        "GET",
+        "commit",
+        "50:50"
+      ],
+      "correctIndex": 3,
+      "explanation": "50:50 eemaldab kaks valet vastust.",
+      "hint": "Mõtle õlekõrrele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Iga käivitus ei tohiks näidata täpselt samu küsimusi samas järjekorras. Milline valik sobib kõige paremini?",
+      "options": [
+        "juhuslik valik",
+        "fikseeritud järjekord",
+        "CSS sorteerimine",
+        "git clone"
+      ],
+      "correctIndex": 0,
+      "explanation": "Juhuslik valik aitab kontrollida arusaamist, mitte päheõppimist.",
+      "hint": "Mõtle küsimusepanga kasutamisele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Andmete laadimine võtab aega ja kasutaja vajab tagasisidet. Milline valik sobib kõige paremini?",
+      "options": [
+        "tühi ekraan",
+        "laadimisolek",
+        "stack trace",
+        "hard reset"
+      ],
+      "correctIndex": 1,
+      "explanation": "Laadimisolek näitab, et rakendus töötab.",
+      "hint": "Mõtle ootamise hetkele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Andmeid pole, aga rakendus ei ole katki. Milline valik sobib kõige paremini?",
+      "options": [
+        "404 alati",
+        "console.error ainult",
+        "tühi olek",
+        "force push"
+      ],
+      "correctIndex": 2,
+      "explanation": "Tühi olek selgitab kasutajale olukorda.",
+      "hint": "Mõtle 'midagi ei leitud' vaatele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Viga tuleb kasutajale selgitada arusaadavas keeles. Milline valik sobib kõige paremini?",
+      "options": [
+        "toores stack trace",
+        "tühi alert",
+        "API võti",
+        "kasutajasõbralik veateade"
+      ],
+      "correctIndex": 3,
+      "explanation": "Kasutaja vajab juhist, mitte sisemist tehnilist detaili.",
+      "hint": "Mõtle kasutaja järgmisele sammule."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Rakendus peab olema kasutatav nii telefonis kui ka arvutis. Milline valik sobib kõige paremini?",
+      "options": [
+        "responsiivne kujundus",
+        "fikseeritud 1400px",
+        "ainult hover",
+        "püsiv modal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Responsiivsus hoiab sisu eri ekraanidel loetava ja kasutatavana.",
+      "hint": "Mõtle ekraani laiusele."
+    },
+    {
+      "level": 1,
+      "question": "Põhimõiste: Kõik põhitegevused peavad töötama ka ilma hiireta. Milline valik sobib kõige paremini?",
+      "options": [
+        "ainult hiire hover",
+        "klaviatuuritugi",
+        "peidetud nupp",
+        "autoplay"
+      ],
+      "correctIndex": 1,
+      "explanation": "Klaviatuuritugi on ligipääsetavuse oluline osa.",
+      "hint": "Mõtle Tab ja Enter kasutamisele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: vormi valideerimine enne API päringut Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'vormi valideerimine enne API päringut' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: API vastuse skeemi kontroll Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'API vastuse skeemi kontroll' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: topeltklõpsu vältimine laadimise ajal Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'topeltklõpsu vältimine laadimise ajal' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: tühja nimekirja kuvamine Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'tühja nimekirja kuvamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: globaalsete kõrvalmõjude vähendamine Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'globaalsete kõrvalmõjude vähendamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: API aadressi hoidmine ühes konstandis Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'API aadressi hoidmine ühes konstandis' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: try/catch fetch-päringu ümber Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'try/catch fetch-päringu ümber' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: localStorage JSON-i turvaline lugemine Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'localStorage JSON-i turvaline lugemine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: muutuja nime täpsustamine Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'muutuja nime täpsustamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: textContent kasutamine kasutaja teksti jaoks Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'textContent kasutamine kasutaja teksti jaoks' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: HTTP 500 kasutajasõbralik teade Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'HTTP 500 kasutajasõbralik teade' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: vormi nupu tüübi määramine Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'vormi nupu tüübi määramine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: api.js mooduli eraldamine Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'api.js mooduli eraldamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: liiga suure funktsiooni jagamine Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'liiga suure funktsiooni jagamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: 5 küsimuse olemasolu igal raskusastmel Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord '5 küsimuse olemasolu igal raskusastmel' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: õige vastuse selgitamine pärast valikut Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'õige vastuse selgitamine pärast valikut' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: 50:50 õige vastuse säilitamine Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord '50:50 õige vastuse säilitamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: küsimuse vahetamine samas raskusastmes Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'küsimuse vahetamine samas raskusastmes' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: turvataseme arvutamine vale vastuse korral Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'turvataseme arvutamine vale vastuse korral' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: juhusliku valiku kasutamine päheõppimise vähendamiseks Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'juhusliku valiku kasutamine päheõppimise vähendamiseks' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: input.value teisendamine arvuks Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'input.value teisendamine arvuks' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: NaN kontroll pärast teisendust Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'NaN kontroll pärast teisendust' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: laadimisoleku kuvamine Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'laadimisoleku kuvamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: klaviatuuriga kasutatavad nupud Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'klaviatuuriga kasutatavad nupud' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: fikseeritud laiuse vältimine mobiilis Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'fikseeritud laiuse vältimine mobiilis' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: focus-oleku lisamine hoveri kõrvale Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'focus-oleku lisamine hoveri kõrvale' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: smoke-test pärast tekstimuudatust Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'smoke-test pärast tekstimuudatust' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: vale vastuse voo testimine Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'vale vastuse voo testimine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: staatilise demo kliendipoolne mängumootor Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'staatilise demo kliendipoolne mängumootor' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: frontend'i ja backend'i reeglite kooskõla Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'frontend'i ja backend'i reeglite kooskõla' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: correctIndex vahemik 0 kuni 3 Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'correctIndex vahemik 0 kuni 3' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: täpselt nelja vastusevariandi nõue Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'täpselt nelja vastusevariandi nõue' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: pooleli jätmisel teenitud punktide säilitamine Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'pooleli jätmisel teenitud punktide säilitamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: selgituse kuvamine kohe pärast vastamist Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'selgituse kuvamine kohe pärast vastamist' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: ühtlane eestikeelne kasutajaliides Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'ühtlane eestikeelne kasutajaliides' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: failinimede asemel arusaamise kontroll Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'failinimede asemel arusaamise kontroll' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: mobiilivaate vastuvõtutingimuse testimine Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'mobiilivaate vastuvõtutingimuse testimine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: aria-live staatuse teate juures Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'aria-live staatuse teate juures' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: innerHTML kasutamine ainult puhastatud sisuga Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'innerHTML kasutamine ainult puhastatud sisuga' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: punktide vormindamine eesti lokaadiga Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'punktide vormindamine eesti lokaadiga' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: lihtsast raskeks küsimuste järjekord Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'lihtsast raskeks küsimuste järjekord' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: API kihi andmete tagastamine UI-le Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'API kihi andmete tagastamine UI-le' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: vigase küsimusepanga selge veateade Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'vigase küsimusepanga selge veateade' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: hidden atribuudi kasutamine ajutisel peitmisel Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'hidden atribuudi kasutamine ajutisel peitmisel' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: õlekõrre nupu keelamine pärast kasutust Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'õlekõrre nupu keelamine pärast kasutust' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: vastusevariantide lukustamine pärast vastamist Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'vastusevariantide lukustamine pärast vastamist' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: type=module skripti laadimine Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "käsitle see selge olekuna",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Olukord 'type=module skripti laadimine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: puuduva DOM elemendi kontroll Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor",
+        "käsitle see selge olekuna"
+      ],
+      "correctIndex": 3,
+      "explanation": "Olukord 'puuduva DOM elemendi kontroll' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: README piirangute kirjeldamine Milline valik sobib kõige paremini?",
+      "options": [
+        "käsitle see selge olekuna",
+        "ignoreeri olukorda",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olukord 'README piirangute kirjeldamine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
+    },
+    {
+      "level": 2,
+      "question": "Olukord: vastuvõtutingimuste käsitsi kontrollimine Milline valik sobib kõige paremini?",
+      "options": [
+        "ignoreeri olukorda",
+        "käsitle see selge olekuna",
+        "peida viga kasutaja eest",
+        "lisa mitteseotud refaktor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olukord 'vastuvõtutingimuste käsitsi kontrollimine' vajab selget oleku, vea või vastutuse käsitlemist, et kasutaja voog ja koodi hooldatavus säiliksid.",
+      "hint": "Mõtle praktilisele parandusele, mitte kosmeetilisele muutusele."
     },
     {
       "level": 3,
-      "question": "Koodi ülevaatusel märkad: arvutuse järel sisendite säilitamine aitab kasutajal kiiresti teist tehet proovida. Millist riski, piirangut või otsust see puudutab?",
+      "question": "Risk: innerHTML ja puhastamata kommentaarid Milline valik sobib kõige paremini?",
       "options": [
-        "Serveripäring",
-        "UX",
-        "Sisselogimine",
-        "Pildifail"
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'innerHTML ja puhastamata kommentaarid' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: API võtme hoidmine frontend'is Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
       ],
       "correctIndex": 1,
-      "explanation": "Arvutuse järel sisendite säilitamine aitab kasutajal kiiresti teist tehet proovida.",
-      "hint": "Vihje: otsi kirjeldusest märksõna, mis seob selle teemaga „UX”."
+      "explanation": "Risk 'API võtme hoidmine frontend'is' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: puudulik raske taseme küsimusepank Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'puudulik raske taseme küsimusepank' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: shuffle muudab algset massiivi Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'shuffle muudab algset massiivi' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: frontend ja backend arvutavad skoori erinevalt Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'frontend ja backend arvutavad skoori erinevalt' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: vahetusõlekõrs annab vale raskusastme Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'vahetusõlekõrs annab vale raskusastme' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: catch-plokk neelab vea vaikides Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'catch-plokk neelab vea vaikides' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: valikuloogika ja renderduse segamine Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'valikuloogika ja renderduse segamine' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: localStorage ametliku tulemuse allikana Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'localStorage ametliku tulemuse allikana' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: selgitus ei põhjenda vastust Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'selgitus ei põhjenda vastust' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: .git ja node_modules failide lugemine AI konteksti Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk '.git ja node_modules failide lugemine AI konteksti' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: AI küsimused ei põhine ülesandel Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'AI küsimused ei põhine ülesandel' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: local arendus sõltub production võtmetest Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'local arendus sõltub production võtmetest' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: shuffled vastuste indeks läheb paigast Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'shuffled vastuste indeks läheb paigast' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: Math.random turvakriitilises loosimises Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'Math.random turvakriitilises loosimises' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: vale vastuse skoor kasutab pooleliolevat astet Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'vale vastuse skoor kasutab pooleliolevat astet' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: lõppenud sessioon lubab veel vastata Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'lõppenud sessioon lubab veel vastata' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: õlekõrre vea järel olek rikutakse Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'õlekõrre vea järel olek rikutakse' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: innerHTML asendab kuulajatega elemendid Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'innerHTML asendab kuulajatega elemendid' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: query parameetri kodeerimata sisend Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'query parameetri kodeerimata sisend' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: aeglane vana päring kirjutab uuema üle Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'aeglane vana päring kirjutab uuema üle' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: backend exception kuvatakse kasutajale Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'backend exception kuvatakse kasutajale' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: == põhjustab tüübiteisenduse vea Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk '== põhjustab tüübiteisenduse vea' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: test kontrollib ainult elemendi olemasolu Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'test kontrollib ainult elemendi olemasolu' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: andmefaili skeemi ja mahu automaattest Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'andmefaili skeemi ja mahu automaattest' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: README ja UI räägivad eri voost Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'README ja UI räägivad eri voost' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: Pages build lisab vanad input-kaustad Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'Pages build lisab vanad input-kaustad' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: kasutamata uue teema UI jääb alles Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'kasutamata uue teema UI jääb alles' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: järgmine küsimus avaneb enne kontrolli Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'järgmine küsimus avaneb enne kontrolli' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: selgitus kordab ainult vastusevarianti Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'selgitus kordab ainult vastusevarianti' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: rasked küsimused on ainult definitsioonid Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'rasked küsimused on ainult definitsioonid' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: funktsiooni varjatud välised sõltuvused Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'funktsiooni varjatud välised sõltuvused' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: globaalne state mitme mängu korral Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'globaalne state mitme mängu korral' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: confirm katkestus muudab sessiooni Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'confirm katkestus muudab sessiooni' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: response.ok kontroll puudub Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'response.ok kontroll puudub' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: identsed küsimused vähendavad variatsiooni Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'identsed küsimused vähendavad variatsiooni' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: ilmselged naljavastused Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'ilmselged naljavastused' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: tulemuse ülevaade puudub Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'tulemuse ülevaade puudub' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: madal kontrast Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'madal kontrast' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: mobiilis liiga suur punktiredel Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'mobiilis liiga suur punktiredel' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: disabled olek ainult värviga Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'disabled olek ainult värviga' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: branch luuakse valest lähteharust Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'branch luuakse valest lähteharust' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: commit ei viita issue numbrile Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'commit ei viita issue numbrile' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: mitteseotud refaktor samas issue's Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'mitteseotud refaktor samas issue's' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: ainult frontend'i sisendikontroll Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'ainult frontend'i sisendikontroll' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: piiranguta teema kirjeldus API-s Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'piiranguta teema kirjeldus API-s' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: AI vastus pole JSON Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "vähenda riski sihitud kontrolliga",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 2,
+      "explanation": "Risk 'AI vastus pole JSON' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: test sõltub päris AI teenusest Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus",
+        "vähenda riski sihitud kontrolliga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Risk 'test sõltub päris AI teenusest' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: juhusliku valiku deterministlik testimine Milline valik sobib kõige paremini?",
+      "options": [
+        "vähenda riski sihitud kontrolliga",
+        "jätka vaikimisi eeldustega",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk 'juhusliku valiku deterministlik testimine' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
+    },
+    {
+      "level": 3,
+      "question": "Risk: correctIndex alias JSON-i ja Pythoni vahel Milline valik sobib kõige paremini?",
+      "options": [
+        "jätka vaikimisi eeldustega",
+        "vähenda riski sihitud kontrolliga",
+        "peida probleem UI-st",
+        "tee suurem mitteseotud muudatus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk 'correctIndex alias JSON-i ja Pythoni vahel' vajab kontrolli, piirangut või eraldamist. Nii väheneb turva-, oleku- või hooldusviga.",
+      "hint": "Mõtle, mis ennetab vea kordumist."
     }
   ]
 }

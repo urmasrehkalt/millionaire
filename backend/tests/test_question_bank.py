@@ -64,3 +64,19 @@ def test_select_game_questions_picks_five_per_level_with_reserves() -> None:
     assert [q.level for q in selected].count(QuestionLevel.MEDIUM) == 5
     assert [q.level for q in selected].count(QuestionLevel.HARD) == 5
     assert len(reserves[QuestionLevel.EASY]) == 3
+
+
+def test_single_junior_developer_bank_has_required_volume_and_schema() -> None:
+    project_root = Path(__file__).resolve().parents[2]
+
+    questions = load_question_bank(project_root / "input", "001")
+
+    assert len(questions) == 150
+    assert [q.level for q in questions].count(QuestionLevel.EASY) == 50
+    assert [q.level for q in questions].count(QuestionLevel.MEDIUM) == 50
+    assert [q.level for q in questions].count(QuestionLevel.HARD) == 50
+    assert len({q.question for q in questions}) == 150
+    assert all(len(q.options) == 4 for q in questions)
+    assert all(0 <= q.correct_index <= 3 for q in questions)
+    assert all(q.explanation for q in questions)
+    assert all(q.hint for q in questions)

@@ -1,7 +1,7 @@
 # Küsimuste genereerimise prompt
 
-See fail sisaldab täielikku prompti, mida `backend/app/services/question_generator.py`
-saadab Google Gemini 2.5 Flash mudelile uue teema küsimusepanga loomisel. Prompt
+See fail sisaldab prompti, mida `backend/app/services/question_generator.py`
+saab kasutada Google Gemini 2.5 Flash mudeliga küsimusepanga loomisel. Prompt
 on jaotatud **süsteemiosaks** (Gemini terminoloogias `system_instruction`) ja
 **kasutaja­päringuks**.
 
@@ -118,11 +118,11 @@ Kui päringus on antud täpne küsimuste arv, loo täpselt nii mitu küsimust.
 
 ## Konfiguratsioon (`question_generator.py`-s)
 
-- `temperature=0.9` — variatsiooni jaoks uue teema küsimusepanga loomisel
+- `temperature=0.9` — variatsiooni jaoks küsimusepanga loomisel
 - `response_mime_type="application/json"` — sundida valiidset JSON-i
 - `response_schema` — Pydantic-põhine skeem, mis kindlustab struktuuri
-- Olemasoleva teema mängu alustamisel AI-d ei kutsuta; kasutatakse teema
-  `questions.json` küsimusepanka
+- Mängu alustamisel AI-d ei kutsuta; kasutatakse salvestatud `questions.json`
+  küsimusepanka
 
 ## Allikas
 
