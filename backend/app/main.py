@@ -28,7 +28,15 @@ def health() -> dict[str, str]:
     return {"status": "ok"}
 
 
-# Serve the frontend last so /api/* routes win.
+# Mount input/ so the client-side game engine can fetch
+# input/<id>/questions.json the same way it does on GitHub Pages.
+app.mount(
+    "/input",
+    StaticFiles(directory=str(settings.input_dir)),
+    name="input",
+)
+
+# Serve the frontend last so /api/* and /input/* mounts win.
 app.mount(
     "/",
     StaticFiles(directory=str(settings.frontend_dir), html=True),

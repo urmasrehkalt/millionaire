@@ -1,11 +1,15 @@
-import { createTopic, listAssignments } from "../api.js";
+import { createTopic, isBackendAvailable, listAssignments } from "../api.js";
 
 export async function renderMenu(root, onSelect) {
     root.innerHTML = `<div class="loading">Laen ülesandeid…</div>`;
 
     let assignments;
+    let backendOnline = false;
     try {
-        assignments = await listAssignments();
+        [assignments, backendOnline] = await Promise.all([
+            listAssignments(),
+            isBackendAvailable(),
+        ]);
     } catch (err) {
         root.innerHTML = `<div class="error-state">Ülesannete laadimine ebaõnnestus: ${err.message}</div>`;
         return;
@@ -20,9 +24,7 @@ export async function renderMenu(root, onSelect) {
         return;
     }
 
-    root.innerHTML = `
-        <p class="menu-intro">Vali ülesanne, mille kohta tahad mängu mängida.</p>
-        <div class="assignment-grid" id="grid"></div>
+    const newTopicSection = backendOnline ? `
         <section class="new-topic-card">
             <h2>Lisa uus teema</h2>
             <p>AI-d kasutatakse ainult siin: uue teema põhjal luuakse salvestatud küsimusepank.</p>
@@ -32,7 +34,17 @@ export async function renderMenu(root, onSelect) {
                 <button class="btn" type="submit">Loo teema AI abil</button>
                 <div class="form-status" id="topic-status" aria-live="polite"></div>
             </form>
-        </section>`;
+        </section>` : `
+        <p class="static-note">
+            See on GitHub Pages demo — uue teema loomine vajab töötavat backendi.
+            <a href="https://github.com/urmasrehkalt/millionaire#k%C3%A4ivitamise-juhend">Käivita lokaalselt</a>,
+            et lisada AI abil uusi teemasid.
+        </p>`;
+
+    root.innerHTML = `
+        <p class="menu-intro">Vali ülesanne, mille kohta tahad mängu mängida.</p>
+        <div class="assignment-grid" id="grid"></div>
+        ${newTopicSection}`;
 
     const grid = root.querySelector("#grid");
     for (const a of assignments) {
@@ -46,7 +58,10 @@ export async function renderMenu(root, onSelect) {
         grid.appendChild(card);
     }
 
-    root.querySelector("#new-topic-form").addEventListener("submit", async (event) => {
+    const newTopicForm = root.querySelector("#new-topic-form");
+    if (!newTopicForm) return;
+
+    newTopicForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         const form = event.currentTarget;
         const status = root.querySelector("#topic-status");
